@@ -2,8 +2,8 @@ import Image from "next/image";
 
 export default function Home() {
   return (
-    <div className=" min-h-screen flex flex-col items-center justify-between">
-      <div className="navbar bg-slate-800">
+    <div className=" min-h-screen flex flex-col items-center justify-between bg-base-100">
+      <div className="navbar bg-base-300">
         <div className="flex-1">
           <a className="btn btn-ghost normal-case text-xl">Your way</a>
         </div>
