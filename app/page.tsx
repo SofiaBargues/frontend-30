@@ -5,7 +5,7 @@ export default function Home() {
     <div className=" min-h-screen flex flex-col items-center justify-between text-base-content bg-base-100">
       <div className="navbar text-base-content bg-base-300">
         <div className="flex-1">
-          <a className="btn btn-ghost normal-case text-xl">Your way</a>
+          <a className=" font-bold normal-case text-xl ">Your way</a>
         </div>
         <div className="flex-none gap-2">
           <label className="btn btn-ghost btn-circle avatar">
