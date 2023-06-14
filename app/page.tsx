@@ -19,43 +19,43 @@ export default function Home() {
 
       <main className="flex flex-col items-center  w-full">
         <div className="flex flex-col items-center w-full w-min-3xl">
-          <div className="p-6 relative left-0">
+          <div className="relative left-0 mt-16">
             <button className="btn btn-circle btn-outline btn-lg">
               <Camera size={48} />
             </button>
             English
           </div>
-          <div className="p-6 relative left-11">
+          <div className="relative left-11 mt-5">
             <button className="btn btn-circle btn-outline btn-lg">
               <Camera size={48} />
             </button>
             Bootcamp
           </div>
-          <div className="p-6 relative left-16">
+          <div className="relative left-16 mt-5">
             <button className="btn btn-circle btn-outline btn-lg">
               <Camera size={48} />
             </button>
             Get a Job
           </div>
-          <div className="p-6 relative left-11">
+          <div className="relative left-11 mt-5">
             <button className="btn btn-circle btn-outline btn-lg">
               <Camera size={48} />
             </button>
             Bootcamp
           </div>
-          <div className="p-6 relative left-0">
+          <div className="relative left-0 mt-5">
             <button className="btn btn-circle btn-outline btn-lg">
               <Camera size={48} />
             </button>
             Get a Job
           </div>
-          <div className="p-6 relative right-11">
+          <div className="relative right-11 mt-5">
             <button className="btn btn-circle btn-outline btn-lg">
               <Camera size={48} />
             </button>
             Bootcamp
           </div>
-          <div className="p-6 relative right-16">
+          <div className="relative right-16 mt-5 ">
             <button className="btn btn-circle btn-outline btn-lg">
               <Camera size={48} />
             </button>
