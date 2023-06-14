@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { Camera } from "lucide-react";
 
 export default function Home() {
   return (
@@ -15,12 +16,28 @@ export default function Home() {
           </label>
         </div>
       </div>
-      <main className="flex flex-col items-center p-24 w-full">
-        <ul className="steps w-full">
-          <li className="step step-primary">English</li>
-          <li className="step step-secondary">Bootcamp</li>
-          <li className="step step">Get a Job</li>
-        </ul>
+      
+      <main className="flex flex-col items-center  w-full">
+        <div className="flex flex-col items-center w-full w-min-3xl">
+          <div className="p-6">
+            <button className="btn btn-circle btn-outline btn-lg">
+              <Camera size={48} />
+            </button>
+            English
+          </div>
+          <div className="p-6">
+            <button className="btn btn-circle btn-outline btn-lg">
+              <Camera size={48} />
+            </button>
+            Bootcamp
+          </div>
+          <div className="p-6">
+            <button className="btn btn-circle btn-outline btn-lg">
+              <Camera size={48} />
+            </button>
+            Get a Job
+          </div>
+        </div>
       </main>
       <footer className="footer footer-center p-4 bg-base-300 text-base-content">
         <div>
