@@ -1,5 +1,13 @@
 import Image from "next/image";
-import { Camera } from "lucide-react";
+import {
+  Book,
+  Camera,
+  Cat,
+  Fish,
+  Languages,
+  PhoneCallIcon,
+  Star,
+} from "lucide-react";
 
 export default function Home() {
   return (
@@ -27,43 +35,43 @@ export default function Home() {
           </div>
           <div className="relative left-11 mt-5">
             <button className="btn btn-circle btn-outline btn-lg">
-              <Camera size={48} />
+              <Cat size={48} />
             </button>
             Bootcamp
           </div>
           <div className="relative left-16 mt-5">
             <button className="btn btn-circle btn-outline btn-lg">
-              <Camera size={48} />
+              <Star size={48} />
             </button>
             Get a Job
           </div>
           <div className="relative left-11 mt-5">
             <button className="btn btn-circle btn-outline btn-lg">
-              <Camera size={48} />
+              <Book size={48} />
             </button>
             Bootcamp
           </div>
           <div className="relative left-0 mt-5">
             <button className="btn btn-circle btn-outline btn-lg">
-              <Camera size={48} />
+              <PhoneCallIcon size={48} />
             </button>
             Get a Job
           </div>
           <div className="relative right-11 mt-5">
             <button className="btn btn-circle btn-outline btn-lg">
-              <Camera size={48} />
+              <Fish size={48} />
             </button>
             Bootcamp
           </div>
           <div className="relative right-16 mt-5 ">
             <button className="btn btn-circle btn-outline btn-lg">
-              <Camera size={48} />
+              <Languages size={48} />
             </button>
             Get a Job
           </div>
         </div>
       </main>
-      <footer className="footer footer-center p-4 bg-base-300 text-base-content">
+      <footer className="footer footer-center p-4 bg-base-300 text-base-content mt-20">
         <div>
           <p>Copyright © 2023 - All right reserved by ACME Industries Ltd</p>
         </div>
