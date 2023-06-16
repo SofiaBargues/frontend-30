@@ -27,48 +27,40 @@ export default function Home() {
 
       <main className="flex flex-col items-center  w-full">
         <div className="flex flex-col items-center w-full w-min-3xl">
-          <div className="relative left-0 mt-16">
-            <button className="btn btn-circle btn-outline btn-lg">
-              <Camera size={48} />
-            </button>
-            English
-          </div>
-          <div className="relative left-11 mt-5">
-            <button className="btn btn-circle btn-outline btn-lg">
-              <Cat size={48} />
-            </button>
-            Bootcamp
-          </div>
-          <div className="relative left-16 mt-5">
-            <button className="btn btn-circle btn-outline btn-lg">
-              <Star size={48} />
-            </button>
-            Get a Job
-          </div>
-          <div className="relative left-11 mt-5">
-            <button className="btn btn-circle btn-outline btn-lg">
-              <Book size={48} />
-            </button>
-            Bootcamp
-          </div>
-          <div className="relative left-0 mt-5">
-            <button className="btn btn-circle btn-outline btn-lg">
-              <PhoneCallIcon size={48} />
-            </button>
-            Get a Job
-          </div>
-          <div className="relative right-11 mt-5">
-            <button className="btn btn-circle btn-outline btn-lg">
-              <Fish size={48} />
-            </button>
-            Bootcamp
-          </div>
-          <div className="relative right-16 mt-5 ">
-            <button className="btn btn-circle btn-outline btn-lg">
-              <Languages size={48} />
-            </button>
-            Get a Job
-          </div>
+          <Step
+            text="newEnglish"
+            icon={<Camera size={48} />}
+            alignment="left-0"
+          />
+          <Step text="Bootcamp" icon={<Cat size={48} />} alignment="left-11" />
+
+          <Step
+            text="Get a Job"
+            icon={<Star size={48} />}
+            alignment="left-16"
+          />
+
+          <Step
+            text="Get a Job"
+            icon={<Book size={48} />}
+            alignment="left-11"
+          />
+
+          <Step
+            text="Get a Job"
+            icon={<PhoneCallIcon size={48} />}
+            alignment="left-0"
+          />
+          <Step
+            text="Get a Job"
+            icon={<Fish size={48} />}
+            alignment="right-11"
+          />
+          <Step
+            text="Get a Job"
+            icon={<Languages size={48} />}
+            alignment="right-16"
+          />
         </div>
       </main>
       <footer className="footer footer-center p-4 bg-base-300 text-base-content mt-20">
@@ -76,6 +68,24 @@ export default function Home() {
           <p>Copyright © 2023 - All right reserved by ACME Industries Ltd</p>
         </div>
       </footer>
+    </div>
+  );
+}
+
+function Step({
+  alignment,
+  icon,
+  text,
+}: {
+  alignment: string;
+  icon: any;
+  text: string;
+}) {
+  const classes = "relative mt-5 " + alignment;
+  return (
+    <div className={classes}>
+      <button className="btn btn-circle btn-outline btn-lg">{icon}</button>
+      {text}
     </div>
   );
 }
