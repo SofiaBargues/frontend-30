@@ -84,8 +84,10 @@ function Step({
   const classes = "relative mt-5 " + alignment;
   return (
     <div className={classes}>
-      <button className="btn btn-circle btn-outline btn-lg">{icon}</button>
-      {text}
+      <div className="flex items-center ">
+        <button className="btn btn-circle btn-outline btn-lg">{icon}</button>
+        <p className="ml-3 text-lg">{text}</p>
+      </div>
     </div>
   );
 }
