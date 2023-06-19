@@ -27,40 +27,13 @@ export default function Home() {
 
       <main className="flex flex-col items-center  w-full">
         <div className="flex flex-col items-center w-full w-min-3xl">
-          <Step
-            text="newEnglish"
-            icon={<Camera size={48} />}
-            alignment="left-0"
-          />
-          <Step text="Bootcamp" icon={<Cat size={48} />} alignment="left-11" />
-
-          <Step
-            text="Get a Job"
-            icon={<Star size={48} />}
-            alignment="left-16"
-          />
-
-          <Step
-            text="Get a Job"
-            icon={<Book size={48} />}
-            alignment="left-11"
-          />
-
-          <Step
-            text="Get a Job"
-            icon={<PhoneCallIcon size={48} />}
-            alignment="left-0"
-          />
-          <Step
-            text="Get a Job"
-            icon={<Fish size={48} />}
-            alignment="right-11"
-          />
-          <Step
-            text="Get a Job"
-            icon={<Languages size={48} />}
-            alignment="right-16"
-          />
+          <Step text="newEnglish" type="start" alignment="left-0" />
+          <Step text="Bootcamp" type="course" alignment="left-11" />
+          <Step text="Get a Job" type="course" alignment="left-16" />
+          <Step text="Get a Job" type="course" alignment="left-11" />
+          <Step text="Get a Job" type="course" alignment="left-0" />
+          <Step text="Get a Job" type="course" alignment="right-11" />
+          <Step text="Get a Job" type="course" alignment="right-16" />
         </div>
       </main>
       <footer className="footer footer-center p-4 bg-base-300 text-base-content mt-20">
@@ -74,13 +47,21 @@ export default function Home() {
 
 function Step({
   alignment,
-  icon,
+  type,
   text,
 }: {
   alignment: string;
-  icon: any;
+  type: string;
   text: string;
 }) {
+  let icon = <></>;
+
+  if (type == "course") {
+    icon = <Book size={48} />;
+  } else {
+    icon = <Star size={48} />;
+  }
+
   const classes = "relative mt-5 " + alignment;
   return (
     <div className={classes}>
