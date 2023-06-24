@@ -24,7 +24,7 @@ export default function Home() {
           </label>
         </div>
       </div>
-      <main className="flex flex-col items-center  w-full">
+      <main className="flex flex-col items-center  w-full pb-24">
         <div className="flex flex-col items-center w-full w-min-3xl">
           <section className="flex flex-col items-center w-full">
             <SectionHeader text="HTML" />
@@ -42,6 +42,7 @@ export default function Home() {
             <SectionHeader text="CSS" />
             <div className="flex flex-col items-center">
               <Step text="newEnglish" type="start" alignment="left-0" />
+              <Step text="Bootcamp" type="course" alignment="left-11" />
               <Step text="Bootcamp" type="course" alignment="left-11" />
             </div>
           </section>
