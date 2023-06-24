@@ -25,8 +25,8 @@ export default function Home() {
         </div>
       </div>
       <main className="flex flex-col items-center  w-full pb-24">
-        <div className="flex flex-col items-center w-full w-min-3xl">
-          <section className="flex flex-col items-center w-full">
+        <div className="flex flex-col items-center w-full ">
+          <section className="flex flex-col  w-full items-stretch">
             <SectionHeader text="HTML" />
             <div className="flex flex-col items-center">
               <Step text="newEnglish" type="start" alignment="left-0" />
@@ -38,7 +38,7 @@ export default function Home() {
               <Step text="Get a Job" type="course" alignment="right-0 mb-6" />
             </div>
           </section>
-          <section className="flex flex-col items-center w-full">
+          <section className="flex flex-col items-stretch w-full">
             <SectionHeader text="CSS" />
             <div className="flex flex-col items-center">
               <Step text="newEnglish" type="start" alignment="left-0" />
@@ -59,7 +59,7 @@ export default function Home() {
 
 function SectionHeader({ text }: { text: string }) {
   return (
-    <header className="bg-secondary w-full p-4">
+    <header className="bg-secondary p-4 md:mx-10 md:rounded-xl">
       <h1 className="text-center text-2xl">{text}</h1>
     </header>
   );
