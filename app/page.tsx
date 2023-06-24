@@ -35,7 +35,12 @@ export default function Home() {
               <Step text="Get a Job" type="course" alignment="left-11" />
               <Step text="Get a Job" type="course" alignment="left-0" />
               <Step text="Get a Job" type="course" alignment="right-11" />
-              <Step text="Get a Job" type="course" alignment="right-0 mb-6" disabled />
+              <Step
+                text="Get a Job"
+                type="course"
+                alignment="right-0 mb-6"
+                disabled
+              />
             </div>
           </section>
           <section className="flex flex-col items-stretch w-full">
@@ -79,23 +84,25 @@ function Step({
   let icon = <></>;
 
   if (type == "course") {
-    icon = <Book size={48} />;
+    icon = <Book size={32} />;
   } else if (type == "start") {
-    icon = <Star size={48} />;
+    icon = <Star size={32} />;
   } else {
-    icon = <Cat size={48} />;
+    icon = <Cat size={32} />;
   }
 
   let isDisabled = "";
-  if (disabled){
-    isDisabled="btn-disabled"
+  if (disabled) {
+    isDisabled = "btn-disabled";
   }
 
   const classes = "relative mt-5 " + alignment;
   return (
     <div className={classes}>
       <div className="flex items-center ">
-        <button className={`btn btn-circle btn-outline btn-lg ${isDisabled}`} >{icon}</button>
+        <button className={`btn btn-circle  btn-lg ${isDisabled}`}>
+          {icon}
+        </button>
         <p className="ml-3 text-lg">{text}</p>
       </div>
     </div>
