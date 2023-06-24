@@ -35,7 +35,7 @@ export default function Home() {
               <Step text="Get a Job" type="course" alignment="left-11" />
               <Step text="Get a Job" type="course" alignment="left-0" />
               <Step text="Get a Job" type="course" alignment="right-11" />
-              <Step text="Get a Job" type="course" alignment="right-16" />
+              <Step text="Get a Job" type="course" alignment="right-0 mb-6" />
             </div>
           </section>
           <section className="flex flex-col items-center w-full">
@@ -43,7 +43,7 @@ export default function Home() {
             <div className="flex flex-col items-center">
               <Step text="newEnglish" type="start" alignment="left-0" />
               <Step text="Bootcamp" type="course" alignment="left-11" />
-              <Step text="Bootcamp" type="course" alignment="left-11" />
+              <Step text="Bootcamp" type="course" alignment="left-0" />
             </div>
           </section>
         </div>
