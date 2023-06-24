@@ -24,7 +24,7 @@ export default function Home() {
           </label>
         </div>
       </div>
-      <main className="flex flex-col items-center  w-full pb-24">
+      <main className="flex flex-col items-center  w-full pb-24 pt-6">
         <div className="flex flex-col items-center w-full ">
           <section className="flex flex-col  w-full items-stretch">
             <SectionHeader text="HTML" />
@@ -35,7 +35,7 @@ export default function Home() {
               <Step text="Get a Job" type="course" alignment="left-11" />
               <Step text="Get a Job" type="course" alignment="left-0" />
               <Step text="Get a Job" type="course" alignment="right-11" />
-              <Step text="Get a Job" type="course" alignment="right-0 mb-6" />
+              <Step text="Get a Job" type="course" alignment="right-0 mb-6" disabled />
             </div>
           </section>
           <section className="flex flex-col items-stretch w-full">
@@ -69,10 +69,12 @@ function Step({
   alignment,
   type,
   text,
+  disabled = false,
 }: {
   alignment: string;
   type: string;
   text: string;
+  disabled?: boolean;
 }) {
   let icon = <></>;
 
@@ -84,11 +86,16 @@ function Step({
     icon = <Cat size={48} />;
   }
 
+  let isDisabled = "";
+  if (disabled){
+    isDisabled="btn-disabled"
+  }
+
   const classes = "relative mt-5 " + alignment;
   return (
     <div className={classes}>
       <div className="flex items-center ">
-        <button className="btn btn-circle btn-outline btn-lg">{icon}</button>
+        <button className={`btn btn-circle btn-outline btn-lg ${isDisabled}`} >{icon}</button>
         <p className="ml-3 text-lg">{text}</p>
       </div>
     </div>
