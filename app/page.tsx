@@ -14,7 +14,7 @@ export default function Home() {
     <div className=" min-h-screen flex flex-col items-center  text-base-content bg-base-100">
       <div className="navbar text-base-content bg-base-300">
         <div className="flex-1">
-          <a className=" font-bold normal-case text-xl ">Your way</a>
+          <a className=" font-bold normal-case text-xl ">Road Map</a>
         </div>
         <div className="flex-none gap-2">
           <label className="btn btn-ghost btn-circle avatar">
