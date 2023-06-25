@@ -29,16 +29,19 @@ export default function Home() {
           <section className="flex flex-col  w-full items-stretch">
             <SectionHeader text="HTML" />
             <div className="flex flex-col items-center">
-              <Step text="newEnglish" type="start" alignment="left-0" />
-              <Step text="Bootcamp" type="course" alignment="left-11" />
-              <Step text="Get a Job" type="course" alignment="left-16" />
-              <Step text="Get a Job" type="course" alignment="left-11" />
-              <Step text="Get a Job" type="course" alignment="left-0" />
-              <Step text="Get a Job" type="course" alignment="right-11" />
+              <Step text="Video Course" type="start" alignment="left-0" />
+              <Step text="Basic HTML " type="course" alignment="left-11" />
+              <Step text="Forms" type="course" alignment="left-16" />
+              <Step text="Form project" type="course" alignment="left-11" />
               <Step
-                text="Get a Job"
+                text="Basic accessibility  "
                 type="course"
-                alignment="right-0 mb-6"
+                alignment="left-0"
+              />
+              <Step
+                text="Tribute page project "
+                type="course"
+                alignment="left-0 mb-6"
                 disabled
               />
             </div>
