@@ -154,38 +154,43 @@ export default function Home() {
           </section>
           <section className="flex flex-col  w-full items-stretch bg-red-100">
             <SectionHeader text="React" />
-          <div className="flex flex-col items-center ">
-            <Step
-              text="Video Course"
-              type="course"
-              alignment="left-0 mb-6"
-              disabled
-            />
-            <Step
-              text="Basic React"
-              type="course"
-              alignment="left-0 mb-6"
-              disabled
-            />
+            <div className="flex flex-col items-center ">
+              <Step
+                text="Video Course"
+                type="course"
+                alignment="left-0 mb-6"
+                disabled
+              />
+              <Step
+                text="Basic React"
+                type="course"
+                alignment="left-0 mb-6"
+                disabled
+              />
             </div>
           </section>
           <section className="flex flex-col  w-full items-stretch bg-slate-300">
             <SectionHeader text="Interactive apps" />
             <div className="flex flex-col items-center">
-          <Step text="App 1" type="course" alignment="left-0" disabled />
-          <Step text="App 2" type="course" alignment="left-0" disabled />
-          <Step text="App 3" type="course" alignment="left-0 mb-6" disabled />
-          </div>
+              <Step text="App 1" type="course" alignment="left-0" disabled />
+              <Step text="App 2" type="course" alignment="left-0" disabled />
+              <Step
+                text="App 3"
+                type="course"
+                alignment="left-0 mb-6"
+                disabled
+              />
+            </div>
           </section>
           <section className="flex flex-col  w-full items-stretch bg-red-400">
             <SectionHeader text="Job search" />
-          <div className="flex flex-col items-center">
-          <Step
-            text="Job search"
-            type="course"
-            alignment="left-0 mb-6"
-            disabled
-            />
+            <div className="flex flex-col items-center">
+              <Step
+                text="Job search"
+                type="course"
+                alignment="left-0 mb-6"
+                disabled
+              />
             </div>
           </section>
         </div>
