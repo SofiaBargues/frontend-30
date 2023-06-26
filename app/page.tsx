@@ -8,6 +8,7 @@ import {
   PhoneCallIcon,
   Star,
 } from "lucide-react";
+import { cn } from "mxcn";
 
 export default function Home() {
   return (
@@ -36,31 +37,31 @@ export default function Home() {
               <Step
                 text="Basic accessibility  "
                 type="course"
-                alignment="left-0"
+                alignment="right-0"
               />
               <Step
                 text="Tribute page project "
                 type="course"
-                alignment="left-0 mb-6"
+                alignment="right-11 mb-6"
                 disabled
               />
             </div>
           </section>
-          <section className="flex flex-col items-stretch w-full bg-red-300">
+          <section className="flex flex-col items-stretch w-full">
             <SectionHeader text="CSS" />
             <div className="flex flex-col items-center">
               <Step text="Video Course" type="start" alignment="left-0" />
-              <Step text="Basic CSS" type="start" alignment="left-0" />
-              <Step text="Colors" type="course" alignment="left-11" />
-              <Step text="Box model" type="course" alignment="left-16" />
+              <Step text="Basic CSS" type="start" alignment="left-11" />
+              <Step text="Colors" type="course" alignment="left-16" />
+              <Step text="Box model" type="course" alignment="left-11" />
               <Step text="Flexbox " type="start" alignment="left-0" />
-              <Step text="Typography" type="course" alignment="left-11" />
+              <Step text="Typography" type="course" alignment="right-11" />
               <Step
                 text="Pseudo selectors "
                 type="course"
-                alignment="left-16"
+                alignment="right-16"
               />
-              <Step text="Intermediate CSS" type="course" alignment="left-11" />
+              <Step text="Intermediate CSS" type="course" alignment="right-11" />
               <Step
                 text="Responsive design "
                 type="course"
@@ -69,25 +70,25 @@ export default function Home() {
               <Step
                 text="Documentation page project"
                 type="start"
-                alignment="left-0"
+                alignment="left-11"
               />
-              <Step text="Variables" type="course" alignment="left-11" />
-              <Step text="Grid" type="course" alignment="left-0" />
+              <Step text="Variables" type="course" alignment="left-16" />
+              <Step text="Grid" type="course" alignment="left-11" />
               <Step
                 text="Landing page project"
                 type="start"
                 alignment="left-0"
               />
-              <Step text="Animations" type="course" alignment="left-11" />
-              <Step text="Transforms" type="course" alignment="left-16" />
+              <Step text="Animations" type="course" alignment="right-11" />
+              <Step text="Transforms" type="course" alignment="right-16" />
               <Step
                 text="Portfolio web project"
                 type="course"
-                alignment="left-11 mb-6"
+                alignment="right-11 mb-6"
               />
             </div>
           </section>
-          <section className="flex flex-col  w-full items-stretch bg-green-300">
+          <section className="flex flex-col  w-full items-stretch">
             <SectionHeader text="Static websites" />
             <div className="flex flex-col items-center">
               <Step
@@ -99,42 +100,43 @@ export default function Home() {
               <Step
                 text="Website 2"
                 type="course"
-                alignment="left-0 "
+                alignment="left-11 "
                 disabled
               />
               <Step
                 text="Website 3"
                 type="course"
-                alignment="left-0 mb-6"
+                alignment="left-16 mb-6"
                 disabled
               />
               <Step
                 text="Portfolio"
                 type="course"
-                alignment="left-0 mb-6"
+                alignment="left-11 mb-6"
                 disabled
               />
             </div>
           </section>
-          <section className="flex flex-col  w-full items-stretch bg-slate-300">
+          <section className="flex flex-col  w-full items-stretch ">
             <SectionHeader text="Git" />
             <div className="flex flex-col items-center">
-              <Step text="Basic" type="course" alignment="left-0" disabled />
+            <Step text="Video Course" type="start" alignment="left-0" />
+              <Step text="Basic" type="course" alignment="right-11" disabled />
               <Step
                 text="Practice 1"
                 type="course"
-                alignment="left-0"
+                alignment="right-16"
                 disabled
               />
               <Step
                 text="Practice 2"
                 type="course"
-                alignment="left-0 mb-6"
+                alignment="right-11 mb-6"
                 disabled
               />
             </div>
           </section>
-          <section className="flex flex-col  w-full items-stretch bg-purple-300">
+          <section className="flex flex-col  w-full items-stretch">
             <SectionHeader text="JavaScript and DOM" />
             <div className="flex flex-col items-center">
               {" "}
@@ -147,12 +149,12 @@ export default function Home() {
               <Step
                 text="Basic JavaScrip"
                 type="course"
-                alignment="left-0 mb-6"
+                alignment="left-1 mb-6"
                 disabled
               />
             </div>
           </section>
-          <section className="flex flex-col  w-full items-stretch bg-red-100">
+          <section className="flex flex-col  w-full items-stretch">
             <SectionHeader text="React" />
             <div className="flex flex-col items-center ">
               <Step
@@ -164,31 +166,31 @@ export default function Home() {
               <Step
                 text="Basic React"
                 type="course"
-                alignment="left-0 mb-6"
+                alignment="right-11 mb-6"
                 disabled
               />
             </div>
           </section>
-          <section className="flex flex-col  w-full items-stretch bg-slate-300">
+          <section className="flex flex-col  w-full items-stretch">
             <SectionHeader text="Interactive apps" />
             <div className="flex flex-col items-center">
               <Step text="App 1" type="course" alignment="left-0" disabled />
-              <Step text="App 2" type="course" alignment="left-0" disabled />
+              <Step text="App 2" type="course" alignment="left-11" disabled />
               <Step
                 text="App 3"
                 type="course"
-                alignment="left-0 mb-6"
+                alignment="left-16 mb-6"
                 disabled
               />
             </div>
           </section>
-          <section className="flex flex-col  w-full items-stretch bg-red-400">
+          <section className="flex flex-col  w-full items-stretch">
             <SectionHeader text="Job search" />
             <div className="flex flex-col items-center">
               <Step
                 text="Job search"
                 type="course"
-                alignment="left-0 mb-6"
+                alignment="left-11 mb-6"
                 disabled
               />
             </div>
@@ -206,7 +208,7 @@ export default function Home() {
 
 function SectionHeader({ text }: { text: string }) {
   return (
-    <header className="bg-secondary p-4 md:mx-10 md:rounded-xl">
+    <header className="bg-primary p-4 md:mx-10 md:rounded-xl">
       <h1 className="text-center text-2xl">{text}</h1>
     </header>
   );
