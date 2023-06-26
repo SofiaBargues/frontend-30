@@ -241,7 +241,7 @@ function Step({
   const classes = "relative mt-5 " + alignment;
   return (
     <div className={classes}>
-      <div className="flex items-center ">
+      <div className="flex flex-col items-center ">
         <button className={`btn btn-circle  btn-lg ${isDisabled}`}>
           {icon}
         </button>
