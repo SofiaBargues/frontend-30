@@ -243,13 +243,12 @@ function Step({
   return (
     <div className={classes}>
       <div className="flex flex-col items-center ">
-        {/*cn('px-2 py-1 bg-red hover:bg-dark-red', null, true && 'p-3 bg-[#B91C1C]') */}
         <button
           className={cn("btn btn-circle  btn-lg", disabled && "btn-disabled")}
         >
           {icon}
         </button>
-        {/* {cn("ml-3 text-lg", disabled && "btn-disabled")} */}
+
         <p className={cn("ml-3 text-lg", disabled && "text-base-300")}>
           {text}
         </p>
