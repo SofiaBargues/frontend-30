@@ -61,7 +61,11 @@ export default function Home() {
                 type="course"
                 alignment="right-16"
               />
-              <Step text="Intermediate CSS" type="course" alignment="right-11" />
+              <Step
+                text="Intermediate CSS"
+                type="course"
+                alignment="right-11"
+              />
               <Step
                 text="Responsive design "
                 type="course"
@@ -120,7 +124,7 @@ export default function Home() {
           <section className="flex flex-col  w-full items-stretch ">
             <SectionHeader text="Git" />
             <div className="flex flex-col items-center">
-            <Step text="Video Course" type="start" alignment="left-0" />
+              <Step text="Video Course" type="start" alignment="left-0" />
               <Step text="Basic" type="course" alignment="right-11" disabled />
               <Step
                 text="Practice 1"
@@ -244,7 +248,10 @@ function Step({
   return (
     <div className={classes}>
       <div className="flex flex-col items-center ">
-        <button className={`btn btn-circle  btn-lg ${isDisabled}`}>
+        {/*cn('px-2 py-1 bg-red hover:bg-dark-red', null, true && 'p-3 bg-[#B91C1C]') */}
+        <button
+          className={cn("btn btn-circle  btn-lg", disabled && "btn-disabled")}
+        >
           {icon}
         </button>
         <p className="ml-3 text-lg">{text}</p>
