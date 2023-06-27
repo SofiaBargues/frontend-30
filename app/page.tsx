@@ -239,11 +239,6 @@ function Step({
     icon = <Cat size={32} />;
   }
 
-  let isDisabled = "";
-  if (disabled) {
-    isDisabled = "btn-disabled";
-  }
-
   const classes = "relative mt-5 " + alignment;
   return (
     <div className={classes}>
