@@ -249,7 +249,10 @@ function Step({
         >
           {icon}
         </button>
-        <p className="ml-3 text-lg">{text}</p>
+        {/* {cn("ml-3 text-lg", disabled && "btn-disabled")} */}
+        <p className={cn("ml-3 text-lg", disabled && "text-base-300")}>
+          {text}
+        </p>
       </div>
     </div>
   );
