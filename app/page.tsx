@@ -239,9 +239,8 @@ function Step({
     icon = <Cat size={32} />;
   }
 
-  const classes = "relative mt-5 " + alignment;
   return (
-    <div className={classes}>
+    <div className={cn("relative mt-5", alignment)}>
       <div className="flex flex-col items-center ">
         <button
           className={cn("btn btn-circle  btn-lg", disabled && "btn-disabled")}
