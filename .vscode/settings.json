@@ -2,7 +2,7 @@
   "editor.defaultFormatter": "esbenp.prettier-vscode",
   "editor.formatOnSave": true,
   "editor.wordWrap": "on",
-  "prettier.prettierPath": "./node_modules/prettier",
-  "indentRainbow.indicatorStyle": "light",
-  "indentRainbow.lightIndicatorStyleLineWidth": 2
+  "prettier.prettierPath": "./node_modules/prettier"
+  // "indentRainbow.indicatorStyle": "light",
+  // "indentRainbow.lightIndicatorStyleLineWidth": 2
 }
