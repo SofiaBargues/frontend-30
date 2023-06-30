@@ -11,7 +11,7 @@ import {
 } from "lucide-react";
 import { cn } from "mxcn";
 
-const data = [
+const HTMLitems = [
   {
     name: "Video Course",
     type: "start",
@@ -45,7 +45,7 @@ const data = [
   {
     name: "Tribute page project",
     type: "course",
-    alignment: "right-11 mb-6",
+    alignment: "right-11",
     completed: false,
   },
 ];
@@ -71,7 +71,7 @@ export default function Home() {
             <SectionHeader text="HTML" />
 
             <div className="flex flex-col items-center">
-              {data.map((item) => (
+              {HTMLitems.map((item) => (
                 <Step
                   text={item.name}
                   type={item.type}
@@ -81,7 +81,7 @@ export default function Home() {
               ))}
             </div>
           </section>
-          <section className="flex flex-col items-stretch w-full">
+          <section className="flex flex-col items-stretch w-full mt-6">
             <SectionHeader text="CSS" />
             <div className="flex flex-col items-center">
               <Step text="Video Course" type="start" alignment="left-0" />
