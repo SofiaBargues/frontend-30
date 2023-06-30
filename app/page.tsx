@@ -4,11 +4,51 @@ import {
   Camera,
   Cat,
   Fish,
+  IterationCcw,
   Languages,
   PhoneCallIcon,
   Star,
 } from "lucide-react";
 import { cn } from "mxcn";
+
+const data = [
+  {
+    name: "Video Course",
+    type: "start",
+    alignment: "left-0",
+    completed: true,
+  },
+  {
+    name: "Basic HTML",
+    type: "course",
+    alignment: "left-11",
+    completed: true,
+  },
+  {
+    name: "Forms",
+    type: "course",
+    alignment: "left-16",
+    completed: true,
+  },
+  {
+    name: "Form project",
+    type: "course",
+    alignment: "left-11",
+    completed: true,
+  },
+  {
+    name: "Basic accessibility",
+    type: "course",
+    alignment: "left-0",
+    completed: true,
+  },
+  {
+    name: "Tribute page project",
+    type: "course",
+    alignment: "right-11 mb-6",
+    completed: false,
+  },
+];
 
 export default function Home() {
   return (
@@ -29,22 +69,16 @@ export default function Home() {
         <div className="flex flex-col items-center w-full ">
           <section className="flex flex-col  w-full items-stretch">
             <SectionHeader text="HTML" />
+
             <div className="flex flex-col items-center">
-              <Step text="Video Course" type="start" alignment="left-0" />
-              <Step text="Basic HTML " type="course" alignment="left-11" />
-              <Step text="Forms" type="course" alignment="left-16" />
-              <Step text="Form project" type="course" alignment="left-11" />
-              <Step
-                text="Basic accessibility  "
-                type="course"
-                alignment="right-0"
-              />
-              <Step
-                text="Tribute page project "
-                type="course"
-                alignment="right-11 mb-6"
-                disabled
-              />
+              {data.map((item) => (
+                <Step
+                  text={item.name}
+                  type={item.type}
+                  alignment={item.alignment}
+                  disabled={!item.completed}
+                />
+              ))}
             </div>
           </section>
           <section className="flex flex-col items-stretch w-full">
@@ -164,7 +198,7 @@ export default function Home() {
               <Step
                 text="Video Course"
                 type="course"
-                alignment="left-0 mb-6"
+                alignment="left-0"
                 disabled
               />
               <Step
