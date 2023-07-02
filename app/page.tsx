@@ -10,6 +10,7 @@ import {
   Star,
 } from "lucide-react";
 import { cn } from "mxcn";
+import { constants } from "buffer";
 
 const HTMLitems = [
   {
@@ -50,6 +51,17 @@ const HTMLitems = [
   },
 ];
 
+var alignments = [
+  "left-0",
+  "left-11",
+  "left-16",
+  "left-11",
+  "left-0",
+  "right-11",
+  "right-16",
+  "right-11",
+];
+
 export default function Home() {
   return (
     <div className=" min-h-screen flex flex-col items-center  text-base-content bg-base-100">
@@ -71,11 +83,11 @@ export default function Home() {
             <SectionHeader text="HTML" />
 
             <div className="flex flex-col items-center">
-              {HTMLitems.map((item) => (
+              {HTMLitems.map((item, index) => (
                 <Step
                   text={item.name}
                   type={item.type}
-                  alignment={item.alignment}
+                  alignment={alignments[index]}
                   disabled={!item.completed}
                 />
               ))}
