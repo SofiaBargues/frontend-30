@@ -15,37 +15,31 @@ const HTMLitems = [
   {
     name: "Video Course",
     type: "start",
-    alignment: "left-0",
     completed: true,
   },
   {
     name: "Basic HTML",
     type: "course",
-    alignment: "left-11",
     completed: true,
   },
   {
     name: "Forms",
     type: "course",
-    alignment: "left-16",
     completed: true,
   },
   {
     name: "Form project",
     type: "course",
-    alignment: "left-11",
     completed: true,
   },
   {
     name: "Basic accessibility",
     type: "course",
-    alignment: "left-0",
     completed: true,
   },
   {
     name: "Tribute page project",
     type: "course",
-    alignment: "right-11",
     completed: false,
   },
 ];
