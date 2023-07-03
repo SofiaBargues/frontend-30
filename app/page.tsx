@@ -10,7 +10,6 @@ import {
   Star,
 } from "lucide-react";
 import { cn } from "mxcn";
-import { constants } from "buffer";
 
 const HTMLitems = [
   {
@@ -81,16 +80,8 @@ export default function Home() {
         <div className="flex flex-col items-center w-full ">
           <section className="flex flex-col  w-full items-stretch">
             <SectionHeader text="HTML" />
-
             <div className="flex flex-col items-center">
-              {HTMLitems.map((item, index) => (
-                <Step
-                  text={item.name}
-                  type={item.type}
-                  alignment={alignments[index]}
-                  disabled={!item.completed}
-                />
-              ))}
+              {HTMLitems.map(itemToStep)}
             </div>
           </section>
           <section className="flex flex-col items-stretch w-full mt-6">
@@ -253,6 +244,20 @@ export default function Home() {
         </div>
       </footer>
     </div>
+  );
+}
+
+function itemToStep(
+  item: { name: string; type: string; completed: any },
+  index: number
+) {
+  return (
+    <Step
+      text={item.name}
+      type={item.type}
+      alignment={alignments[index]}
+      disabled={!item.completed}
+    />
   );
 }
 
