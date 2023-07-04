@@ -155,12 +155,7 @@ export default function Home() {
       </div>
       <main className="flex flex-col items-center  w-full pb-24 pt-6">
         <div className="flex flex-col items-center w-full ">
-          <section className="flex flex-col  w-full items-stretch">
-            <SectionHeader text="HTML" />
-            <div className="flex flex-col items-center">
-              {HTMLitems.map(itemToStep)}
-            </div>
-          </section>
+          <Section name="HTML" />
           <section className="flex flex-col items-stretch w-full mt-6">
             <SectionHeader text="CSS" />
             <div className="flex flex-col items-center">
@@ -283,6 +278,17 @@ export default function Home() {
         </div>
       </footer>
     </div>
+  );
+}
+
+function Section({ name }: { name: string }) {
+  return (
+    <section className="flex flex-col  w-full items-stretch">
+      <SectionHeader text={name} />
+      <div className="flex flex-col items-center">
+        {HTMLitems.map(itemToStep)}
+      </div>
+    </section>
   );
 }
 
