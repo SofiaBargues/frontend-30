@@ -44,6 +44,89 @@ const HTMLitems = [
   },
 ];
 
+const CSSitems = [
+  {
+    name: "Video Course",
+    type: "start",
+    completed: true,
+  },
+  {
+    name: "Basic CSS",
+    type: "start",
+    completed: true,
+  },
+  {
+    name: "Colors",
+    type: "course",
+    completed: false,
+  },
+  {
+    name: "Box model",
+    type: "course",
+    completed: false,
+  },
+  {
+    name: "Flexbox",
+    type: "start",
+    completed: true,
+  },
+  {
+    name: "Typography",
+    type: "course",
+    completed: false,
+  },
+  {
+    name: "Pseudo selectors",
+    type: "course",
+    completed: false,
+  },
+  {
+    name: "Intermediate CSS",
+    type: "course",
+    completed: false,
+  },
+  {
+    name: "Responsive design",
+    type: "course",
+    completed: false,
+  },
+  {
+    name: "Documentation page project",
+    type: "start",
+    completed: false,
+  },
+  {
+    name: "Variables",
+    type: "course",
+    completed: false,
+  },
+  {
+    name: "Grid",
+    type: "course",
+    completed: false,
+  },
+  {
+    name: "Landing page project",
+    type: "start",
+    completed: false,
+  },
+  {
+    name: "Animations",
+    type: "course",
+    completed: false,
+  },
+  {
+    name: "Transforms",
+    type: "course",
+    completed: false,
+  },
+  {
+    name: "Portfolio web project",
+    type: "course",
+    completed: false,
+  },
+];
+
 var alignments = [
   "left-0",
   "left-11",
@@ -81,142 +164,7 @@ export default function Home() {
           <section className="flex flex-col items-stretch w-full mt-6">
             <SectionHeader text="CSS" />
             <div className="flex flex-col items-center">
-              <Step text="Video Course" type="start" alignment="left-0" />
-              <Step text="Basic CSS" type="start" alignment="left-11" />
-              <Step text="Colors" type="course" alignment="left-16" />
-              <Step text="Box model" type="course" alignment="left-11" />
-              <Step text="Flexbox " type="start" alignment="left-0" />
-              <Step text="Typography" type="course" alignment="right-11" />
-              <Step
-                text="Pseudo selectors "
-                type="course"
-                alignment="right-16"
-              />
-              <Step
-                text="Intermediate CSS"
-                type="course"
-                alignment="right-11"
-              />
-              <Step
-                text="Responsive design "
-                type="course"
-                alignment="left-0"
-              />
-              <Step
-                text="Documentation page project"
-                type="start"
-                alignment="left-11"
-              />
-              <Step text="Variables" type="course" alignment="left-16" />
-              <Step text="Grid" type="course" alignment="left-11" />
-              <Step
-                text="Landing page project"
-                type="start"
-                alignment="left-0"
-              />
-              <Step text="Animations" type="course" alignment="right-11" />
-              <Step text="Transforms" type="course" alignment="right-16" />
-              <Step
-                text="Portfolio web project"
-                type="course"
-                alignment="right-11 mb-6"
-              />
-            </div>
-          </section>
-          <section className="flex flex-col  w-full items-stretch">
-            <SectionHeader text="Static websites" />
-            <div className="flex flex-col items-center">
-              <Step
-                text="Website 1"
-                type="course"
-                alignment="left-0 "
-                disabled
-              />
-              <Step
-                text="Website 2"
-                type="course"
-                alignment="left-11 "
-                disabled
-              />
-              <Step
-                text="Website 3"
-                type="course"
-                alignment="left-16 mb-6"
-                disabled
-              />
-              <Step
-                text="Portfolio"
-                type="course"
-                alignment="left-11 mb-6"
-                disabled
-              />
-            </div>
-          </section>
-          <section className="flex flex-col  w-full items-stretch ">
-            <SectionHeader text="Git" />
-            <div className="flex flex-col items-center">
-              <Step text="Video Course" type="start" alignment="left-0" />
-              <Step text="Basic" type="course" alignment="right-11" disabled />
-              <Step
-                text="Practice 1"
-                type="course"
-                alignment="right-16"
-                disabled
-              />
-              <Step
-                text="Practice 2"
-                type="course"
-                alignment="right-11 mb-6"
-                disabled
-              />
-            </div>
-          </section>
-          <section className="flex flex-col  w-full items-stretch">
-            <SectionHeader text="JavaScript and DOM" />
-            <div className="flex flex-col items-center">
-              {" "}
-              <Step
-                text="Video Course"
-                type="course"
-                alignment="left-0 "
-                disabled
-              />
-              <Step
-                text="Basic JavaScrip"
-                type="course"
-                alignment="left-1 mb-6"
-                disabled
-              />
-            </div>
-          </section>
-          <section className="flex flex-col  w-full items-stretch">
-            <SectionHeader text="React" />
-            <div className="flex flex-col items-center ">
-              <Step
-                text="Video Course"
-                type="course"
-                alignment="left-0"
-                disabled
-              />
-              <Step
-                text="Basic React"
-                type="course"
-                alignment="right-11 mb-6"
-                disabled
-              />
-            </div>
-          </section>
-          <section className="flex flex-col  w-full items-stretch">
-            <SectionHeader text="Interactive apps" />
-            <div className="flex flex-col items-center">
-              <Step text="App 1" type="course" alignment="left-0" disabled />
-              <Step text="App 2" type="course" alignment="left-11" disabled />
-              <Step
-                text="App 3"
-                type="course"
-                alignment="left-16 mb-6"
-                disabled
-              />
+              {CSSitems.map(itemToStep)}
             </div>
           </section>
           <section className="flex flex-col  w-full items-stretch">
@@ -249,7 +197,7 @@ function itemToStep(
     <Step
       text={item.name}
       type={item.type}
-      alignment={alignments[index]}
+      alignment={alignments[index % alignments.length]}
       disabled={!item.completed}
     />
   );
