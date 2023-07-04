@@ -168,6 +168,103 @@ export default function Home() {
             </div>
           </section>
           <section className="flex flex-col  w-full items-stretch">
+            <SectionHeader text="Static websites" />
+            <div className="flex flex-col items-center">
+              <Step
+                text="Website 1"
+                type="course"
+                alignment="left-0 "
+                disabled
+              />
+              <Step
+                text="Website 2"
+                type="course"
+                alignment="left-11 "
+                disabled
+              />
+              <Step
+                text="Website 3"
+                type="course"
+                alignment="left-16 mb-6"
+                disabled
+              />
+              <Step
+                text="Portfolio"
+                type="course"
+                alignment="left-11 mb-6"
+                disabled
+              />
+            </div>
+          </section>
+          <section className="flex flex-col  w-full items-stretch ">
+            <SectionHeader text="Git" />
+            <div className="flex flex-col items-center">
+              <Step text="Video Course" type="start" alignment="left-0" />
+              <Step text="Basic" type="course" alignment="right-11" disabled />
+              <Step
+                text="Practice 1"
+                type="course"
+                alignment="right-16"
+                disabled
+              />
+              <Step
+                text="Practice 2"
+                type="course"
+                alignment="right-11 mb-6"
+                disabled
+              />
+            </div>
+          </section>
+          <section className="flex flex-col  w-full items-stretch">
+            <SectionHeader text="JavaScript and DOM" />
+            <div className="flex flex-col items-center">
+              {" "}
+              <Step
+                text="Video Course"
+                type="course"
+                alignment="left-0 "
+                disabled
+              />
+              <Step
+                text="Basic JavaScrip"
+                type="course"
+                alignment="left-1 mb-6"
+                disabled
+              />
+            </div>
+          </section>
+          <section className="flex flex-col  w-full items-stretch">
+            <SectionHeader text="React" />
+            <div className="flex flex-col items-center ">
+              <Step
+                text="Video Course"
+                type="course"
+                alignment="left-0"
+                disabled
+              />
+              <Step
+                text="Basic React"
+                type="course"
+                alignment="right-11 mb-6"
+                disabled
+              />
+            </div>
+          </section>
+          <section className="flex flex-col  w-full items-stretch">
+            <SectionHeader text="Interactive apps" />
+            <div className="flex flex-col items-center">
+              <Step text="App 1" type="course" alignment="left-0" disabled />
+              <Step text="App 2" type="course" alignment="left-11" disabled />
+              <Step
+                text="App 3"
+                type="course"
+                alignment="left-16 mb-6"
+                disabled
+              />
+            </div>
+          </section>
+
+          <section className="flex flex-col  w-full items-stretch">
             <SectionHeader text="Job search" />
             <div className="flex flex-col items-center">
               <Step
