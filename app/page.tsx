@@ -155,13 +155,9 @@ export default function Home() {
       </div>
       <main className="flex flex-col items-center  w-full pb-24 pt-6">
         <div className="flex flex-col items-center w-full ">
-          <Section name="HTML" />
-          <section className="flex flex-col items-stretch w-full mt-6">
-            <SectionHeader text="CSS" />
-            <div className="flex flex-col items-center">
-              {CSSitems.map(itemToStep)}
-            </div>
-          </section>
+          <Section name="HTML" items={HTMLitems} />
+          <Section name="CSS" items={CSSitems} />
+
           <section className="flex flex-col  w-full items-stretch">
             <SectionHeader text="Static websites" />
             <div className="flex flex-col items-center">
@@ -281,13 +277,17 @@ export default function Home() {
   );
 }
 
-function Section({ name }: { name: string }) {
+function Section({
+  name,
+  items,
+}: {
+  name: string;
+  items: { name: string; type: string; completed: boolean }[];
+}) {
   return (
     <section className="flex flex-col  w-full items-stretch">
       <SectionHeader text={name} />
-      <div className="flex flex-col items-center">
-        {HTMLitems.map(itemToStep)}
-      </div>
+      <div className="flex flex-col items-center">{items.map(itemToStep)}</div>
     </section>
   );
 }
