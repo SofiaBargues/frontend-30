@@ -21,27 +21,27 @@ const HTMLitems: Item[] = [
   {
     name: "Video Course",
     type: "start",
-    completed: true,
+    completed: false,
   },
   {
     name: "Basic HTML",
     type: "course",
-    completed: true,
+    completed: false,
   },
   {
     name: "Forms",
     type: "course",
-    completed: true,
+    completed: false,
   },
   {
     name: "Form project",
     type: "course",
-    completed: true,
+    completed: false,
   },
   {
     name: "Basic accessibility",
     type: "course",
-    completed: true,
+    completed: false,
   },
   {
     name: "Tribute page project",
@@ -54,12 +54,12 @@ const CSSitems: Item[] = [
   {
     name: "Video Course",
     type: "start",
-    completed: true,
+    completed: false,
   },
   {
     name: "Basic CSS",
     type: "start",
-    completed: true,
+    completed: false,
   },
   {
     name: "Colors",
@@ -74,7 +74,7 @@ const CSSitems: Item[] = [
   {
     name: "Flexbox",
     type: "start",
-    completed: true,
+    completed: false,
   },
   {
     name: "Typography",
@@ -137,22 +137,22 @@ const StaticSiteItems: Item[] = [
   {
     name: "Website 1",
     type: "course",
-    completed: false,
+    completed: true,
   },
   {
     name: "Website 2",
     type: "course",
-    completed: false,
+    completed: true,
   },
   {
     name: "Website 3",
     type: "course",
-    completed: false,
+    completed: true,
   },
   {
     name: "Portfolio",
     type: "course",
-    completed: false,
+    completed: true,
   },
 ];
 
@@ -165,17 +165,17 @@ const GitItems: Item[] = [
   {
     name: "Basic",
     type: "course",
-    completed: false,
+    completed: true,
   },
   {
     name: "Practice 1",
     type: "course",
-    completed: false,
+    completed: true,
   },
   {
     name: "Practice 2",
     type: "course",
-    completed: false,
+    completed: true,
   },
 ];
 
@@ -208,17 +208,17 @@ const IntAppItems: Item[] = [
   {
     name: "App 1",
     type: "course",
-    completed: false,
+    completed: true,
   },
   {
     name: "App 2",
     type: "course",
-    completed: false,
+    completed: true,
   },
   {
     name: "App 3",
     type: "course",
-    completed: false,
+    completed: true,
   },
 ];
 
@@ -226,7 +226,7 @@ const JobItems: Item[] = [
   {
     name: "Job search",
     type: "course",
-    completed: false,
+    completed: true,
   },
 ];
 
