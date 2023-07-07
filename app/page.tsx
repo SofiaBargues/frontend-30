@@ -156,6 +156,80 @@ const StaticSiteItems: Item[] = [
   },
 ];
 
+const GitItems: Item[] = [
+  {
+    name: "Video Course",
+    type: "start",
+    completed: true,
+  },
+  {
+    name: "Basic",
+    type: "course",
+    completed: false,
+  },
+  {
+    name: "Practice 1",
+    type: "course",
+    completed: false,
+  },
+  {
+    name: "Practice 2",
+    type: "course",
+    completed: false,
+  },
+];
+
+const JSItems: Item[] = [
+  {
+    name: "Video Course",
+    type: "course",
+    completed: true,
+  },
+  {
+    name: "Basic JavaScript",
+    type: "course",
+    completed: true,
+  },
+];
+const ReactItems: Item[] = [
+  {
+    name: "Video Course",
+    type: "course",
+    completed: true,
+  },
+  {
+    name: "Basic React",
+    type: "course",
+    completed: true,
+  },
+];
+
+const IntAppItems: Item[] = [
+  {
+    name: "App 1",
+    type: "course",
+    completed: false,
+  },
+  {
+    name: "App 2",
+    type: "course",
+    completed: false,
+  },
+  {
+    name: "App 3",
+    type: "course",
+    completed: false,
+  },
+];
+
+const JobItems: Item[] = [
+  {
+    name: "Job search",
+    type: "course",
+    completed: false,
+  },
+];
+
 var alignments = [
   "left-0",
   "left-11",
@@ -187,86 +261,11 @@ export default function Home() {
           <Section name="HTML" items={HTMLitems} />
           <Section name="CSS" items={CSSitems} />
           <Section name="Static websites" items={StaticSiteItems} />
-
-          <section className="flex flex-col  w-full items-stretch ">
-            <SectionHeader text="Git" />
-            <div className="flex flex-col items-center">
-              <Step text="Video Course" type="start" alignment="left-0" />
-              <Step text="Basic" type="course" alignment="right-11" disabled />
-              <Step
-                text="Practice 1"
-                type="course"
-                alignment="right-16"
-                disabled
-              />
-              <Step
-                text="Practice 2"
-                type="course"
-                alignment="right-11 mb-6"
-                disabled
-              />
-            </div>
-          </section>
-          <section className="flex flex-col  w-full items-stretch">
-            <SectionHeader text="JavaScript and DOM" />
-            <div className="flex flex-col items-center">
-              {" "}
-              <Step
-                text="Video Course"
-                type="course"
-                alignment="left-0 "
-                disabled
-              />
-              <Step
-                text="Basic JavaScrip"
-                type="course"
-                alignment="left-1 mb-6"
-                disabled
-              />
-            </div>
-          </section>
-          <section className="flex flex-col  w-full items-stretch">
-            <SectionHeader text="React" />
-            <div className="flex flex-col items-center ">
-              <Step
-                text="Video Course"
-                type="course"
-                alignment="left-0"
-                disabled
-              />
-              <Step
-                text="Basic React"
-                type="course"
-                alignment="right-11 mb-6"
-                disabled
-              />
-            </div>
-          </section>
-          <section className="flex flex-col  w-full items-stretch">
-            <SectionHeader text="Interactive apps" />
-            <div className="flex flex-col items-center">
-              <Step text="App 1" type="course" alignment="left-0" disabled />
-              <Step text="App 2" type="course" alignment="left-11" disabled />
-              <Step
-                text="App 3"
-                type="course"
-                alignment="left-16 mb-6"
-                disabled
-              />
-            </div>
-          </section>
-
-          <section className="flex flex-col  w-full items-stretch">
-            <SectionHeader text="Job search" />
-            <div className="flex flex-col items-center">
-              <Step
-                text="Job search"
-                type="course"
-                alignment="left-11 mb-6"
-                disabled
-              />
-            </div>
-          </section>
+          <Section name="Git" items={GitItems} />
+          <Section name="JavaScript and DOM" items={JSItems} />
+          <Section name="React" items={ReactItems} />
+          <Section name="Interactive apps" items={IntAppItems} />
+          <Section name="Job search" items={JobItems} />
         </div>
       </main>
       <footer className="footer footer-center p-4 bg-base-300 text-base-content mt-20 fixed bottom-0">
