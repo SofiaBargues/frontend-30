@@ -11,7 +11,13 @@ import {
 } from "lucide-react";
 import { cn } from "mxcn";
 
-const HTMLitems = [
+type Item = {
+  name: string;
+  type: string;
+  completed: boolean;
+};
+
+const HTMLitems: Item[] = [
   {
     name: "Video Course",
     type: "start",
@@ -44,7 +50,7 @@ const HTMLitems = [
   },
 ];
 
-const CSSitems = [
+const CSSitems: Item[] = [
   {
     name: "Video Course",
     type: "start",
@@ -277,13 +283,7 @@ export default function Home() {
   );
 }
 
-function Section({
-  name,
-  items,
-}: {
-  name: string;
-  items: { name: string; type: string; completed: boolean }[];
-}) {
+function Section({ name, items }: { name: string; items: Item[] }) {
   return (
     <section className="flex flex-col  w-full items-stretch">
       <SectionHeader text={name} />
@@ -292,10 +292,7 @@ function Section({
   );
 }
 
-function itemToStep(
-  item: { name: string; type: string; completed: any },
-  index: number
-) {
+function itemToStep(item: Item, index: number) {
   return (
     <Step
       text={item.name}
