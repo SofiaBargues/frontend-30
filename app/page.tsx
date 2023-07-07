@@ -133,6 +133,29 @@ const CSSitems: Item[] = [
   },
 ];
 
+const StaticSiteItems: Item[] = [
+  {
+    name: "Website 1",
+    type: "course",
+    completed: false,
+  },
+  {
+    name: "Website 2",
+    type: "course",
+    completed: false,
+  },
+  {
+    name: "Website 3",
+    type: "course",
+    completed: false,
+  },
+  {
+    name: "Portfolio",
+    type: "course",
+    completed: false,
+  },
+];
+
 var alignments = [
   "left-0",
   "left-11",
@@ -163,36 +186,8 @@ export default function Home() {
         <div className="flex flex-col items-center w-full ">
           <Section name="HTML" items={HTMLitems} />
           <Section name="CSS" items={CSSitems} />
+          <Section name="Static websites" items={StaticSiteItems} />
 
-          <section className="flex flex-col  w-full items-stretch">
-            <SectionHeader text="Static websites" />
-            <div className="flex flex-col items-center">
-              <Step
-                text="Website 1"
-                type="course"
-                alignment="left-0 "
-                disabled
-              />
-              <Step
-                text="Website 2"
-                type="course"
-                alignment="left-11 "
-                disabled
-              />
-              <Step
-                text="Website 3"
-                type="course"
-                alignment="left-16 mb-6"
-                disabled
-              />
-              <Step
-                text="Portfolio"
-                type="course"
-                alignment="left-11 mb-6"
-                disabled
-              />
-            </div>
-          </section>
           <section className="flex flex-col  w-full items-stretch ">
             <SectionHeader text="Git" />
             <div className="flex flex-col items-center">
