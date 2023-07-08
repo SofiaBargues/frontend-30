@@ -21,32 +21,32 @@ const HTMLitems: Item[] = [
   {
     name: "Video Course",
     type: "start",
-    completed: false,
+    completed: true,
   },
   {
     name: "Basic HTML",
     type: "course",
-    completed: false,
+    completed: true,
   },
   {
     name: "Forms",
     type: "course",
-    completed: false,
+    completed: true,
   },
   {
     name: "Form project",
     type: "course",
-    completed: false,
+    completed: true,
   },
   {
     name: "Basic accessibility",
     type: "course",
-    completed: false,
+    completed: true,
   },
   {
     name: "Tribute page project",
     type: "course",
-    completed: false,
+    completed: true,
   },
 ];
 
@@ -54,32 +54,32 @@ const CSSitems: Item[] = [
   {
     name: "Video Course",
     type: "start",
-    completed: false,
+    completed: true,
   },
   {
     name: "Basic CSS",
     type: "start",
-    completed: false,
+    completed: true,
   },
   {
     name: "Colors",
     type: "course",
-    completed: false,
+    completed: true,
   },
   {
     name: "Box model",
     type: "course",
-    completed: false,
+    completed: true,
   },
   {
     name: "Flexbox",
     type: "start",
-    completed: false,
+    completed: true,
   },
   {
     name: "Typography",
     type: "course",
-    completed: false,
+    completed: true,
   },
   {
     name: "Pseudo selectors",
@@ -137,22 +137,22 @@ const StaticSiteItems: Item[] = [
   {
     name: "Website 1",
     type: "course",
-    completed: true,
+    completed: false,
   },
   {
     name: "Website 2",
     type: "course",
-    completed: true,
+    completed: false,
   },
   {
     name: "Website 3",
     type: "course",
-    completed: true,
+    completed: false,
   },
   {
     name: "Portfolio",
     type: "course",
-    completed: true,
+    completed: false,
   },
 ];
 
@@ -160,22 +160,22 @@ const GitItems: Item[] = [
   {
     name: "Video Course",
     type: "start",
-    completed: true,
+    completed: false,
   },
   {
     name: "Basic",
     type: "course",
-    completed: true,
+    completed: false,
   },
   {
     name: "Practice 1",
     type: "course",
-    completed: true,
+    completed: false,
   },
   {
     name: "Practice 2",
     type: "course",
-    completed: true,
+    completed: false,
   },
 ];
 
@@ -183,24 +183,24 @@ const JSItems: Item[] = [
   {
     name: "Video Course",
     type: "course",
-    completed: true,
+    completed: false,
   },
   {
     name: "Basic JavaScript",
     type: "course",
-    completed: true,
+    completed: false,
   },
 ];
 const ReactItems: Item[] = [
   {
     name: "Video Course",
     type: "course",
-    completed: true,
+    completed: false,
   },
   {
     name: "Basic React",
     type: "course",
-    completed: true,
+    completed: false,
   },
 ];
 
@@ -208,17 +208,17 @@ const IntAppItems: Item[] = [
   {
     name: "App 1",
     type: "course",
-    completed: true,
+    completed: false,
   },
   {
     name: "App 2",
     type: "course",
-    completed: true,
+    completed: false,
   },
   {
     name: "App 3",
     type: "course",
-    completed: true,
+    completed: false,
   },
 ];
 
@@ -226,7 +226,7 @@ const JobItems: Item[] = [
   {
     name: "Job search",
     type: "course",
-    completed: true,
+    completed: false,
   },
 ];
 
