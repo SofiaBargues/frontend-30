@@ -296,7 +296,17 @@ function Section({ name, items }: { name: string; items: Item[] }) {
   );
 }
 
-function itemToStep(item: Item, index: number) {
+function itemToStep(item: Item, index: number, items: Item[]) {
+  if (index === items.length - 1) {
+    return (
+      <Step
+        text={item.name}
+        type={item.type}
+        alignment={alignments[0]}
+        disabled={!item.completed}
+      />
+    );
+  }
   return (
     <Step
       text={item.name}
