@@ -340,7 +340,10 @@ function Step({
     <div className={cn("relative mt-5", alignment)}>
       <div className="flex flex-col items-center ">
         <button
-          className={cn("btn btn-circle  btn-lg", disabled && "btn-disabled")}
+          className={cn(
+            "btn btn-circle  btn-lg border-4 border-primary",
+            disabled && "btn-disabled border-primary/20"
+          )}
         >
           {icon}
         </button>
