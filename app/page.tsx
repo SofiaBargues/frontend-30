@@ -267,8 +267,9 @@ export default function Home() {
           <div className="w-full" data-theme="acid">
             <Section name="Static websites" items={StaticSiteItems} />
           </div>
-          <Section name="Git" items={GitItems} />
-
+          <div className="w-full" data-theme="luxury">
+            <Section name="Git" items={GitItems} />
+          </div>
           <Section name="JavaScript and DOM" items={JSItems} />
           <Section name="React" items={ReactItems} />
           <Section name="Interactive apps" items={IntAppItems} />
@@ -344,7 +345,7 @@ function Step({
           {icon}
         </button>
 
-        <p className={cn("ml-3 text-lg", disabled && "text-base-300")}>
+        <p className={cn("ml-3 text-lg", disabled && "text-base-content/20")}>
           {text}
         </p>
       </div>
