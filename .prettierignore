@@ -2,6 +2,3 @@
 build
 coverage
 .next
-
-# Ignore all HTML files:
-*.html

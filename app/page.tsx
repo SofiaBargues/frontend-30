@@ -10,6 +10,7 @@ import {
   Star,
 } from "lucide-react";
 import { cn } from "mxcn";
+import { text } from "stream/consumers";
 
 type Item = {
   name: string;
@@ -304,6 +305,7 @@ function itemToStep(item: Item, index: number, items: Item[]) {
         type={item.type}
         alignment={alignments[0]}
         disabled={!item.completed}
+        key={item.name}
       />
     );
   }
@@ -313,6 +315,7 @@ function itemToStep(item: Item, index: number, items: Item[]) {
       type={item.type}
       alignment={alignments[index % alignments.length]}
       disabled={!item.completed}
+      key={item.name}
     />
   );
 }
