@@ -290,7 +290,7 @@ function Section({ name, items }: { name: string; items: Item[] }) {
   return (
     <section className="flex flex-col  w-full items-stretch">
       <SectionHeader text={name} />
-      <div className="flex flex-col items-center pb-6 ">
+      <div className="flex flex-col items-center pb-8 ">
         {items.map(itemToStep)}
       </div>
     </section>
@@ -313,7 +313,7 @@ function itemToStep(item: Item, index: number, items: Item[]) {
 
 function SectionHeader({ text }: { text: string }) {
   return (
-    <header className=" mt-6 bg-primary p-4 md:mx-10 md:rounded-xl">
+    <header className=" mt-6 mb-6 bg-primary p-4 md:mx-10 md:rounded-xl">
       <h1 className="text-center text-2xl">{text}</h1>
     </header>
   );
