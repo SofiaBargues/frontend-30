@@ -184,7 +184,7 @@ const JSItems: Item[] = [
   {
     name: "Video Course",
     type: "course",
-    completed: false,
+    completed: true,
   },
   {
     name: "Basic JavaScript",
@@ -259,18 +259,10 @@ export default function Home() {
       </div>
       <main className="flex flex-col items-center  w-full pb-24 pt-6">
         <div className="flex flex-col items-center w-full ">
-          <div className="w-full" data-theme="cupcake">
-            <Section name="HTML" items={HTMLitems} />
-          </div>
-          <div className="w-full" data-theme="forest">
-            <Section name="CSS" items={CSSitems} />
-          </div>
-          <div className="w-full" data-theme="acid">
-            <Section name="Static websites" items={StaticSiteItems} />
-          </div>
-          <div className="w-full" data-theme="luxury">
-            <Section name="Git" items={GitItems} />
-          </div>
+          <Section name="HTML" items={HTMLitems} />
+          <Section name="CSS" items={CSSitems} />
+          <Section name="Static websites" items={StaticSiteItems} />
+          <Section name="Git" items={GitItems} />
           <Section name="JavaScript and DOM" items={JSItems} />
           <Section name="React" items={ReactItems} />
           <Section name="Interactive apps" items={IntAppItems} />
