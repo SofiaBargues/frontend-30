@@ -1,3 +1,5 @@
+"use client";
+
 import Image from "next/image";
 import {
   Book,
@@ -340,10 +342,24 @@ function Step({
             "btn btn-circle  btn-lg border-4 border-primary",
             disabled && "btn-disabled border-primary/20"
           )}
+          onClick={() =>
+            (document.getElementById(text) as HTMLDialogElement).showModal()
+          }
         >
           {icon}
         </button>
-
+        <dialog id={text} className="modal">
+          <form method="dialog" className="modal-box">
+            <h3 className="font-bold text-lg">{text}</h3>
+            <p className="py-4">
+              Press ESC key or click the button below to close
+            </p>
+            <div className="modal-action">
+              {/* if there is a button in form, it will close the modal */}
+              <button className="btn">Close</button>
+            </div>
+          </form>
+        </dialog>
         <p className={cn("ml-3 text-lg", disabled && "text-base-content/20")}>
           {text}
         </p>
