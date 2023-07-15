@@ -286,15 +286,35 @@ var alignments = [
 ];
 
 const themes = [
-  {
-    id: "retro",
-  },
-  {
-    id: "cupcake",
-  },
-  {
-    id: "forest",
-  },
+  { id: "light" },
+  { id: "dark" },
+  { id: "cupcake" },
+  { id: "bumblebee" },
+  { id: "emerald" },
+  { id: "corporate" },
+  { id: "synthwave" },
+  { id: "retro" },
+  { id: "cyberpunk" },
+  { id: "valentine" },
+  { id: "halloween" },
+  { id: "garden" },
+  { id: "forest" },
+  { id: "aqua" },
+  { id: "lofi" },
+  { id: "pastel" },
+  { id: "fantasy" },
+  { id: "wireframe" },
+  { id: "black" },
+  { id: "luxury" },
+  { id: "dracula" },
+  { id: "cmyk" },
+  { id: "autumn" },
+  { id: "business" },
+  { id: "acid" },
+  { id: "lemonade" },
+  { id: "night" },
+  { id: "coffee" },
+  { id: "winter" },
 ];
 
 export default function Home() {
