@@ -16,6 +16,7 @@ import { text } from "stream/consumers";
 
 type Item = {
   name: string;
+  description: string;
   type: string;
   completed: boolean;
 };
@@ -23,31 +24,37 @@ type Item = {
 const HTMLitems: Item[] = [
   {
     name: "Video Course",
+    description: "Empty",
     type: "start",
     completed: true,
   },
   {
     name: "Basic HTML",
+    description: "Empty",
     type: "course",
     completed: true,
   },
   {
     name: "Forms",
+    description: "Empty",
     type: "course",
     completed: true,
   },
   {
     name: "Form project",
+    description: "Empty",
     type: "course",
     completed: true,
   },
   {
     name: "Basic accessibility",
+    description: "Empty",
     type: "course",
     completed: true,
   },
   {
     name: "Tribute page project",
+    description: "Empty",
     type: "course",
     completed: true,
   },
@@ -56,81 +63,97 @@ const HTMLitems: Item[] = [
 const CSSitems: Item[] = [
   {
     name: "Video Course",
+    description: "Empty",
     type: "start",
     completed: true,
   },
   {
     name: "Basic CSS",
+    description: "Empty",
     type: "start",
     completed: true,
   },
   {
     name: "Colors",
+    description: "Empty",
     type: "course",
     completed: true,
   },
   {
     name: "Box model",
+    description: "Empty",
     type: "course",
     completed: true,
   },
   {
     name: "Flexbox",
+    description: "Empty",
     type: "start",
     completed: true,
   },
   {
     name: "Typography",
+    description: "Empty",
     type: "course",
     completed: true,
   },
   {
     name: "Pseudo selectors",
+    description: "Empty",
     type: "course",
     completed: false,
   },
   {
     name: "Intermediate CSS",
+    description: "Empty",
     type: "course",
     completed: false,
   },
   {
     name: "Responsive design",
+    description: "Empty",
     type: "course",
     completed: false,
   },
   {
     name: "Documentation page project",
+    description: "Empty",
     type: "start",
     completed: false,
   },
   {
     name: "Variables",
+    description: "Empty",
     type: "course",
     completed: false,
   },
   {
     name: "Grid",
+    description: "Empty",
     type: "course",
     completed: false,
   },
   {
     name: "Landing page project",
+    description: "Empty",
     type: "start",
     completed: false,
   },
   {
     name: "Animations",
+    description: "Empty",
     type: "course",
     completed: false,
   },
   {
     name: "Transforms",
+    description: "Empty",
     type: "course",
     completed: false,
   },
   {
     name: "Portfolio web project",
+    description: "Empty",
     type: "course",
     completed: false,
   },
@@ -139,21 +162,25 @@ const CSSitems: Item[] = [
 const StaticSiteItems: Item[] = [
   {
     name: "Website 1",
+    description: "Empty",
     type: "course",
     completed: false,
   },
   {
     name: "Website 2",
+    description: "Empty",
     type: "course",
     completed: false,
   },
   {
     name: "Website 3",
+    description: "Empty",
     type: "course",
     completed: false,
   },
   {
     name: "Portfolio",
+    description: "Empty",
     type: "course",
     completed: false,
   },
@@ -162,21 +189,25 @@ const StaticSiteItems: Item[] = [
 const GitItems: Item[] = [
   {
     name: "Video Course",
+    description: "Empty",
     type: "start",
     completed: false,
   },
   {
     name: "Basic",
+    description: "Empty",
     type: "course",
     completed: false,
   },
   {
     name: "Practice 1",
+    description: "Empty",
     type: "course",
     completed: false,
   },
   {
     name: "Practice 2",
+    description: "Empty",
     type: "course",
     completed: false,
   },
@@ -184,12 +215,14 @@ const GitItems: Item[] = [
 
 const JSItems: Item[] = [
   {
-    name: "Video Course",
+    name: "Video Course JS",
+    description: "Empty 1",
     type: "course",
     completed: true,
   },
   {
     name: "Basic JavaScript",
+    description: "Empty  2",
     type: "course",
     completed: false,
   },
@@ -197,11 +230,13 @@ const JSItems: Item[] = [
 const ReactItems: Item[] = [
   {
     name: "Video Course",
+    description: "Empty",
     type: "course",
     completed: false,
   },
   {
     name: "Basic React",
+    description: "Empty",
     type: "course",
     completed: false,
   },
@@ -210,16 +245,19 @@ const ReactItems: Item[] = [
 const IntAppItems: Item[] = [
   {
     name: "App 1",
+    description: "Empty",
     type: "course",
     completed: false,
   },
   {
     name: "App 2",
+    description: "Empty",
     type: "course",
     completed: false,
   },
   {
     name: "App 3",
+    description: "Empty",
     type: "course",
     completed: false,
   },
@@ -228,6 +266,7 @@ const IntAppItems: Item[] = [
 const JobItems: Item[] = [
   {
     name: "Job search",
+    description: "Empty",
     type: "course",
     completed: false,
   },
@@ -298,6 +337,7 @@ function itemToStep(item: Item, index: number, items: Item[]) {
     <Step
       text={item.name}
       type={item.type}
+      description={item.description}
       alignment={alignments[alignmentIndex]}
       disabled={!item.completed}
       key={item.name}
@@ -317,11 +357,13 @@ function Step({
   alignment,
   type,
   text,
+  description,
   disabled = false,
 }: {
   alignment: string;
   type: string;
   text: string;
+  description: string;
   disabled?: boolean;
 }) {
   let icon = <></>;
@@ -351,9 +393,7 @@ function Step({
         <dialog id={text} className="modal">
           <form method="dialog" className="modal-box">
             <h3 className="font-bold text-lg">{text}</h3>
-            <p className="py-4">
-              Press ESC key or click the button below to close
-            </p>
+            <p className="py-4">{description}</p>
             <div className="modal-action">
               {/* if there is a button in form, it will close the modal */}
               <button className="btn">Close</button>
