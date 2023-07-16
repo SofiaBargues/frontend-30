@@ -319,20 +319,25 @@ const themes = [
 
 export default function Home() {
   return (
-    <div className=" min-h-screen flex flex-col items-center  text-base-content bg-base-100">
-      <div className="navbar text-base-content bg-base-300">
-        <div className="flex-1">
-          <a className=" font-bold normal-case text-xl ">Road Map</a>
+    <div className=" min-h-screen flex flex-col items-center text-base-content bg-base-100 ">
+      <div className="navbar text-base-content bg-base-300 justify-between ">
+        <div id="group1" className=" flex gap-2">
+          <div>
+            <label className="btn btn-ghost btn-circle avatar">
+              <div className="w-10 rounded-full">
+                <img src="/avatar.png" />
+              </div>
+            </label>
+          </div>
+          <div>
+            <a className=" font-bold normal-case text-xl ">Road Map</a>
+          </div>
         </div>
-        <div className="flex-none gap-2">
-          <label className="btn btn-ghost btn-circle avatar">
-            <div className="w-10 rounded-full">
-              <img src="/avatar.png" />
-            </div>
-          </label>
+
+        <div id="group2" className="flex gap-2">
+          <ThemeChange dropdownClasses="..." />
+          <GitHub />
         </div>
-        <ThemeChange dropdownClasses="..." />
-        <GitHub />
       </div>
       <main className="flex flex-col items-center  w-full pb-24 pt-6">
         <div className="flex flex-col items-center w-full ">
