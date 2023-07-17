@@ -21,42 +21,49 @@ type Item = {
   description: string;
   type: string;
   completed: boolean;
+  link?: string;
 };
 
 const HTMLitems: Item[] = [
   {
-    name: "Video Course",
-    description: "Empty",
+    name: "Video Course ",
+    description: "https://youtu.be/MJkdaVFHrto",
     type: "start",
     completed: true,
+    link: "https://youtu.be/MJkdaVFHrto",
   },
   {
     name: "Basic HTML",
-    description: "Empty",
+    description:
+      "HTML tags give a webpage its structure. You can use HTML tags to add photos, buttons, and other elements to your webpage.In this course, you'll learn the most common HTML tags by building your own cat photo app.",
     type: "course",
     completed: true,
   },
   {
     name: "Forms",
-    description: "Empty",
+    description:
+      "You can use HTML forms to collect information from people who visit your webpage.In this course, you'll learn HTML forms by building a signup page. You'll learn how to control what types of data people can type into your form, and some new CSS tools for styling your page.",
     type: "course",
     completed: true,
   },
   {
     name: "Form project",
-    description: "Empty",
+    description:
+      "You can use HTML forms to collect information from people who visit your webpage. In this course, you'll learn HTML forms by building a signup page. You'll learn how to control what types of data people can type into your form, and some new CSS tools for styling your page.",
     type: "course",
     completed: true,
   },
   {
     name: "Basic accessibility",
-    description: "Empty",
+    description:
+      "CSS tells the browser how to display your webpage. You can use CSS to set the color, font, size, and other aspects of HTML elements. In this course, you'll learn CSS by designing a menu page for a cafe webpage.",
     type: "course",
     completed: true,
   },
   {
     name: "Tribute page project",
-    description: "Empty",
+    description:
+      "This is one of the required projects to earn your certification. For this project, you will build a tribute page for a subject of your choosing, fictional or real.",
     type: "course",
     completed: true,
   },
@@ -65,49 +72,57 @@ const HTMLitems: Item[] = [
 const CSSitems: Item[] = [
   {
     name: "Video Course",
-    description: "Empty",
+    description: "https://youtu.be/wZniZEbPAzk",
     type: "start",
     completed: true,
+    link: "https://youtu.be/wZniZEbPAzk",
   },
   {
     name: "Basic CSS",
-    description: "Empty",
+    description:
+      "CSS tells the browser how to display your webpage. You can use CSS to set the color, font, size, and other aspects of HTML elements. In this course, you'll learn CSS by designing a menu page for a cafe webpage.",
     type: "start",
     completed: true,
   },
   {
     name: "Colors",
-    description: "Empty",
+    description:
+      "Selecting the correct colors for your webpage can greatly improve the aesthetic appeal to your readers. In this course, you'll build a set of colored markers. You'll learn different ways to set color values and how to pair colors with each other.",
     type: "course",
     completed: true,
   },
   {
     name: "Box model",
-    description: "Empty",
+    description:
+      "Every HTML element is its own box - with its own spacing and a border. This is called the Box Model.In this course, you'll use CSS and the Box Model to create your own Rothko-style rectangular art pieces.",
     type: "course",
     completed: true,
   },
   {
     name: "Flexbox",
-    description: "Empty",
+    description:
+      "Flexbox helps you design your webpage so that it looks good on any screen size. In this course, you'll use Flexbox to build a responsive photo gallery webpage.",
     type: "start",
     completed: true,
   },
   {
     name: "Typography",
-    description: "Empty",
+    description:
+      "Typography is the art of styling your text to be easily readable and suit its purpose. In this course, you'll use typography to build a nutrition label webpage. You'll learn how to style text, adjust line height, and position your text using CSS.",
     type: "course",
     completed: true,
   },
   {
     name: "Pseudo selectors",
-    description: "Empty",
+    description:
+      "You can use CSS pseudo selectors to change specific HTML elements. In this course, you'll build a balance sheet using pseudo selectors. You'll learn how to change the style of an element when you hover over it with your mouse, and trigger other events on your webpage.",
     type: "course",
     completed: false,
   },
   {
     name: "Intermediate CSS",
-    description: "Empty",
+    description:
+      "In this course, you'll learn how to use some intermediate CSS techniques by coding your own Picasso painting webpage. You'll learn about SVG icons, CSS positioning, and review other CSS skills you've learned.",
     type: "course",
     completed: false,
   },
@@ -119,43 +134,50 @@ const CSSitems: Item[] = [
   },
   {
     name: "Documentation page project",
-    description: "Empty",
+    description:
+      "Responsive Design tells your webpage how it should look on different-sized screens. In this course, you'll use CSS and Responsive Design to code a piano. You'll also learn more about media queries and pseudo selectors.",
     type: "start",
     completed: false,
   },
   {
     name: "Variables",
-    description: "Empty",
+    description:
+      "CSS variables help you organize your styles and reuse them. In this course, you'll build a city skyline. You'll learn how to configure CSS variables so you can reuse them whenever you want.",
     type: "course",
     completed: false,
   },
   {
     name: "Grid",
-    description: "Empty",
+    description:
+      "CSS Grid gives you control over the rows and columns of your webpage design. In this course, you'll build a magazine article. You'll learn how to use CSS Grid, including concepts like grid rows and grid columns.",
     type: "course",
     completed: false,
   },
   {
     name: "Landing page project",
-    description: "Empty",
+    description:
+      "This is one of the required projects to earn your certification. For this project, you will build a product landing page to market a product of your choice.",
     type: "start",
     completed: false,
   },
   {
     name: "Animations",
-    description: "Empty",
+    description:
+      "You can use CSS animation to draw attention to specific sections of your webpage and make it more engaging. In this course, you'll build a Ferris wheel. You'll learn how to use CSS to animate elements, transform them, and adjust their speed.",
     type: "course",
     completed: false,
   },
   {
     name: "Transforms",
-    description: "Empty",
+    description:
+      "You can transform HTML elements to create appealing designs that draw your reader's eye. You can use transforms to rotate elements, scale them, and more. In this course, you'll build a penguin. You'll use CSS transforms to position and resize the parts of your penguin, create a background, and animate your work.",
     type: "course",
     completed: false,
   },
   {
     name: "Portfolio web project",
-    description: "Empty",
+    description:
+      "This is one of the required projects to earn your certification. For this project, you will build your own personal portfolio page.",
     type: "course",
     completed: false,
   },
