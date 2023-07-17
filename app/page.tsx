@@ -507,7 +507,7 @@ function itemToStep(item: Item, index: number, items: Item[]) {
 function SectionHeader({ text }: { text: string }) {
   return (
     <header className=" mt-6 mb-6 bg-primary p-4 md:mx-10 md:rounded-xl">
-      <h1 className="text-center text-2xl">{text}</h1>
+      <h1 className="text-center text-primary-content text-2xl">{text}</h1>
     </header>
   );
 }
