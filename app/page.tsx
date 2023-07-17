@@ -320,7 +320,7 @@ const themes = [
 export default function Home() {
   return (
     <div className=" min-h-screen flex flex-col items-center text-base-content bg-base-100 ">
-      <div className="navbar text-base-content bg-base-300 justify-between ">
+      <nav className="navbar text-base-content bg-base-300 justify-between ">
         <div id="group1" className=" flex gap-2">
           <div>
             <label className="btn btn-ghost btn-circle avatar">
@@ -338,7 +338,7 @@ export default function Home() {
           <ThemeChange dropdownClasses="..." />
           <GitHub />
         </div>
-      </div>
+      </nav>
       <main className="flex flex-col items-center  w-full pb-24 pt-6">
         <div className="flex flex-col items-center w-full ">
           <Section name="HTML" items={HTMLitems} />
@@ -404,9 +404,10 @@ function ThemeChange({
         </svg>
       </div>
       <div
-        className={`dropdown-content bg-base-200 text-base-content rounded-box top-px h-[70vh] max-h-96 w-56 overflow-y-auto shadow ${contentClasses}`}
+        tabIndex={0}
+        className={`dropdown-content z-[1] menu  bg-base-200 text-base-content rounded-box top-px h-[70vh] max-h-96 w-56 overflow-y-auto shadow ${contentClasses}`}
       >
-        <div className="grid grid-cols-1 gap-3 p-3" tabIndex={0}>
+        <div className="grid grid-cols-1 gap-3 p-3">
           {themes.map((theme) => (
             <button
               key={theme.id}
