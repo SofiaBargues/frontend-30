@@ -559,10 +559,10 @@ function Step({
 
   return (
     <div className={cn("relative mt-5", alignment)}>
-      <div className="flex flex-col items-center ">
+      <div className="flex flex-col items-center">
         <button
           className={cn(
-            "btn btn-circle  btn-lg border-4 border-primary",
+            "mb-2 btn btn-circle  btn-lg border-4 border-primary",
             disabled && "btn-disabled border-primary/20"
           )}
           onClick={() =>
@@ -571,6 +571,9 @@ function Step({
         >
           {icon}
         </button>
+        <p className={cn(" text-lg", disabled && "text-base-content/20")}>
+          {text}
+        </p>
         <dialog id={text} className="modal">
           <form method="dialog" className="modal-box">
             <h3 className="font-bold text-lg">{text}</h3>
@@ -581,9 +584,6 @@ function Step({
             </div>
           </form>
         </dialog>
-        <p className={cn("ml-3 text-lg", disabled && "text-base-content/20")}>
-          {text}
-        </p>
       </div>
     </div>
   );
