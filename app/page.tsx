@@ -341,20 +341,22 @@ const themes = [
 
 export default function Home() {
   return (
-    <div className="flex flex-col min-h-screen text-base-content bg-base-100 ">
+    <div className=" min-h-screen text-base-content bg-base-100 ">
       <nav className="navbar z-10 text-base-content bg-base-300 justify-between fixed top-0">
-        <div id="group1" className=" flex gap-2">
-          <div>
-            <label className="btn btn-ghost btn-circle avatar">
-              <div className="w-10 rounded-full">
-                <img src="/avatar.png" />
-              </div>
-            </label>
+        <a href="/">
+          <div id="group1 " className="btn btn-ghost ml-2 flex gap-2">
+            <div>
+              <label className=" avatar">
+                <div className="w-10 rounded-full">
+                  <img src="/avatar.png" />
+                </div>
+              </label>
+            </div>
+            <div>
+              <p className=" font-bold normal-case text-xl ">Road Map</p>
+            </div>
           </div>
-          <div>
-            <a className=" font-bold normal-case text-xl ">Road Map</a>
-          </div>
-        </div>
+        </a>
 
         <div id="group2" className="flex gap-2">
           <ThemeChange dropdownClasses="..." />
