@@ -341,8 +341,8 @@ const themes = [
 
 export default function Home() {
   return (
-    <div className=" min-h-screen flex flex-col items-center text-base-content bg-base-100 ">
-      <nav className="navbar text-base-content bg-base-300 justify-between ">
+    <div className="flex flex-col min-h-screen text-base-content bg-base-100 ">
+      <nav className="navbar z-10 text-base-content bg-base-300 justify-between fixed top-0">
         <div id="group1" className=" flex gap-2">
           <div>
             <label className="btn btn-ghost btn-circle avatar">
@@ -361,7 +361,7 @@ export default function Home() {
           <GitHub />
         </div>
       </nav>
-      <main className="flex flex-col items-center  w-full pb-24 pt-6">
+      <main className="flex flex-col items-center w-full pt-20 pb-24">
         <div className="flex flex-col items-center w-full ">
           <Section name="HTML" items={HTMLitems} />
           <Section name="CSS" items={CSSitems} />
