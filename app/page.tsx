@@ -522,6 +522,7 @@ function itemToStep(item: Item, index: number, items: Item[]) {
       type={item.type}
       description={item.description}
       alignment={alignments[alignmentIndex]}
+      link={item.link}
       disabled={!item.completed}
       key={item.name}
     />
@@ -541,12 +542,14 @@ function Step({
   type,
   text,
   description,
+  link,
   disabled = false,
 }: {
   alignment: string;
   type: string;
   text: string;
   description: string;
+  link?: string;
   disabled?: boolean;
 }) {
   let icon = <></>;
@@ -580,6 +583,9 @@ function Step({
           <form method="dialog" className="modal-box">
             <h3 className="font-bold text-lg">{text}</h3>
             <p className="py-4">{description}</p>
+            <a href={link} className="py-4 link link-info">
+              {link}
+            </a>
             <div className="modal-action">
               {/* if there is a button in form, it will close the modal */}
               <button className="btn">Close</button>
