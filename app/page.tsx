@@ -364,6 +364,7 @@ export default function Home() {
         </div>
       </nav>
       <main className="flex flex-col items-center w-full pt-20 pb-24">
+        <Hero />
         <div className="flex flex-col items-center w-full ">
           <Section name="HTML" items={HTMLitems} />
           <Section name="CSS" items={CSSitems} />
@@ -543,6 +544,30 @@ function SectionHeader({ text }: { text: string }) {
     <header className=" mt-6 mb-6 bg-primary p-4 md:mx-10 md:rounded-xl">
       <h1 className="text-center text-primary-content text-2xl">{text}</h1>
     </header>
+  );
+}
+
+function Hero({}: {}) {
+  return (
+    <div className="hero min-h-screen bg-base-200">
+      <div className="hero-content text-center">
+        <div className="max-w-2xl">
+          <h1 className="text-5xl font-bold">
+            🌟 Welcome to My Web Development Adventure! 🌟
+          </h1>
+          <p className="py-6">
+            Come along as I learn how to create awesome websites! 🚀 I'm just
+            starting out, but I want to share my progress with you. On this
+            page, I'll show you the courses I'm taking and the projects I'm
+            working on to learn web development. 📚🔨 I hope this inspires other
+            beginners like me and shows how far I've come. 🌱 Let's learn
+            together and have fun exploring the amazing world of web
+            development! 🌐💡
+          </p>
+          {/* <button className="btn btn-primary">Get Started</button> */}
+        </div>
+      </div>
+    </div>
   );
 }
 
