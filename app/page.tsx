@@ -377,7 +377,16 @@ export default function Home() {
       </main>
       <footer className="footer footer-center p-4 bg-base-300 text-base-content mt-20 fixed bottom-0">
         <div>
-          <p>Copyright © 2023 - All right reserved by ACME Industries Ltd</p>
+          <p>
+            Sofia Bargues - 2023 -{" "}
+            <a
+              className="link link-info"
+              target="_blank"
+              href="mailto:barguessofia@gmail.com"
+            >
+              barguessofia@gmail.com
+            </a>
+          </p>
         </div>
       </footer>
     </div>
