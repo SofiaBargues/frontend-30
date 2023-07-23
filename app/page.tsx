@@ -559,9 +559,9 @@ function Hero({}: {}) {
             <span className="text-primary">Adventure</span>
           </h1>
           <p className="py-6">
-            Let's create awesome websites together! I'll share the courses and
-            projects I'm working on. I hope it inspires other beginners while
-            showing my growth. Let's explore web development together!
+            {
+              "Let's create awesome websites together! I'll share the courses and projects I'm working on. I hope it inspires other beginners while showing my growth. Let's explore web development together!"
+            }
           </p>
           {/* <button className="btn btn-primary">Get Started</button> */}
         </div>
