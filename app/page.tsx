@@ -363,7 +363,7 @@ export default function Home() {
           <GitHub />
         </div>
       </nav>
-      <main className="flex flex-col items-center w-full pt-20 pb-24">
+      <main className="flex flex-col items-center w-full  pb-24">
         <Hero />
         <div className="flex flex-col items-center w-full ">
           <Section name="HTML" items={HTMLitems} />
@@ -551,18 +551,17 @@ function Hero({}: {}) {
   return (
     <div className="hero min-h-screen bg-base-200">
       <div className="hero-content text-center">
-        <div className="max-w-2xl">
+        <div className="max-w-xl">
           <h1 className="text-5xl font-bold">
-            🌟 Welcome to My Web Development Adventure! 🌟
+            My
+            <br /> <span className="font-extrabold">Web Development</span>{" "}
+            <br />
+            <span className="text-primary">Adventure</span>
           </h1>
           <p className="py-6">
-            Come along as I learn how to create awesome websites! 🚀 I'm just
-            starting out, but I want to share my progress with you. On this
-            page, I'll show you the courses I'm taking and the projects I'm
-            working on to learn web development. 📚🔨 I hope this inspires other
-            beginners like me and shows how far I've come. 🌱 Let's learn
-            together and have fun exploring the amazing world of web
-            development! 🌐💡
+            Let's create awesome websites together! I'll share the courses and
+            projects I'm working on. I hope it inspires other beginners while
+            showing my growth. Let's explore web development together!
           </p>
           {/* <button className="btn btn-primary">Get Started</button> */}
         </div>
