@@ -571,7 +571,6 @@ function Hero({}: {}) {
                 loop: true,
               }}
             />
-            {/* <br /> <span className="font-extrabold">Web Development</span>{" "} */}
             <span className="text-primary">Adventure</span>
           </h1>
           <p className="py-6">
