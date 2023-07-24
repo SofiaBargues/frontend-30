@@ -342,7 +342,7 @@ const themes = [
 export default function Home() {
   return (
     <div className=" min-h-screen text-base-content bg-base-100 ">
-      <nav className="navbar z-10 text-base-content bg-base-300 justify-between fixed top-0">
+      <nav className="navbar z-10 text-base-content bg-base-300 justify-between fixed top-0 border-b-primary border-b-2">
         <a href="/">
           <div id="group1 " className="btn btn-ghost ml-2 flex gap-2">
             <div>
@@ -541,8 +541,10 @@ function itemToStep(item: Item, index: number, items: Item[]) {
 
 function SectionHeader({ text }: { text: string }) {
   return (
-    <header className=" mt-6 mb-6 bg-primary p-4 md:mx-10 md:rounded-xl">
-      <h1 className="text-center text-primary-content text-2xl">{text}</h1>
+    <header className=" mt-6 mb-6 bg-secondary p-4 md:mx-10 md:rounded-xl">
+      <h1 className="text-center text-secondary-content font-semibold text-2xl">
+        {text}
+      </h1>
     </header>
   );
 }
