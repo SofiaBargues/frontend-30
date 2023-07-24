@@ -16,6 +16,8 @@ import { text } from "stream/consumers";
 import { themeChange } from "theme-change";
 import { useEffect } from "react";
 
+import Typewriter from "typewriter-effect";
+
 type Item = {
   name: string;
   description: string;
@@ -556,8 +558,20 @@ function Hero({}: {}) {
         <div className="max-w-xl">
           <h1 className="text-5xl font-bold">
             My
-            <br /> <span className="font-extrabold">Web Development</span>{" "}
             <br />
+            <Typewriter
+              options={{
+                strings: [
+                  "Web Development",
+                  "Learning",
+                  "Exploring",
+                  "Programming",
+                ],
+                autoStart: true,
+                loop: true,
+              }}
+            />
+            {/* <br /> <span className="font-extrabold">Web Development</span>{" "} */}
             <span className="text-primary">Adventure</span>
           </h1>
           <p className="py-6">
