@@ -556,24 +556,19 @@ function Hero({}: {}) {
     <div className="hero min-h-screen bg-base-200">
       <div className="hero-content text-center">
         <div className="max-w-xl">
-          <h1 className="text-5xl font-bold">
+          <h1 className="text-5xl sm:text-7xl lg:text-8xl font-bold">
             My
             <br />
             <Typewriter
               options={{
-                strings: [
-                  "Web Development",
-                  "Learning",
-                  "Exploring",
-                  "Programming",
-                ],
+                strings: ["Web Dev", "Learning", "Exploring", "Programming"],
                 autoStart: true,
                 loop: true,
               }}
             />
             <span className="text-primary">Adventure</span>
           </h1>
-          <p className="py-6">
+          <p className="py-6 sm:text-xl lg:text-2xl">
             {
               "Let's create awesome websites together! I'll share the courses and projects I'm working on. I hope it inspires other beginners while showing my growth. Let's explore web development together!"
             }
