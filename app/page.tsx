@@ -543,8 +543,8 @@ function itemToStep(item: Item, index: number, items: Item[]) {
 
 function SectionHeader({ text }: { text: string }) {
   return (
-    <header className=" mt-6 mb-6 bg-secondary p-4 md:mx-10 md:rounded-xl">
-      <h1 className="text-center text-secondary-content font-semibold text-2xl">
+    <header className=" mt-6 mb-6 bg-secondary p-4 md:mx-10 md:rounded-xl ">
+      <h1 className="text-center text-secondary-content font-semibold text-2xl sm:text-3xl lg:text-4xl ">
         {text}
       </h1>
     </header>
