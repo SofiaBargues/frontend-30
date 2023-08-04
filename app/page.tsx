@@ -378,12 +378,12 @@ export default function Home() {
           <Section name="Job search" items={JobItems} />
         </div>
       </main>
-      <footer className="footer footer-center p-4 bg-base-300 text-base-content mt-20 fixed bottom-0">
+      <footer className="footer footer-center p-4 bg-primary text-primary-content mt-20 fixed bottom-0">
         <div>
           <p>
             Sofia Bargues - 2023 -{" "}
             <a
-              className="link link-info"
+              className="link hover:text-primary-content/80"
               target="_blank"
               href="mailto:barguessofia@gmail.com"
             >
@@ -518,7 +518,7 @@ function Section({ name, items }: { name: string; items: Item[] }) {
   return (
     <section className="flex flex-col  w-full items-stretch">
       <SectionHeader text={name} />
-      <div className="flex flex-col items-center pb-8 ">
+      <div className="flex flex-col items-center pb-8 gap-8">
         {items.map(itemToStep)}
       </div>
     </section>
@@ -544,9 +544,9 @@ function itemToStep(item: Item, index: number, items: Item[]) {
 function SectionHeader({ text }: { text: string }) {
   return (
     <header className=" mt-6 mb-6 bg-secondary p-4 md:mx-10 md:rounded-xl ">
-      <h1 className="text-center text-secondary-content font-semibold text-2xl sm:text-3xl lg:text-4xl ">
+      <h2 className="text-center text-secondary-content font-semibold text-2xl sm:text-3xl lg:text-4xl ">
         {text}
-      </h1>
+      </h2>
     </header>
   );
 }
@@ -571,7 +571,7 @@ function Hero({}: {}) {
             </div>
             <span>Adventure</span>
           </h1>
-          <p className="max-w-xl py-6 sm:text-xl lg:text-2xl">
+          <p className="max-w-xl py-6 sm:text-xl lg:text-2xl mt-2">
             {
               "Let's create awesome websites together! I'll share the courses and projects I'm working on. I hope it inspires other beginners while showing my growth. Let's explore web development together!"
             }
@@ -609,7 +609,7 @@ function Step({
   }
 
   return (
-    <div className={cn("relative mt-5", alignment)}>
+    <div className={cn("relative", alignment)}>
       <div className="flex flex-col items-center">
         <button
           className={cn(
@@ -622,14 +622,19 @@ function Step({
         >
           {icon}
         </button>
-        <p className={cn(" text-lg", disabled && "text-base-content/20")}>
+        <p
+          className={cn(
+            " text-lg font-semibold  sm:text-xl",
+            disabled && "text-base-content/20"
+          )}
+        >
           {text}
         </p>
         <dialog id={text} className="modal">
           <form method="dialog" className="modal-box">
             <h3 className="font-bold text-lg">{text}</h3>
             <p className="py-4">{description}</p>
-            <a href={link} className="py-4 link link-info">
+            <a href={link} className="py-4 link link-primary">
               {link}
             </a>
             <div className="modal-action">
