@@ -17,6 +17,7 @@ import { themeChange } from "theme-change";
 import { useEffect } from "react";
 
 import Typewriter from "typewriter-effect";
+import Link from "next/link";
 
 type Item = {
   name: string;
@@ -345,7 +346,7 @@ export default function Home() {
   return (
     <div className=" min-h-screen text-base-content bg-base-100 ">
       <nav className="navbar z-10 text-base-content bg-base-300 justify-between fixed top-0 border-b-primary border-b-2">
-        <a href="/">
+        <Link href="/">
           <div id="group1 " className="btn btn-ghost ml-2 flex gap-2">
             <div>
               <label className=" avatar">
@@ -358,7 +359,7 @@ export default function Home() {
               <p className=" font-bold normal-case text-xl ">Road Map</p>
             </div>
           </div>
-        </a>
+        </Link>
 
         <div id="group2" className="flex gap-2">
           <ThemeChange dropdownClasses="..." />
