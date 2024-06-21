@@ -21,12 +21,13 @@ import Link from "next/link";
 
 type Item = {
   name: string;
+  completed: boolean;
   description: string;
   type: string;
-  completed: boolean;
-  link?: string;
-  demo?: string;
-  repositorio?: string;
+  statementUrl?: string;
+  demoUrl?: string;
+  githubUrl?: string;
+  tutorialUrl?: string;
 };
 
 const HTMLitems: Item[] = [
@@ -35,9 +36,10 @@ const HTMLitems: Item[] = [
     description: "https://youtu.be/MJkdaVFHrto",
     type: "start",
     completed: true,
-    link: "https://www.frontendmentor.io/challenges/qr-code-component-iux_sIO_H",
-    repositorio: "https://github.com/SofiaBargues/qr-code-component",
-    demo: "https://qr-code-component-liart.vercel.app/",
+    statementUrl:
+      "https://www.frontendmentor.io/challenges/qr-code-component-iux_sIO_H",
+    githubUrl: "https://github.com/SofiaBargues/qr-code-component",
+    demoUrl: "https://qr-code-component-liart.vercel.app/",
   },
   {
     name: "Basic HTML",
@@ -82,7 +84,7 @@ const CSSitems: Item[] = [
     description: "https://youtu.be/wZniZEbPAzk",
     type: "start",
     completed: true,
-    link: "https://youtu.be/wZniZEbPAzk",
+    statementUrl: "https://youtu.be/wZniZEbPAzk",
   },
   {
     name: "Basic CSS",
@@ -556,6 +558,40 @@ function GitHub() {
   );
 }
 
+let statementImg = (
+  <svg
+    fill="#000000"
+    viewBox="0 0 24 24"
+    role="img"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+    <g
+      id="SVGRepo_tracerCarrier"
+      stroke-linecap="round"
+      stroke-linejoin="round"
+    ></g>
+    <g id="SVGRepo_iconCarrier">
+      <path d="M12.17 1.272a.732.732 0 0 0-.718.732v13.914a.732.732 0 0 0 .732.732.732.732 0 0 0 .732-.732V2.004a.732.732 0 0 0-.745-.732zM23.246 5.44a.734.734 0 0 0-.277.063l-6.282 2.804a.733.733 0 0 0 0 1.336l6.282 2.813a.738.738 0 0 0 .3.065.732.732 0 0 0 .297-1.4L18.78 8.976l4.786-2.137a.734.734 0 0 0 .37-.966.734.734 0 0 0-.69-.433zm-22.5 5.032a.732.732 0 0 0-.722.915c1.736 6.677 7.775 11.341 14.683 11.341a.732.732 0 0 0 0-1.464A13.706 13.706 0 0 1 1.44 11.02a.732.732 0 0 0-.694-.547z"></path>
+    </g>
+  </svg>
+);
+
+function MyButton({ url, name }) {
+  return (
+    <a
+      aria-label="Github"
+      target="_blank"
+      href={url}
+      rel="noopener, noreferrer"
+      className="btn btn-ghost drawer-button  normal-case"
+    >
+      {" "}
+      <div className="flex-none items-center">{name}</div>{" "}
+    </a>
+  );
+}
+
 function Section({ name, items }: { name: string; items: Item[] }) {
   return (
     <section className="flex flex-col  w-full items-stretch">
@@ -572,15 +608,17 @@ function itemToStep(item: Item, index: number, items: Item[]) {
     index === items.length - 1 ? 0 : index % alignments.length;
   return (
     <Step
-      text={item.name}
+      name={item.name}
       type={item.type}
-      repositorio={item.repositorio}
-      demo={item.demo}
+      githubUrl={item.githubUrl}
+      demoUrl={item.demoUrl}
       description={item.description}
       alignment={alignments[alignmentIndex]}
-      link={item.link}
+      statementUrl={item.statementUrl}
+      tutorialUrl={item.tutorialUrl}
       disabled={!item.completed}
       key={item.name}
+      item={item}
     ></Step>
   );
 }
@@ -628,31 +666,24 @@ function Hero({}: {}) {
 }
 
 interface StepProps {
-  alignment: string;
-  type: string;
-  text: string;
+  name: string;
   description: string;
-  link?: string;
+  alignment: string;
   disabled?: boolean;
-  demo?: string;
-  repositorio?: string;
+  type: string;
+  item: Item;
+  statementUrl?: string;
+  demoUrl?: string;
+  githubUrl?: string;
+  tutorialUrl?: string;
 }
 
-function Step({
-  alignment,
-  type,
-  text,
-  description,
-  link,
-  repositorio,
-  demo,
-  disabled = false,
-}: StepProps) {
+function Step({ alignment, disabled = false, item }: StepProps) {
   let icon = <></>;
 
-  if (type == "course") {
+  if (item.type == "course") {
     icon = <Book size={32} />;
-  } else if (type == "start") {
+  } else if (item.type == "start") {
     icon = <Star size={32} />;
   } else {
     icon = <Cat size={32} />;
@@ -667,7 +698,9 @@ function Step({
             disabled && "btn-disabled border-primary/20"
           )}
           onClick={() =>
-            (document.getElementById(text) as HTMLDialogElement).showModal()
+            (
+              document.getElementById(item.name) as HTMLDialogElement
+            ).showModal()
           }
         >
           {icon}
@@ -678,15 +711,19 @@ function Step({
             disabled && "text-base-content/20"
           )}
         >
-          {text}
+          {item.name}
         </p>
-        <dialog id={text} className="modal">
+        <dialog id={item.name} className="modal">
           <form method="dialog" className="modal-box">
-            <h3 className="font-bold text-lg">{text}</h3>
-            <p className="py-4">{description}</p>
-            <a href={link} className="py-4 link link-primary">
-              {link}
-            </a>
+            <h3 className="font-bold text-lg">{item.name}</h3>
+            <p className="py-4">{item.description}</p>
+            <div className=" flex  gap-4">
+              <MyButton url={item.githubUrl} name="GitHub" />
+              <MyButton url={item.demoUrl} name="Demo" />
+              <MyButton url={item.statementUrl} name="Statement" />
+              <MyButton url={item.tutorialUrl} name="Tutorial" />
+            </div>
+
             <div className="modal-action">
               {/* if there is a button in form, it will close the modal */}
               <button className="btn">Close</button>
