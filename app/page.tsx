@@ -1,17 +1,17 @@
 "use client";
 
 import Image from "next/image";
-import article from "./public/article-preview.jpg";
-import blog from "./public/blog-preview-card.jpg";
-import expenses from "./public/expenses-chart-component.jpg";
-import interactive from "./public/interactive-pricing-component.jpg";
-import newslettere from "./public/newsletter-singup-form.jpg";
-import qr from "./public/qr-code-component.jpg";
-import recipe from "./public/recipe-page.jpg";
-import social from "./public/social-links-profile.jpg";
-import testimonials from "./public/testimonials-grid-section.jpg";
-import time from "./public/time-tracking-dashboard.jpg";
-import tip from "./public/tip-calculator-app.jpg";
+// import article from "./public/article-preview.jpg";
+// import blog from "./public/blog-preview-card.jpg";
+// import expenses from "./public/expenses-chart-component.jpg";
+// import interactive from "./public/interactive-pricing-component.jpg";
+// import newslettere from "./public/newsletter-singup-form.jpg";
+// import qr from "./public/qr-code-component.jpg";
+// import recipe from "./public/recipe-page.jpg";
+// import social from "./public/social-links-profile.jpg";
+// import testimonials from "./public/testimonials-grid-section.jpg";
+// import time from "./public/time-tracking-dashboard.jpg";
+// import tip from "./public/tip-calculator-app.jpg";
 import {
   Book,
   Camera,
@@ -53,8 +53,7 @@ const HTMLCSS: Item[] = [
       "https://www.frontendmentor.io/challenges/qr-code-component-iux_sIO_H",
     githubUrl: "https://github.com/SofiaBargues/qr-code-component",
     demoUrl: "https://qr-code-component-liart.vercel.app/",
-    imgSource:
-      "https://res.cloudinary.com/dz209s6jk/image/upload/v1642681473/Challenges/lzfaukzhigbavv5sc26b.jpg",
+    imgSource: "/qr-code-component.jpg",
   },
   {
     name: "Blog Preview Card",
