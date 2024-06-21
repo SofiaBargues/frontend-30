@@ -186,118 +186,124 @@ const CSSitems: Item[] = [
   },
 ];
 
-const StaticSiteItems: Item[] = [
-  {
-    name: "Website 1",
-    description: "Empty",
-    type: "course",
-    completed: false,
-  },
-  {
-    name: "Website 2",
-    description: "Empty",
-    type: "course",
-    completed: false,
-  },
-  {
-    name: "Website 3",
-    description: "Empty",
-    type: "course",
-    completed: false,
-  },
-  {
-    name: "Portfolio",
-    description: "Empty",
-    type: "course",
-    completed: false,
-  },
-];
+// const StaticSiteItems: Item[] = [
+//   {
+//     name: "Website 1",
+//     description: "Empty",
+//     type: "course",
+//     completed: false,
+//   },
+//   {
+//     name: "Website 2",
+//     description: "Empty",
+//     type: "course",
+//     completed: false,
+//   },
+//   {
+//     name: "Website 3",
+//     description: "Empty",
+//     type: "course",
+//     completed: false,
+//   },
+//   {
+//     name: "Portfolio",
+//     description: "Empty",
+//     type: "course",
+//     completed: false,
+//   },
+// ];
 
-const GitItems: Item[] = [
-  {
-    name: "Video Course",
-    description: "Empty",
-    type: "start",
-    completed: false,
-  },
-  {
-    name: "Basic",
-    description: "Empty",
-    type: "course",
-    completed: false,
-  },
-  {
-    name: "Practice 1",
-    description: "Empty",
-    type: "course",
-    completed: false,
-  },
-  {
-    name: "Practice 2",
-    description: "Empty",
-    type: "course",
-    completed: false,
-  },
-];
+// const GitItems: Item[] = [
+//   {
+//     name: "Video Course",
+//     description: "Empty",
+//     type: "start",
+//     completed: false,
+//   },
+//   {
+//     name: "Basic",
+//     description: "Empty",
+//     type: "course",
+//     completed: false,
+//   },
+//   {
+//     name: "Practice 1",
+//     description: "Empty",
+//     type: "course",
+//     completed: false,
+//   },
+//   {
+//     name: "Practice 2",
+//     description: "Empty",
+//     type: "course",
+//     completed: false,
+//   },
+// ];
 
-const JSItems: Item[] = [
-  {
-    name: "Video Course JS",
-    description: "Empty 1",
-    type: "course",
-    completed: true,
-  },
-  {
-    name: "Basic JavaScript",
-    description: "Empty  2",
-    type: "course",
-    completed: true,
-  },
-];
-const ReactItems: Item[] = [
-  {
-    name: "Video Course",
-    description: "Empty",
-    type: "course",
-    completed: false,
-  },
-  {
-    name: "Basic React",
-    description: "Empty",
-    type: "course",
-    completed: false,
-  },
-];
+// const JSItems: Item[] = [
+//   {
+//     name: "Video Course JS",
+//     description: "Empty 1",
+//     type: "course",
+//     completed: true,
+//   },
+//   {
+//     name: "Basic JavaScript",
+//     description: "Empty  2",
+//     type: "course",
+//     completed: true,
+//   },
+// ];
+// const ReactItems: Item[] = [
+//   {
+//     name: "Video Course",
+//     description: "Empty",
+//     type: "course",
+//     completed: false,
+//   },
+//   {
+//     name: "Basic React",
+//     description: "Empty",
+//     type: "course",
+//     completed: false,
+//   },
+// ];
 
-const IntAppItems: Item[] = [
-  {
-    name: "App 1",
-    description: "Empty",
-    type: "course",
-    completed: false,
-  },
-  {
-    name: "App 2",
-    description: "Empty",
-    type: "course",
-    completed: false,
-  },
-  {
-    name: "App 3",
-    description: "Empty",
-    type: "course",
-    completed: false,
-  },
-];
+// const IntAppItems: Item[] = [
+//   {
+//     name: "App 1",
+//     description: "Empty",
+//     type: "course",
+//     completed: false,
+//   },
+//   {
+//     name: "App 2",
+//     description: "Empty",
+//     type: "course",
+//     completed: false,
+//   },
+//   {
+//     name: "App 3",
+//     description: "Empty",
+//     type: "course",
+//     completed: false,
+//   },
+// ];
 
-const JobItems: Item[] = [
-  {
-    name: "Job search",
-    description: "Empty",
-    type: "course",
-    completed: false,
-  },
-];
+// const JobItems: Item[] = [
+//   {
+//     name: "Job search",
+//     description: "Empty",
+//     type: "course",
+//     completed: false,
+//   },
+//   {
+//     name: "Job search",
+//     description: "Empty",
+//     type: "course",
+//     completed: false,
+//   },
+// ];
 
 var alignments = [
   "left-0",
@@ -350,13 +356,13 @@ export default function Home() {
           <div id="group1 " className="btn btn-ghost ml-2 flex gap-2">
             <div>
               <label className=" avatar">
-                <div className="w-10 rounded-full">
-                  <img src="/avatar.png" />
+                <div className="w-10 rounded-full border-2 ">
+                  <img src="/avatarColor.png" />
                 </div>
               </label>
             </div>
             <div>
-              <p className=" font-bold normal-case text-xl ">Road Map</p>
+              <p className=" font-bold normal-case text-xl ">Frontend 30</p>
             </div>
           </div>
         </Link>
@@ -371,22 +377,22 @@ export default function Home() {
         <div className="flex flex-col items-center w-full ">
           <Section name="HTML" items={HTMLitems} />
           <Section name="CSS" items={CSSitems} />
-          <Section name="Static websites" items={StaticSiteItems} />
+          {/* <Section name="Static websites" items={StaticSiteItems} />
           <Section name="Git" items={GitItems} />
           <Section name="JavaScript and DOM" items={JSItems} />
           <Section name="React" items={ReactItems} />
           <Section name="Interactive apps" items={IntAppItems} />
-          <Section name="Job search" items={JobItems} />
+          <Section name="Job search" items={JobItems} /> */}
         </div>
       </main>
       <footer className="footer footer-center p-4 bg-primary text-primary-content mt-20 fixed bottom-0">
         <div>
           <p>
-            Sofia Bargues - 2023 -{" "}
+            Sofia Bargues - 2024 -
             <a
               className="link hover:text-primary-content/80"
               target="_blank"
-              href="mailto:barguessofia@gmail.com"
+              href="mailto: barguessofia@gmail.com"
             >
               barguessofia@gmail.com
             </a>
