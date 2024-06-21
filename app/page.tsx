@@ -65,7 +65,7 @@ const HTMLCSS: Item[] = [
     completed: true,
     tutorialUrl: "https://www.youtube.com/watch?v=PlUOMi23qAc",
     statementUrl:
-      "https://www.frontendmentor.io/challenges/blog-preview-card-ckPaj01IcS",
+      "https://www.frontendmentor.io/challenges/social-links-profile-UG32l9m6dQ",
     githubUrl: "https://github.com/SofiaBargues/blog-preview-card",
     demoUrl: "https://blog-preview-card-xi-gules.vercel.app/",
     imgSource:
@@ -78,7 +78,7 @@ const HTMLCSS: Item[] = [
     completed: true,
     tutorialUrl: "https://www.youtube.com/watch?v=wF2DLQGeJS0&t=185s",
     statementUrl:
-      "https://www.frontendmentor.io/challenges/blog-preview-card-ckPaj01IcS",
+      "https://www.frontendmentor.io/challenges/recipe-page-KiTsR8QQKm",
     githubUrl: "https://github.com/SofiaBargues/blog-preview-card",
     demoUrl: "https://blog-preview-card-xi-gules.vercel.app/",
     imgSource:
@@ -92,7 +92,7 @@ const HTMLCSS: Item[] = [
     tutorialUrl:
       "https://www.youtube.com/watch?v=0TiIJjC7Olw&list=PLrVXEY3WfL-39_2q2HiKkuyNxelQI1XeV",
     statementUrl:
-      "https://www.frontendmentor.io/challenges/blog-preview-card-ckPaj01IcS",
+      "https://www.frontendmentor.io/challenges/testimonials-grid-section-Nnw6J7Un7",
     githubUrl: "https://github.com/SofiaBargues/blog-preview-card",
     demoUrl: "https://blog-preview-card-xi-gules.vercel.app/",
     imgSource:
@@ -106,7 +106,7 @@ const HTMLCSS: Item[] = [
     tutorialUrl:
       "https://www.youtube.com/watch?v=SKhZ0IBk1_A&list=PLrVXEY3WfL-39_2q2HiKkuyNxelQI1XeV&index=2",
     statementUrl:
-      "https://www.frontendmentor.io/challenges/blog-preview-card-ckPaj01IcS",
+      "https://www.frontendmentor.io/learning-paths/javascript-fundamentals-oR7g6-mTZ-/steps/665e1b4e6ec3887a3b142b16/challenge/start",
     githubUrl: "https://github.com/SofiaBargues/blog-preview-card",
     demoUrl: "https://blog-preview-card-xi-gules.vercel.app/",
     imgSource:
@@ -122,7 +122,7 @@ const HTMLCSSJS: Item[] = [
     completed: true,
     tutorialUrl: "https://www.youtube.com/watch?v=l9Qw8y3LfCY",
     statementUrl:
-      "https://www.frontendmentor.io/challenges/blog-preview-card-ckPaj01IcS",
+      "https://www.frontendmentor.io/challenges/time-tracking-dashboard-UIQ7167Jw",
     githubUrl: "https://github.com/SofiaBargues/blog-preview-card",
     demoUrl: "https://blog-preview-card-xi-gules.vercel.app/",
     imgSource:
@@ -136,7 +136,7 @@ const HTMLCSSJS: Item[] = [
     tutorialUrl:
       "https://www.youtube.com/watch?v=abdsoVJsWzQ&list=PLrVXEY3WfL-39_2q2HiKkuyNxelQI1XeV&index=3",
     statementUrl:
-      "https://www.frontendmentor.io/challenges/blog-preview-card-ckPaj01IcS",
+      "https://www.frontendmentor.io/challenges/newsletter-signup-form-with-success-message-3FC1AZbNrv/hub",
     githubUrl: "https://github.com/SofiaBargues/blog-preview-card",
     demoUrl: "https://blog-preview-card-xi-gules.vercel.app/",
     imgSource:
@@ -149,7 +149,7 @@ const HTMLCSSJS: Item[] = [
     completed: true,
     tutorialUrl: "https://www.youtube.com/watch?v=s9CHPlY8J8I",
     statementUrl:
-      "https://www.frontendmentor.io/challenges/blog-preview-card-ckPaj01IcS",
+      "https://www.frontendmentor.io/challenges/expenses-chart-component-e7yJBUdjwt",
     githubUrl: "https://github.com/SofiaBargues/blog-preview-card",
     demoUrl: "https://blog-preview-card-xi-gules.vercel.app/",
     imgSource:
@@ -162,7 +162,7 @@ const HTMLCSSJS: Item[] = [
     completed: true,
     tutorialUrl: "https://www.youtube.com/watch?v=FYCauVeo8OY",
     statementUrl:
-      "https://www.frontendmentor.io/challenges/blog-preview-card-ckPaj01IcS",
+      "https://www.frontendmentor.io/challenges/tip-calculator-app-ugJNGbJUX",
     githubUrl: "https://github.com/SofiaBargues/blog-preview-card",
     demoUrl: "https://blog-preview-card-xi-gules.vercel.app/",
     imgSource:
@@ -175,7 +175,7 @@ const HTMLCSSJS: Item[] = [
     completed: true,
     tutorialUrl: "https://www.youtube.com/watch?v=3n22cowxoKU",
     statementUrl:
-      "https://www.frontendmentor.io/challenges/blog-preview-card-ckPaj01IcS",
+      "https://www.frontendmentor.io/challenges/pricing-component-with-toggle-8vPwRMIC",
     githubUrl: "https://github.com/SofiaBargues/blog-preview-card",
     demoUrl: "https://blog-preview-card-xi-gules.vercel.app/",
     imgSource:
@@ -188,7 +188,7 @@ const HTMLCSSJS: Item[] = [
     completed: false,
     tutorialUrl: "https://www.youtube.com/watch?v=3n22cowxoKU",
     statementUrl:
-      "https://www.frontendmentor.io/challenges/blog-preview-card-ckPaj01IcS",
+      "https://www.frontendmentor.io/challenges/age-calculator-app-dF9DFFpj-Q",
     githubUrl: "https://github.com/SofiaBargues/blog-preview-card",
     demoUrl: "https://blog-preview-card-xi-gules.vercel.app/",
     imgSource:
@@ -201,20 +201,20 @@ const HTMLCSSJS: Item[] = [
     completed: false,
     tutorialUrl: "https://www.youtube.com/watch?v=3n22cowxoKU",
     statementUrl:
-      "https://www.frontendmentor.io/challenges/blog-preview-card-ckPaj01IcS",
+      "https://www.frontendmentor.io/challenges/interactive-pricing-component-t0m8PIyY8",
     githubUrl: "https://github.com/SofiaBargues/blog-preview-card",
     demoUrl: "https://blog-preview-card-xi-gules.vercel.app/",
     imgSource:
       "https://res.cloudinary.com/dz209s6jk/image/upload/v1703155661/Challenges/iyh3uk6keluskixx8pz6.jpg",
   },
   {
-    name: " Social media dashboard",
+    name: "Social media dashboard",
     description: "Here the desciption",
     type: "start",
     completed: false,
     tutorialUrl: "https://www.youtube.com/watch?v=3n22cowxoKU",
     statementUrl:
-      "https://www.frontendmentor.io/challenges/blog-preview-card-ckPaj01IcS",
+      "https://www.frontendmentor.io/challenges/social-media-dashboard-with-theme-switcher-6oY8ozp_H",
     githubUrl: "https://github.com/SofiaBargues/blog-preview-card",
     demoUrl: "https://blog-preview-card-xi-gules.vercel.app/",
     imgSource:
@@ -227,7 +227,7 @@ const HTMLCSSJS: Item[] = [
     completed: false,
     tutorialUrl: "https://www.youtube.com/watch?v=3n22cowxoKU",
     statementUrl:
-      "https://www.frontendmentor.io/challenges/blog-preview-card-ckPaj01IcS",
+      "https://www.frontendmentor.io/challenges/advice-generator-app-QdUG-13db",
     githubUrl: "https://github.com/SofiaBargues/blog-preview-card",
     demoUrl: "https://blog-preview-card-xi-gules.vercel.app/",
     imgSource:
@@ -633,7 +633,7 @@ let statementImg = (
   </svg>
 );
 
-function MyButton({ url, name }) {
+function MyButton({ url, name }: { url: any; name: string }) {
   return (
     <a
       aria-label="Github"
@@ -732,6 +732,7 @@ interface StepProps {
   demoUrl?: string;
   githubUrl?: string;
   tutorialUrl?: string;
+  imgSource?: string;
 }
 
 function Step({ alignment, disabled = false, item }: StepProps) {
