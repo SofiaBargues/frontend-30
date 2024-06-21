@@ -28,167 +28,223 @@ type Item = {
   demoUrl?: string;
   githubUrl?: string;
   tutorialUrl?: string;
+  imgSource?: string;
 };
 
-const HTMLitems: Item[] = [
+const HTMLCSS: Item[] = [
   {
     name: "QR code component",
-    description: "https://youtu.be/MJkdaVFHrto",
+    description: "Here the desciption",
     type: "start",
     completed: true,
+    tutorialUrl: "https://www.youtube.com/watch?v=5BBYPntB-GY&t=7s",
     statementUrl:
       "https://www.frontendmentor.io/challenges/qr-code-component-iux_sIO_H",
     githubUrl: "https://github.com/SofiaBargues/qr-code-component",
     demoUrl: "https://qr-code-component-liart.vercel.app/",
+    imgSource:
+      "https://res.cloudinary.com/dz209s6jk/image/upload/v1642681473/Challenges/lzfaukzhigbavv5sc26b.jpg",
   },
   {
-    name: "Basic HTML",
-    description:
-      "HTML tags give a webpage its structure. You can use HTML tags to add photos, buttons, and other elements to your webpage.In this course, you'll learn the most common HTML tags by building your own cat photo app.",
-    type: "course",
+    name: "Blog Preview Card",
+    description: "Here the desciption",
+    type: "start",
     completed: true,
+    tutorialUrl: "https://www.youtube.com/watch?v=3n22cowxoKU",
+    statementUrl:
+      "https://www.frontendmentor.io/challenges/blog-preview-card-ckPaj01IcS",
+    githubUrl: "https://github.com/SofiaBargues/blog-preview-card",
+    demoUrl: "https://blog-preview-card-xi-gules.vercel.app/",
+    imgSource:
+      "https://res.cloudinary.com/dz209s6jk/image/upload/v1703155661/Challenges/iyh3uk6keluskixx8pz6.jpg",
   },
   {
-    name: "Forms",
-    description:
-      "You can use HTML forms to collect information from people who visit your webpage.In this course, you'll learn HTML forms by building a signup page. You'll learn how to control what types of data people can type into your form, and some new CSS tools for styling your page.",
-    type: "course",
+    name: "Social links profile",
+    description: "Here the desciption",
+    type: "start",
     completed: true,
+    tutorialUrl: "https://www.youtube.com/watch?v=PlUOMi23qAc",
+    statementUrl:
+      "https://www.frontendmentor.io/challenges/blog-preview-card-ckPaj01IcS",
+    githubUrl: "https://github.com/SofiaBargues/blog-preview-card",
+    demoUrl: "https://blog-preview-card-xi-gules.vercel.app/",
+    imgSource:
+      "https://res.cloudinary.com/dz209s6jk/image/upload/v1703155661/Challenges/iyh3uk6keluskixx8pz6.jpg",
   },
   {
-    name: "Form project",
-    description:
-      "You can use HTML forms to collect information from people who visit your webpage. In this course, you'll learn HTML forms by building a signup page. You'll learn how to control what types of data people can type into your form, and some new CSS tools for styling your page.",
-    type: "course",
+    name: "Recipe page",
+    description: "Here the desciption",
+    type: "start",
     completed: true,
+    tutorialUrl: "https://www.youtube.com/watch?v=wF2DLQGeJS0&t=185s",
+    statementUrl:
+      "https://www.frontendmentor.io/challenges/blog-preview-card-ckPaj01IcS",
+    githubUrl: "https://github.com/SofiaBargues/blog-preview-card",
+    demoUrl: "https://blog-preview-card-xi-gules.vercel.app/",
+    imgSource:
+      "https://res.cloudinary.com/dz209s6jk/image/upload/v1703155661/Challenges/iyh3uk6keluskixx8pz6.jpg",
   },
   {
-    name: "Basic accessibility",
-    description:
-      "CSS tells the browser how to display your webpage. You can use CSS to set the color, font, size, and other aspects of HTML elements. In this course, you'll learn CSS by designing a menu page for a cafe webpage.",
-    type: "course",
+    name: "Testimonials grid section",
+    description: "Here the desciption",
+    type: "start",
     completed: true,
+    tutorialUrl:
+      "https://www.youtube.com/watch?v=0TiIJjC7Olw&list=PLrVXEY3WfL-39_2q2HiKkuyNxelQI1XeV",
+    statementUrl:
+      "https://www.frontendmentor.io/challenges/blog-preview-card-ckPaj01IcS",
+    githubUrl: "https://github.com/SofiaBargues/blog-preview-card",
+    demoUrl: "https://blog-preview-card-xi-gules.vercel.app/",
+    imgSource:
+      "https://res.cloudinary.com/dz209s6jk/image/upload/v1703155661/Challenges/iyh3uk6keluskixx8pz6.jpg",
   },
   {
-    name: "Tribute page project",
-    description:
-      "This is one of the required projects to earn your certification. For this project, you will build a tribute page for a subject of your choosing, fictional or real.",
-    type: "course",
+    name: "Article preview component",
+    description: "Here the desciption",
+    type: "start",
     completed: true,
+    tutorialUrl:
+      "https://www.youtube.com/watch?v=SKhZ0IBk1_A&list=PLrVXEY3WfL-39_2q2HiKkuyNxelQI1XeV&index=2",
+    statementUrl:
+      "https://www.frontendmentor.io/challenges/blog-preview-card-ckPaj01IcS",
+    githubUrl: "https://github.com/SofiaBargues/blog-preview-card",
+    demoUrl: "https://blog-preview-card-xi-gules.vercel.app/",
+    imgSource:
+      "https://res.cloudinary.com/dz209s6jk/image/upload/v1703155661/Challenges/iyh3uk6keluskixx8pz6.jpg",
   },
 ];
 
-const CSSitems: Item[] = [
+const HTMLCSSJS: Item[] = [
   {
-    name: "Video Course",
-    description: "https://youtu.be/wZniZEbPAzk",
+    name: "Time tracking dashboard",
+    description: "Here the desciption",
     type: "start",
     completed: true,
-    statementUrl: "https://youtu.be/wZniZEbPAzk",
+    tutorialUrl: "https://www.youtube.com/watch?v=l9Qw8y3LfCY",
+    statementUrl:
+      "https://www.frontendmentor.io/challenges/blog-preview-card-ckPaj01IcS",
+    githubUrl: "https://github.com/SofiaBargues/blog-preview-card",
+    demoUrl: "https://blog-preview-card-xi-gules.vercel.app/",
+    imgSource:
+      "https://res.cloudinary.com/dz209s6jk/image/upload/v1703155661/Challenges/iyh3uk6keluskixx8pz6.jpg",
   },
   {
-    name: "Basic CSS",
-    description:
-      "CSS tells the browser how to display your webpage. You can use CSS to set the color, font, size, and other aspects of HTML elements. In this course, you'll learn CSS by designing a menu page for a cafe webpage.",
+    name: "Newsletter sign-up form with success message",
+    description: "Here the desciption",
     type: "start",
     completed: true,
+    tutorialUrl:
+      "https://www.youtube.com/watch?v=abdsoVJsWzQ&list=PLrVXEY3WfL-39_2q2HiKkuyNxelQI1XeV&index=3",
+    statementUrl:
+      "https://www.frontendmentor.io/challenges/blog-preview-card-ckPaj01IcS",
+    githubUrl: "https://github.com/SofiaBargues/blog-preview-card",
+    demoUrl: "https://blog-preview-card-xi-gules.vercel.app/",
+    imgSource:
+      "https://res.cloudinary.com/dz209s6jk/image/upload/v1703155661/Challenges/iyh3uk6keluskixx8pz6.jpg",
   },
   {
-    name: "Colors",
-    description:
-      "Selecting the correct colors for your webpage can greatly improve the aesthetic appeal to your readers. In this course, you'll build a set of colored markers. You'll learn different ways to set color values and how to pair colors with each other.",
-    type: "course",
-    completed: true,
-  },
-  {
-    name: "Box model",
-    description:
-      "Every HTML element is its own box - with its own spacing and a border. This is called the Box Model.In this course, you'll use CSS and the Box Model to create your own Rothko-style rectangular art pieces.",
-    type: "course",
-    completed: true,
-  },
-  {
-    name: "Flexbox",
-    description:
-      "Flexbox helps you design your webpage so that it looks good on any screen size. In this course, you'll use Flexbox to build a responsive photo gallery webpage.",
+    name: "Expenses chart component",
+    description: "Here the desciption",
     type: "start",
     completed: true,
+    tutorialUrl: "https://www.youtube.com/watch?v=s9CHPlY8J8I",
+    statementUrl:
+      "https://www.frontendmentor.io/challenges/blog-preview-card-ckPaj01IcS",
+    githubUrl: "https://github.com/SofiaBargues/blog-preview-card",
+    demoUrl: "https://blog-preview-card-xi-gules.vercel.app/",
+    imgSource:
+      "https://res.cloudinary.com/dz209s6jk/image/upload/v1703155661/Challenges/iyh3uk6keluskixx8pz6.jpg",
   },
   {
-    name: "Typography",
-    description:
-      "Typography is the art of styling your text to be easily readable and suit its purpose. In this course, you'll use typography to build a nutrition label webpage. You'll learn how to style text, adjust line height, and position your text using CSS.",
-    type: "course",
+    name: "Tip calculator",
+    description: "Here the desciption",
+    type: "start",
     completed: true,
+    tutorialUrl: "https://www.youtube.com/watch?v=FYCauVeo8OY",
+    statementUrl:
+      "https://www.frontendmentor.io/challenges/blog-preview-card-ckPaj01IcS",
+    githubUrl: "https://github.com/SofiaBargues/blog-preview-card",
+    demoUrl: "https://blog-preview-card-xi-gules.vercel.app/",
+    imgSource:
+      "https://res.cloudinary.com/dz209s6jk/image/upload/v1703155661/Challenges/iyh3uk6keluskixx8pz6.jpg",
   },
   {
-    name: "Pseudo selectors",
-    description:
-      "You can use CSS pseudo selectors to change specific HTML elements. In this course, you'll build a balance sheet using pseudo selectors. You'll learn how to change the style of an element when you hover over it with your mouse, and trigger other events on your webpage.",
-    type: "course",
-    completed: false,
+    name: "Pricing component with toggle",
+    description: "Here the desciption",
+    type: "start",
+    completed: true,
+    tutorialUrl: "https://www.youtube.com/watch?v=3n22cowxoKU",
+    statementUrl:
+      "https://www.frontendmentor.io/challenges/blog-preview-card-ckPaj01IcS",
+    githubUrl: "https://github.com/SofiaBargues/blog-preview-card",
+    demoUrl: "https://blog-preview-card-xi-gules.vercel.app/",
+    imgSource:
+      "https://res.cloudinary.com/dz209s6jk/image/upload/v1703155661/Challenges/iyh3uk6keluskixx8pz6.jpg",
   },
   {
-    name: "Intermediate CSS",
-    description:
-      "In this course, you'll learn how to use some intermediate CSS techniques by coding your own Picasso painting webpage. You'll learn about SVG icons, CSS positioning, and review other CSS skills you've learned.",
-    type: "course",
-    completed: false,
-  },
-  {
-    name: "Responsive design",
-    description: "Empty",
-    type: "course",
-    completed: false,
-  },
-  {
-    name: "Documentation page project",
-    description:
-      "Responsive Design tells your webpage how it should look on different-sized screens. In this course, you'll use CSS and Responsive Design to code a piano. You'll also learn more about media queries and pseudo selectors.",
+    name: "Age calculator app",
+    description: "Here the desciption",
     type: "start",
     completed: false,
+    tutorialUrl: "https://www.youtube.com/watch?v=3n22cowxoKU",
+    statementUrl:
+      "https://www.frontendmentor.io/challenges/blog-preview-card-ckPaj01IcS",
+    githubUrl: "https://github.com/SofiaBargues/blog-preview-card",
+    demoUrl: "https://blog-preview-card-xi-gules.vercel.app/",
+    imgSource:
+      "https://res.cloudinary.com/dz209s6jk/image/upload/v1703155661/Challenges/iyh3uk6keluskixx8pz6.jpg",
   },
   {
-    name: "Variables",
-    description:
-      "CSS variables help you organize your styles and reuse them. In this course, you'll build a city skyline. You'll learn how to configure CSS variables so you can reuse them whenever you want.",
-    type: "course",
-    completed: false,
-  },
-  {
-    name: "Grid",
-    description:
-      "CSS Grid gives you control over the rows and columns of your webpage design. In this course, you'll build a magazine article. You'll learn how to use CSS Grid, including concepts like grid rows and grid columns.",
-    type: "course",
-    completed: false,
-  },
-  {
-    name: "Landing page project",
-    description:
-      "This is one of the required projects to earn your certification. For this project, you will build a product landing page to market a product of your choice.",
+    name: "Interactive pricing component",
+    description: "Here the desciption",
     type: "start",
     completed: false,
+    tutorialUrl: "https://www.youtube.com/watch?v=3n22cowxoKU",
+    statementUrl:
+      "https://www.frontendmentor.io/challenges/blog-preview-card-ckPaj01IcS",
+    githubUrl: "https://github.com/SofiaBargues/blog-preview-card",
+    demoUrl: "https://blog-preview-card-xi-gules.vercel.app/",
+    imgSource:
+      "https://res.cloudinary.com/dz209s6jk/image/upload/v1703155661/Challenges/iyh3uk6keluskixx8pz6.jpg",
   },
   {
-    name: "Animations",
-    description:
-      "You can use CSS animation to draw attention to specific sections of your webpage and make it more engaging. In this course, you'll build a Ferris wheel. You'll learn how to use CSS to animate elements, transform them, and adjust their speed.",
-    type: "course",
+    name: " Social media dashboard",
+    description: "Here the desciption",
+    type: "start",
     completed: false,
+    tutorialUrl: "https://www.youtube.com/watch?v=3n22cowxoKU",
+    statementUrl:
+      "https://www.frontendmentor.io/challenges/blog-preview-card-ckPaj01IcS",
+    githubUrl: "https://github.com/SofiaBargues/blog-preview-card",
+    demoUrl: "https://blog-preview-card-xi-gules.vercel.app/",
+    imgSource:
+      "https://res.cloudinary.com/dz209s6jk/image/upload/v1703155661/Challenges/iyh3uk6keluskixx8pz6.jpg",
   },
   {
-    name: "Transforms",
-    description:
-      "You can transform HTML elements to create appealing designs that draw your reader's eye. You can use transforms to rotate elements, scale them, and more. In this course, you'll build a penguin. You'll use CSS transforms to position and resize the parts of your penguin, create a background, and animate your work.",
-    type: "course",
+    name: "Advice generator app",
+    description: "Here the desciption",
+    type: "start",
     completed: false,
+    tutorialUrl: "https://www.youtube.com/watch?v=3n22cowxoKU",
+    statementUrl:
+      "https://www.frontendmentor.io/challenges/blog-preview-card-ckPaj01IcS",
+    githubUrl: "https://github.com/SofiaBargues/blog-preview-card",
+    demoUrl: "https://blog-preview-card-xi-gules.vercel.app/",
+    imgSource:
+      "https://res.cloudinary.com/dz209s6jk/image/upload/v1703155661/Challenges/iyh3uk6keluskixx8pz6.jpg",
   },
   {
-    name: "Portfolio web project",
-    description:
-      "This is one of the required projects to earn your certification. For this project, you will build your own personal portfolio page.",
-    type: "course",
+    name: "Weather App",
+    description: "Here the desciption",
+    type: "start",
     completed: false,
+    tutorialUrl: "https://www.youtube.com/watch?v=3n22cowxoKU",
+    statementUrl:
+      "https://www.frontendmentor.io/challenges/blog-preview-card-ckPaj01IcS",
+    githubUrl: "https://github.com/SofiaBargues/blog-preview-card",
+    demoUrl: "https://blog-preview-card-xi-gules.vercel.app/",
+    imgSource:
+      "https://res.cloudinary.com/dz209s6jk/image/upload/v1703155661/Challenges/iyh3uk6keluskixx8pz6.jpg",
   },
 ];
 
@@ -382,8 +438,8 @@ export default function Home() {
       <main className="flex flex-col items-center w-full  pb-24">
         <Hero />
         <div className="flex flex-col items-center w-full ">
-          <Section name="HTML + CSS" items={HTMLitems} />
-          <Section name="CSS" items={CSSitems} />
+          <Section name="HTML + CSS" items={HTMLCSS} />
+          <Section name="HTML + CSS + JS" items={HTMLCSSJS} />
           {/* <Section name="Static websites" items={StaticSiteItems} />
           <Section name="Git" items={GitItems} />
           <Section name="JavaScript and DOM" items={JSItems} />
@@ -586,8 +642,7 @@ function MyButton({ url, name }) {
       rel="noopener, noreferrer"
       className="btn btn-ghost drawer-button  normal-case"
     >
-      {" "}
-      <div className="flex-none items-center">{name}</div>{" "}
+      <div className="flex-none items-center">{name}</div>
     </a>
   );
 }
@@ -619,6 +674,7 @@ function itemToStep(item: Item, index: number, items: Item[]) {
       disabled={!item.completed}
       key={item.name}
       item={item}
+      imgSource={item.imgSource}
     ></Step>
   );
 }
@@ -716,11 +772,13 @@ function Step({ alignment, disabled = false, item }: StepProps) {
         <dialog id={item.name} className="modal">
           <form method="dialog" className="modal-box">
             <h3 className="font-bold text-lg">{item.name}</h3>
+
+            <img src={item.imgSource} alt="" />
             <p className="py-4">{item.description}</p>
-            <div className=" flex  gap-4">
+            <div className=" flex w-full justify-between ">
+              <MyButton url={item.statementUrl} name="Statement" />
               <MyButton url={item.githubUrl} name="GitHub" />
               <MyButton url={item.demoUrl} name="Demo" />
-              <MyButton url={item.statementUrl} name="Statement" />
               <MyButton url={item.tutorialUrl} name="Tutorial" />
             </div>
 
