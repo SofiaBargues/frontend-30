@@ -65,8 +65,8 @@ const HTMLCSS: Item[] = [
     tutorialUrl: "https://www.youtube.com/watch?v=PlUOMi23qAc",
     statementUrl:
       "https://www.frontendmentor.io/challenges/social-links-profile-UG32l9m6dQ",
-    githubUrl: "https://github.com/SofiaBargues/blog-preview-card",
-    demoUrl: "https://blog-preview-card-xi-gules.vercel.app/",
+    githubUrl: "https://github.com/SofiaBargues/social-links-profile-main",
+    demoUrl: "https://social-links-profile-main-yycc.vercel.app/",
     imgSource: "/social-links-profile.jpg",
   },
   {
@@ -77,8 +77,8 @@ const HTMLCSS: Item[] = [
     tutorialUrl: "https://www.youtube.com/watch?v=wF2DLQGeJS0&t=185s",
     statementUrl:
       "https://www.frontendmentor.io/challenges/recipe-page-KiTsR8QQKm",
-    githubUrl: "https://github.com/SofiaBargues/blog-preview-card",
-    demoUrl: "https://blog-preview-card-xi-gules.vercel.app/",
+    githubUrl: "https://github.com/SofiaBargues/recipe-page",
+    demoUrl: "https://testimonialsgrid-section-qr3w.vercel.app/",
     imgSource: "/recipe-page.jpg",
   },
   {
@@ -90,8 +90,9 @@ const HTMLCSS: Item[] = [
       "https://www.youtube.com/watch?v=0TiIJjC7Olw&list=PLrVXEY3WfL-39_2q2HiKkuyNxelQI1XeV",
     statementUrl:
       "https://www.frontendmentor.io/challenges/testimonials-grid-section-Nnw6J7Un7",
-    githubUrl: "https://github.com/SofiaBargues/blog-preview-card",
-    demoUrl: "https://blog-preview-card-xi-gules.vercel.app/",
+    githubUrl: "https://github.com/SofiaBargues/testimonialsgrid-section",
+    demoUrl:
+      "https://testimonialsgrid-section-git-main-sofiabargues-projects.vercel.app/",
     imgSource: "/testimonials-grid-section.jpg",
   },
   {
@@ -103,8 +104,8 @@ const HTMLCSS: Item[] = [
       "https://www.youtube.com/watch?v=SKhZ0IBk1_A&list=PLrVXEY3WfL-39_2q2HiKkuyNxelQI1XeV&index=2",
     statementUrl:
       "https://www.frontendmentor.io/learning-paths/javascript-fundamentals-oR7g6-mTZ-/steps/665e1b4e6ec3887a3b142b16/challenge/start",
-    githubUrl: "https://github.com/SofiaBargues/blog-preview-card",
-    demoUrl: "https://blog-preview-card-xi-gules.vercel.app/",
+    githubUrl: "https://github.com/SofiaBargues/article-preview-component",
+    demoUrl: "https://article-preview-component-sable.vercel.app/",
     imgSource: "/article-preview.jpg",
   },
 ];
@@ -118,8 +119,8 @@ const HTMLCSSJS: Item[] = [
     tutorialUrl: "https://www.youtube.com/watch?v=l9Qw8y3LfCY",
     statementUrl:
       "https://www.frontendmentor.io/challenges/time-tracking-dashboard-UIQ7167Jw",
-    githubUrl: "https://github.com/SofiaBargues/blog-preview-card",
-    demoUrl: "https://blog-preview-card-xi-gules.vercel.app/",
+    githubUrl: "https://github.com/SofiaBargues/time-tracking-dashboard",
+    demoUrl: "https://time-tracking-dashboard-pied.vercel.app/",
     imgSource: "/time-tracking-dashboard.jpg",
   },
   {
@@ -131,8 +132,8 @@ const HTMLCSSJS: Item[] = [
       "https://www.youtube.com/watch?v=abdsoVJsWzQ&list=PLrVXEY3WfL-39_2q2HiKkuyNxelQI1XeV&index=3",
     statementUrl:
       "https://www.frontendmentor.io/challenges/newsletter-signup-form-with-success-message-3FC1AZbNrv/hub",
-    githubUrl: "https://github.com/SofiaBargues/blog-preview-card",
-    demoUrl: "https://blog-preview-card-xi-gules.vercel.app/",
+    githubUrl: "https://github.com/SofiaBargues/newsletter-sign-up",
+    demoUrl: "https://frontend-mentor-newsletter-signup-form-ruby.vercel.app/",
     imgSource: "/newsletter-singup-form.jpg",
   },
   {
@@ -143,8 +144,8 @@ const HTMLCSSJS: Item[] = [
     tutorialUrl: "https://www.youtube.com/watch?v=s9CHPlY8J8I",
     statementUrl:
       "https://www.frontendmentor.io/challenges/expenses-chart-component-e7yJBUdjwt",
-    githubUrl: "https://github.com/SofiaBargues/blog-preview-card",
-    demoUrl: "https://blog-preview-card-xi-gules.vercel.app/",
+    githubUrl: "https://github.com/SofiaBargues/expensesChartComponent",
+    demoUrl: "https://expenses-chart-component-rho-amber.vercel.app/",
     imgSource: "/expenses-chart-component.jpg",
   },
   {
@@ -418,9 +419,9 @@ export default function Home() {
         </Link>
 
         <div id="group2" className="flex gap-2">
-          <ThemeChange dropdownClasses="..." />
           <GitHub />
           <LinkedIn />
+          <ThemeChange dropdownClasses="..." />
         </div>
       </nav>
       <main className="flex flex-col items-center w-full  pb-24">
@@ -428,12 +429,6 @@ export default function Home() {
         <div className="flex flex-col items-center w-full ">
           <Section name="HTML + CSS" items={HTMLCSS} />
           <Section name="HTML + CSS + JS" items={HTMLCSSJS} />
-          {/* <Section name="Static websites" items={StaticSiteItems} />
-          <Section name="Git" items={GitItems} />
-          <Section name="JavaScript and DOM" items={JSItems} />
-          <Section name="React" items={ReactItems} />
-          <Section name="Interactive apps" items={IntAppItems} />
-          <Section name="Job search" items={JobItems} /> */}
         </div>
       </main>
       <footer className="footer footer-center p-4 bg-primary text-primary-content mt-20 fixed bottom-0">
