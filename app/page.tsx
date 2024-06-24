@@ -407,7 +407,7 @@ export default function Home() {
             <div>
               <label className="avatar">
                 <div className="w-10 rounded-full border-2 ">
-                  <img src="/avatarColor.png" />
+                  <img src="/avatarColor.png" alt=" " />
                 </div>
               </label>
             </div>
