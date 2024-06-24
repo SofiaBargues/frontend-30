@@ -1,17 +1,7 @@
 "use client";
 
 import Image from "next/image";
-// import article from "./public/article-preview.jpg";
-// import blog from "./public/blog-preview-card.jpg";
-// import expenses from "./public/expenses-chart-component.jpg";
-// import interactive from "./public/interactive-pricing-component.jpg";
-// import newslettere from "./public/newsletter-singup-form.jpg";
-// import qr from "./public/qr-code-component.jpg";
-// import recipe from "./public/recipe-page.jpg";
-// import social from "./public/social-links-profile.jpg";
-// import testimonials from "./public/testimonials-grid-section.jpg";
-// import time from "./public/time-tracking-dashboard.jpg";
-// import tip from "./public/tip-calculator-app.jpg";
+
 import {
   Book,
   Camera,
@@ -65,8 +55,7 @@ const HTMLCSS: Item[] = [
       "https://www.frontendmentor.io/challenges/blog-preview-card-ckPaj01IcS",
     githubUrl: "https://github.com/SofiaBargues/blog-preview-card",
     demoUrl: "https://blog-preview-card-xi-gules.vercel.app/",
-    imgSource:
-      "https://res.cloudinary.com/dz209s6jk/image/upload/v1703155661/Challenges/iyh3uk6keluskixx8pz6.jpg",
+    imgSource: "/blog-preview-card.jpg",
   },
   {
     name: "Social links profile",
@@ -78,8 +67,7 @@ const HTMLCSS: Item[] = [
       "https://www.frontendmentor.io/challenges/social-links-profile-UG32l9m6dQ",
     githubUrl: "https://github.com/SofiaBargues/blog-preview-card",
     demoUrl: "https://blog-preview-card-xi-gules.vercel.app/",
-    imgSource:
-      "https://res.cloudinary.com/dz209s6jk/image/upload/v1703155661/Challenges/iyh3uk6keluskixx8pz6.jpg",
+    imgSource: "/social-links-profile.jpg",
   },
   {
     name: "Recipe page",
@@ -91,8 +79,7 @@ const HTMLCSS: Item[] = [
       "https://www.frontendmentor.io/challenges/recipe-page-KiTsR8QQKm",
     githubUrl: "https://github.com/SofiaBargues/blog-preview-card",
     demoUrl: "https://blog-preview-card-xi-gules.vercel.app/",
-    imgSource:
-      "https://res.cloudinary.com/dz209s6jk/image/upload/v1703155661/Challenges/iyh3uk6keluskixx8pz6.jpg",
+    imgSource: "/recipe-page.jpg",
   },
   {
     name: "Testimonials grid section",
@@ -105,8 +92,7 @@ const HTMLCSS: Item[] = [
       "https://www.frontendmentor.io/challenges/testimonials-grid-section-Nnw6J7Un7",
     githubUrl: "https://github.com/SofiaBargues/blog-preview-card",
     demoUrl: "https://blog-preview-card-xi-gules.vercel.app/",
-    imgSource:
-      "https://res.cloudinary.com/dz209s6jk/image/upload/v1703155661/Challenges/iyh3uk6keluskixx8pz6.jpg",
+    imgSource: "/testimonials-grid-section.jpg",
   },
   {
     name: "Article preview component",
@@ -119,8 +105,7 @@ const HTMLCSS: Item[] = [
       "https://www.frontendmentor.io/learning-paths/javascript-fundamentals-oR7g6-mTZ-/steps/665e1b4e6ec3887a3b142b16/challenge/start",
     githubUrl: "https://github.com/SofiaBargues/blog-preview-card",
     demoUrl: "https://blog-preview-card-xi-gules.vercel.app/",
-    imgSource:
-      "https://res.cloudinary.com/dz209s6jk/image/upload/v1703155661/Challenges/iyh3uk6keluskixx8pz6.jpg",
+    imgSource: "/article-preview.jpg",
   },
 ];
 
@@ -135,8 +120,7 @@ const HTMLCSSJS: Item[] = [
       "https://www.frontendmentor.io/challenges/time-tracking-dashboard-UIQ7167Jw",
     githubUrl: "https://github.com/SofiaBargues/blog-preview-card",
     demoUrl: "https://blog-preview-card-xi-gules.vercel.app/",
-    imgSource:
-      "https://res.cloudinary.com/dz209s6jk/image/upload/v1703155661/Challenges/iyh3uk6keluskixx8pz6.jpg",
+    imgSource: "/time-tracking-dashboard.jpg",
   },
   {
     name: "Newsletter sign-up form with success message",
@@ -149,8 +133,7 @@ const HTMLCSSJS: Item[] = [
       "https://www.frontendmentor.io/challenges/newsletter-signup-form-with-success-message-3FC1AZbNrv/hub",
     githubUrl: "https://github.com/SofiaBargues/blog-preview-card",
     demoUrl: "https://blog-preview-card-xi-gules.vercel.app/",
-    imgSource:
-      "https://res.cloudinary.com/dz209s6jk/image/upload/v1703155661/Challenges/iyh3uk6keluskixx8pz6.jpg",
+    imgSource: "/newsletter-singup-form.jpg",
   },
   {
     name: "Expenses chart component",
@@ -162,8 +145,7 @@ const HTMLCSSJS: Item[] = [
       "https://www.frontendmentor.io/challenges/expenses-chart-component-e7yJBUdjwt",
     githubUrl: "https://github.com/SofiaBargues/blog-preview-card",
     demoUrl: "https://blog-preview-card-xi-gules.vercel.app/",
-    imgSource:
-      "https://res.cloudinary.com/dz209s6jk/image/upload/v1703155661/Challenges/iyh3uk6keluskixx8pz6.jpg",
+    imgSource: "/expenses-chart-component.jpg",
   },
   {
     name: "Tip calculator",
@@ -173,10 +155,9 @@ const HTMLCSSJS: Item[] = [
     tutorialUrl: "https://www.youtube.com/watch?v=FYCauVeo8OY",
     statementUrl:
       "https://www.frontendmentor.io/challenges/tip-calculator-app-ugJNGbJUX",
-    githubUrl: "https://github.com/SofiaBargues/blog-preview-card",
-    demoUrl: "https://blog-preview-card-xi-gules.vercel.app/",
-    imgSource:
-      "https://res.cloudinary.com/dz209s6jk/image/upload/v1703155661/Challenges/iyh3uk6keluskixx8pz6.jpg",
+    githubUrl: "https://github.com/SofiaBargues/tip-calculator-app-main",
+    demoUrl: "https://tip-calculator-app-main-ivory.vercel.app/",
+    imgSource: "/tip-calculator-app.jpg",
   },
   {
     name: "Pricing component with toggle",
@@ -188,8 +169,7 @@ const HTMLCSSJS: Item[] = [
       "https://www.frontendmentor.io/challenges/pricing-component-with-toggle-8vPwRMIC",
     githubUrl: "https://github.com/SofiaBargues/blog-preview-card",
     demoUrl: "https://blog-preview-card-xi-gules.vercel.app/",
-    imgSource:
-      "https://res.cloudinary.com/dz209s6jk/image/upload/v1703155661/Challenges/iyh3uk6keluskixx8pz6.jpg",
+    imgSource: "/pricing-component-with-toggle.jpg",
   },
   {
     name: "Age calculator app",
@@ -201,8 +181,7 @@ const HTMLCSSJS: Item[] = [
       "https://www.frontendmentor.io/challenges/age-calculator-app-dF9DFFpj-Q",
     githubUrl: "https://github.com/SofiaBargues/blog-preview-card",
     demoUrl: "https://blog-preview-card-xi-gules.vercel.app/",
-    imgSource:
-      "https://res.cloudinary.com/dz209s6jk/image/upload/v1703155661/Challenges/iyh3uk6keluskixx8pz6.jpg",
+    imgSource: "/age-calculator-app.jpg",
   },
   {
     name: "Interactive pricing component",
@@ -214,8 +193,7 @@ const HTMLCSSJS: Item[] = [
       "https://www.frontendmentor.io/challenges/interactive-pricing-component-t0m8PIyY8",
     githubUrl: "https://github.com/SofiaBargues/blog-preview-card",
     demoUrl: "https://blog-preview-card-xi-gules.vercel.app/",
-    imgSource:
-      "https://res.cloudinary.com/dz209s6jk/image/upload/v1703155661/Challenges/iyh3uk6keluskixx8pz6.jpg",
+    imgSource: "/interactive-pricing-component.jpg",
   },
   {
     name: "Social media dashboard",
