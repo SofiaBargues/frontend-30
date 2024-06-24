@@ -78,7 +78,7 @@ const HTMLCSS: Item[] = [
     statementUrl:
       "https://www.frontendmentor.io/challenges/recipe-page-KiTsR8QQKm",
     githubUrl: "https://github.com/SofiaBargues/recipe-page",
-    demoUrl: "https://testimonialsgrid-section-qr3w.vercel.app/",
+    demoUrl: "https://recipe-page-alpha-ten.vercel.app/",
     imgSource: "/recipe-page.jpg",
   },
   {
