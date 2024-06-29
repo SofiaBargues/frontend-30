@@ -1,5 +1,5 @@
 {
-  "name": "blog-app",
+  "name": "frontend-30",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -28,6 +28,7 @@
     "typewriter-effect": "^2.20.1"
   },
   "devDependencies": {
-    "prettier": "2.8.8"
+    "prettier": "^3.3.2",
+    "prettier-plugin-tailwindcss": "^0.6.5"
   }
 }

@@ -401,19 +401,19 @@ const themes = [
 
 export default function Home() {
   return (
-    <div className=" min-h-screen text-base-content flex flex-col items-center bg-base-100 ">
-      <nav className="navbar z-10 text-base-content bg-base-300 justify-between fixed top-0 border-b-primary border-b-2">
+    <div className="flex min-h-screen flex-col items-center bg-base-100 text-base-content">
+      <nav className="navbar fixed top-0 z-10 justify-between border-b-2 border-b-primary bg-base-300 text-base-content">
         <Link href="/">
-          <div id="group1 " className="btn btn-ghost ml-2 flex gap-2">
+          <div id="group1 " className="btn-ghost btn ml-2 flex gap-2">
             <div>
               <label className="avatar">
-                <div className="w-10 rounded-full border-2 ">
+                <div className="w-10 rounded-full border-2">
                   <img src="/avatarColor.png" alt=" " />
                 </div>
               </label>
             </div>
             <div>
-              <p className=" font-bold normal-case text-xl ">Frontend 30</p>
+              <p className="text-xl font-bold normal-case">Frontend 30</p>
             </div>
           </div>
         </Link>
@@ -424,14 +424,14 @@ export default function Home() {
           <ThemeChange dropdownClasses="..." />
         </div>
       </nav>
-      <main className="flex flex-col items-center w-full container pb-24">
+      <main className="container flex w-full flex-col items-center pb-24">
         <Hero />
-        <div className="flex flex-col items-center w-full ">
+        <div className="flex w-full flex-col items-center">
           <Section name="HTML + CSS" items={HTMLCSS} />
           <Section name="HTML + CSS + JS" items={HTMLCSSJS} />
         </div>
       </main>
-      <footer className="footer footer-center p-4 bg-primary text-primary-content mt-20 fixed bottom-0">
+      <footer className="footer footer-center fixed bottom-0 mt-20 bg-primary p-4 text-primary-content">
         <div>
           <p>
             Sofia Bargues - 2024 -
@@ -461,7 +461,7 @@ function ThemeChange({
   return (
     <div
       title="Change Theme"
-      className={`dropdown dropdown-end ${dropdownClasses}`}
+      className={`dropdown-end dropdown ${dropdownClasses}`}
     >
       <div tabIndex={0} className={`btn normal-case ${btnClasses}`}>
         <svg
@@ -494,20 +494,20 @@ function ThemeChange({
       </div>
       <div
         tabIndex={0}
-        className={`dropdown-content z-[1] menu bg-base-200 text-base-content rounded-box top-px  p-3 shadow ${contentClasses}`}
+        className={`dropdown-content menu rounded-box top-px z-[1] bg-base-200 p-3 text-base-content shadow ${contentClasses}`}
       >
-        <div className="overflow-y-auto h-[70vh] max-h-96 w-56">
+        <div className="h-[70vh] max-h-96 w-56 overflow-y-auto">
           <div className="grid grid-cols-1 gap-3 pr-2">
             {themes.map((theme) => (
               <button
                 key={theme.id}
-                className="outline-base-content overflow-hidden rounded-lg text-left"
+                className="overflow-hidden rounded-lg text-left outline-base-content"
                 data-set-theme={theme.id}
                 data-act-class="[&_svg]:visible"
               >
                 <div
                   data-theme={theme.id}
-                  className="bg-base-100 text-base-content w-full cursor-pointer font-sans"
+                  className="w-full cursor-pointer bg-base-100 font-sans text-base-content"
                 >
                   <div className="grid grid-cols-5 grid-rows-3">
                     <div className="col-span-5 row-span-3 row-start-1 flex items-center gap-2 px-4 py-3">
@@ -523,10 +523,10 @@ function ThemeChange({
                       </svg>
                       <div className="flex-grow text-sm">{theme.id}</div>
                       <div className="flex h-full flex-shrink-0 flex-wrap gap-1">
-                        <div className="bg-primary w-2 rounded" />
-                        <div className="bg-secondary w-2 rounded" />
-                        <div className="bg-accent w-2 rounded" />
-                        <div className="bg-neutral w-2 rounded" />
+                        <div className="w-2 rounded bg-primary" />
+                        <div className="w-2 rounded bg-secondary" />
+                        <div className="w-2 rounded bg-accent" />
+                        <div className="w-2 rounded bg-neutral" />
                       </div>
                     </div>
                   </div>
@@ -546,13 +546,13 @@ function LinkedIn() {
       className="tooltip tooltip-bottom before:text-xs before:content-[attr(data-tip)]"
       data-tip="LinkedIn"
     >
-      <div className="flex-none items-center ">
+      <div className="flex-none items-center">
         <a
           aria-label="LinkedIn"
           target="_blank"
           href="https://www.linkedin.com/in/sofia-bargues/"
           rel="noopener, noreferrer"
-          className="btn btn-ghost drawer-button btn-square normal-case"
+          className="btn-ghost drawer-button btn-square btn normal-case"
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -580,7 +580,7 @@ function GitHub() {
           target="_blank"
           href="https://github.com/SofiaBargues/roadmap"
           rel="noopener, noreferrer"
-          className="btn btn-ghost drawer-button btn-square normal-case"
+          className="btn-ghost drawer-button btn-square btn normal-case"
         >
           <svg
             width="20"
@@ -623,7 +623,7 @@ function MyButton({ url, name }: { url: any; name: string }) {
       target="_blank"
       href={url}
       rel="noopener, noreferrer"
-      className="btn btn-ghost drawer-button  normal-case"
+      className="btn-ghost drawer-button btn normal-case"
     >
       <div className="flex-none items-center">{name}</div>
     </a>
@@ -632,9 +632,9 @@ function MyButton({ url, name }: { url: any; name: string }) {
 
 function Section({ name, items }: { name: string; items: Item[] }) {
   return (
-    <section className="flex flex-col  w-full items-stretch">
+    <section className="flex w-full flex-col items-stretch">
       <SectionHeader text={name} />
-      <div className="flex flex-col items-center pb-8 gap-8">
+      <div className="flex flex-col items-center gap-8 pb-8">
         {items.map(itemToStep)}
       </div>
     </section>
@@ -664,8 +664,8 @@ function itemToStep(item: Item, index: number, items: Item[]) {
 
 function SectionHeader({ text }: { text: string }) {
   return (
-    <header className=" mt-6 mb-6 bg-secondary p-4 md:mx-10 md:rounded-xl ">
-      <h2 className="text-center text-secondary-content font-semibold text-2xl sm:text-3xl lg:text-4xl ">
+    <header className="mb-6 mt-6 bg-secondary p-4 md:mx-10 md:rounded-xl">
+      <h2 className="text-center text-2xl font-semibold text-secondary-content sm:text-3xl lg:text-4xl">
         {text}
       </h2>
     </header>
@@ -677,7 +677,7 @@ function Hero({}: {}) {
     <div className="hero min-h-screen bg-base-200">
       <div className="hero-content text-center">
         <div className="flex flex-col items-center">
-          <h1 className="max-w-2xl text-5xl sm:text-7xl lg:text-8xl font-bold">
+          <h1 className="max-w-2xl text-5xl font-bold sm:text-7xl lg:text-8xl">
             My
             <br />
             <div className="h-12 sm:h-[4.5rem] lg:h-24">
@@ -692,7 +692,7 @@ function Hero({}: {}) {
             </div>
             <span>Adventure</span>
           </h1>
-          <p className="max-w-xl py-6 sm:text-xl lg:text-2xl mt-2">
+          <p className="mt-2 max-w-xl py-6 sm:text-xl lg:text-2xl">
             {
               "Let's create awesome websites together! I'll share the courses and projects I'm working on. I hope it inspires other beginners while showing my growth. Let's explore web development together!"
             }
@@ -730,15 +730,15 @@ function Step({ alignment, disabled = false, item }: StepProps) {
   }
 
   return (
-    <div className="p-6 flex flex-col md:flex-row rounded-lg items-center  w-full justify-center border-2 border-primary">
-      <div className=" bg-orange-200 w-full md:w-[400px] flex justify-center">
+    <div className="flex w-full flex-col items-center justify-center rounded-lg border-2 border-primary p-6 md:flex-row">
+      <div className="flex h-[200px] w-full justify-center bg-orange-200 md:h-[200px] md:w-[400px]">
         <img src={item.imgSource} alt="" className="rounded-lg" />
       </div>
-      <div className="flex flex-col m-3 w-full">
-        <h3 className="font-bold text-lg p-[1rem]">{item.name}</h3>
-        <p className="py-4  p-[1rem]">{item.description}</p>
+      <div className="m-3 flex w-full flex-col">
+        <h3 className="p-[1rem] text-lg font-bold">{item.name}</h3>
+        <p className="p-[1rem] py-4">{item.description}</p>
         <p>{item.completed === true ? "Complete" : "Incomplete"}</p>
-        <div className=" flex w-full justify-between ">
+        <div className="flex w-full justify-between">
           <MyButton url={item.statementUrl} name="Statement" />
           <MyButton url={item.githubUrl} name="GitHub" />
           <MyButton url={item.demoUrl} name="Demo" />
