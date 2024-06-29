@@ -401,7 +401,7 @@ const themes = [
 
 export default function Home() {
   return (
-    <div className=" min-h-screen text-base-content bg-base-100 ">
+    <div className=" min-h-screen text-base-content flex flex-col items-center bg-base-100 ">
       <nav className="navbar z-10 text-base-content bg-base-300 justify-between fixed top-0 border-b-primary border-b-2">
         <Link href="/">
           <div id="group1 " className="btn btn-ghost ml-2 flex gap-2">
@@ -424,7 +424,7 @@ export default function Home() {
           <ThemeChange dropdownClasses="..." />
         </div>
       </nav>
-      <main className="flex flex-col items-center w-full  pb-24">
+      <main className="flex flex-col items-center w-full container pb-24">
         <Hero />
         <div className="flex flex-col items-center w-full ">
           <Section name="HTML + CSS" items={HTMLCSS} />
@@ -730,48 +730,19 @@ function Step({ alignment, disabled = false, item }: StepProps) {
   }
 
   return (
-    <div className={cn("relative", alignment)}>
-      <div className="flex flex-col items-center">
-        <button
-          className={cn(
-            "mb-2 btn btn-circle  btn-lg border-4 border-primary",
-            disabled && "btn-disabled border-primary/20"
-          )}
-          onClick={() =>
-            (
-              document.getElementById(item.name) as HTMLDialogElement
-            ).showModal()
-          }
-        >
-          {icon}
-        </button>
-        <p
-          className={cn(
-            " text-lg font-semibold  sm:text-xl",
-            disabled && "text-base-content/20"
-          )}
-        >
-          {item.name}
-        </p>
-        <dialog id={item.name} className="modal">
-          <form method="dialog" className="modal-box">
-            <h3 className="font-bold text-lg">{item.name}</h3>
-
-            <img src={item.imgSource} alt="" />
-            <p className="py-4">{item.description}</p>
-            <div className=" flex w-full justify-between ">
-              <MyButton url={item.statementUrl} name="Statement" />
-              <MyButton url={item.githubUrl} name="GitHub" />
-              <MyButton url={item.demoUrl} name="Demo" />
-              <MyButton url={item.tutorialUrl} name="Tutorial" />
-            </div>
-
-            <div className="modal-action">
-              {/* if there is a button in form, it will close the modal */}
-              <button className="btn">Close</button>
-            </div>
-          </form>
-        </dialog>
+    <div className="p-6 bg-slate-100 flex flex-col md:flex-row rounded-lg items-center  w-full justify-center">
+      <div className="bg-orange-400 w-full md:[300px] flex justify-center">
+        <img src={item.imgSource} alt="" className="h-64 md:h-48 rounded-lg" />
+      </div>
+      <div className="flex flex-col m-3">
+        <h3 className="font-bold text-lg p-[1rem]">{item.name}</h3>
+        <p className="py-4  p-[1rem]">{item.description}</p>
+        <div className=" flex w-full justify-between ">
+          <MyButton url={item.statementUrl} name="Statement" />
+          <MyButton url={item.githubUrl} name="GitHub" />
+          <MyButton url={item.demoUrl} name="Demo" />
+          <MyButton url={item.tutorialUrl} name="Tutorial" />
+        </div>
       </div>
     </div>
   );
