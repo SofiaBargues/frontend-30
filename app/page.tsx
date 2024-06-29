@@ -731,12 +731,13 @@ function Step({ alignment, disabled = false, item }: StepProps) {
 
   return (
     <div className="p-6 flex flex-col md:flex-row rounded-lg items-center  w-full justify-center border-2 border-primary">
-      <div className="  w-full md:[300px] flex justify-center">
-        <img src={item.imgSource} alt="" className="h-64 md:h-48 rounded-lg" />
+      <div className=" bg-orange-200 w-full md:w-[400px] flex justify-center">
+        <img src={item.imgSource} alt="" className="rounded-lg" />
       </div>
-      <div className="flex flex-col m-3">
+      <div className="flex flex-col m-3 w-full">
         <h3 className="font-bold text-lg p-[1rem]">{item.name}</h3>
         <p className="py-4  p-[1rem]">{item.description}</p>
+        <p>{item.completed === true ? "Complete" : "Incomplete"}</p>
         <div className=" flex w-full justify-between ">
           <MyButton url={item.statementUrl} name="Statement" />
           <MyButton url={item.githubUrl} name="GitHub" />
