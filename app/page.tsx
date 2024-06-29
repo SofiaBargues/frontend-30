@@ -730,8 +730,8 @@ function Step({ alignment, disabled = false, item }: StepProps) {
   }
 
   return (
-    <div className="p-6 bg-slate-100 flex flex-col md:flex-row rounded-lg items-center  w-full justify-center">
-      <div className="bg-orange-400 w-full md:[300px] flex justify-center">
+    <div className="p-6 flex flex-col md:flex-row rounded-lg items-center  w-full justify-center border-2 border-primary">
+      <div className="  w-full md:[300px] flex justify-center">
         <img src={item.imgSource} alt="" className="h-64 md:h-48 rounded-lg" />
       </div>
       <div className="flex flex-col m-3">
