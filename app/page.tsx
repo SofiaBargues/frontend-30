@@ -168,8 +168,8 @@ const HTMLCSSJS: Item[] = [
     tutorialUrl: "https://www.youtube.com/watch?v=3n22cowxoKU",
     statementUrl:
       "https://www.frontendmentor.io/challenges/pricing-component-with-toggle-8vPwRMIC",
-    githubUrl: "https://github.com/SofiaBargues/blog-preview-card",
-    demoUrl: "https://blog-preview-card-xi-gules.vercel.app/",
+    githubUrl: "https://github.com/SofiaBargues/pricing-component-with-toggle",
+    demoUrl: "https://pricing-component-with-toggle-two-phi.vercel.app/",
     imgSource: "/pricing-component-with-toggle.jpg",
   },
   {
