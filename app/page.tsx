@@ -69,15 +69,7 @@ function Problems({ items }: { items: Item[] }) {
 }
 
 function itemToStep(item: Item, index: number, items: Item[]) {
-  return <Step disabled={!item.completed} item={item}></Step>;
-}
-
-function SectionHeader({ text }: { text: string }) {
   return (
-    <header className="mb-6 mt-6 bg-secondary p-4 md:mx-10 md:rounded-xl">
-      <h2 className="text-center text-2xl font-semibold text-secondary-content sm:text-3xl lg:text-4xl">
-        {text}
-      </h2>
-    </header>
+    <Step number={index + 1} disabled={!item.completed} item={item}></Step>
   );
 }
