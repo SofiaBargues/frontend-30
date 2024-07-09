@@ -9,7 +9,7 @@ export interface StepProps {
   item: Item;
   number: number;
   isDone: boolean;
-  setDone: () => void;
+  setDone: (isDone: boolean) => void;
 }
 
 export function Step({
