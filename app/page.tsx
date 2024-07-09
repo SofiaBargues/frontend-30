@@ -8,6 +8,7 @@ import { LinkedIn } from "./component/LinkedIn";
 import { GitHub } from "./component/GitHub";
 import { Step } from "./component/Step";
 import { Hero } from "./component/Hero";
+import { useState } from "react";
 
 export default function Home() {
   return (
@@ -59,17 +60,24 @@ export default function Home() {
 }
 
 function Problems({ items }: { items: Item[] }) {
+  const [isDone, setDone] = useState(false);
+
+  function itemToStep(item: Item, index: number, items: Item[]) {
+    return (
+      <Step
+        number={index + 1}
+        isDone={isDone}
+        setDone={setDone}
+        disabled={!item.completed}
+        item={item}
+      ></Step>
+    );
+  }
   return (
     <section className="flex w-full flex-col items-stretch">
       <div className="flex flex-col items-center gap-8 pb-8">
         {items.map(itemToStep)}
       </div>
     </section>
-  );
-}
-
-function itemToStep(item: Item, index: number, items: Item[]) {
-  return (
-    <Step number={index + 1} disabled={!item.completed} item={item}></Step>
   );
 }

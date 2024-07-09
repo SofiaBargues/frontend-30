@@ -8,18 +8,17 @@ export interface StepProps {
   disabled?: boolean;
   item: Item;
   number: number;
-  // isDone: boolean;
-  // setDone: ()=>();
+  isDone: boolean;
+  setDone: () => void;
 }
 
 export function Step({
   disabled = false,
   item,
   number,
-  // isDone,
-  // setDone,
+  isDone,
+  setDone,
 }: StepProps) {
-  const [isDone, setDone] = useState(false);
   let icon = <></>;
 
   function handleClick({ event }: { event: any }) {
