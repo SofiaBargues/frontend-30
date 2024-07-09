@@ -2,23 +2,12 @@
 
 import { Item } from "./component/Item";
 import Link from "next/link";
-import { HTMLCSS, HTMLCSSJS } from "./component/data";
+import { data } from "./component/data";
 import { ThemeChange } from "./component/ThemeChange";
 import { LinkedIn } from "./component/LinkedIn";
 import { GitHub } from "./component/GitHub";
 import { Step } from "./component/Step";
 import { Hero } from "./component/Hero";
-
-var alignments = [
-  "left-0",
-  "left-11",
-  "left-16",
-  "left-11",
-  "left-0",
-  "right-11",
-  "right-16",
-  "right-11",
-];
 
 export default function Home() {
   return (
@@ -48,8 +37,7 @@ export default function Home() {
       <main className="container flex w-full flex-col items-center pb-24">
         <Hero />
         <div className="flex w-full flex-col items-center">
-          <Section name="HTML + CSS" items={HTMLCSS} />
-          <Section name="HTML + CSS + JS" items={HTMLCSSJS} />
+          <Problems items={data} />
         </div>
       </main>
       <footer className="footer footer-center fixed bottom-0 mt-20 bg-primary p-4 text-primary-content">
@@ -70,10 +58,9 @@ export default function Home() {
   );
 }
 
-function Section({ name, items }: { name: string; items: Item[] }) {
+function Problems({ items }: { items: Item[] }) {
   return (
     <section className="flex w-full flex-col items-stretch">
-      <SectionHeader text={name} />
       <div className="flex flex-col items-center gap-8 pb-8">
         {items.map(itemToStep)}
       </div>
@@ -82,24 +69,7 @@ function Section({ name, items }: { name: string; items: Item[] }) {
 }
 
 function itemToStep(item: Item, index: number, items: Item[]) {
-  const alignmentIndex =
-    index === items.length - 1 ? 0 : index % alignments.length;
-  return (
-    <Step
-      name={item.name}
-      type={item.type}
-      githubUrl={item.githubUrl}
-      demoUrl={item.demoUrl}
-      description={item.description}
-      alignment={alignments[alignmentIndex]}
-      statementUrl={item.statementUrl}
-      tutorialUrl={item.tutorialUrl}
-      disabled={!item.completed}
-      key={item.name}
-      item={item}
-      imgSource={item.imgSource}
-    ></Step>
-  );
+  return <Step disabled={!item.completed} item={item}></Step>;
 }
 
 function SectionHeader({ text }: { text: string }) {

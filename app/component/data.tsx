@@ -1,6 +1,6 @@
 import { Item } from "./Item";
 
-export const HTMLCSS: Item[] = [
+export const data: Item[] = [
   {
     name: "QR code component",
     description: "Here the desciption",
@@ -76,9 +76,6 @@ export const HTMLCSS: Item[] = [
     demoUrl: "https://article-preview-component-sable.vercel.app/",
     imgSource: "/article-preview.jpg",
   },
-];
-
-export const HTMLCSSJS: Item[] = [
   {
     name: "Time tracking dashboard",
     description: "Here the desciption",
