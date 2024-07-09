@@ -1,7 +1,21 @@
 "use client";
 import { Book, Star, Cat } from "lucide-react";
 import { MyButton } from "./MyButton";
-import { StepProps } from "./page";
+import { Item } from "./Item";
+
+export interface StepProps {
+  name: string;
+  description: string;
+  alignment: string;
+  disabled?: boolean;
+  type: string;
+  item: Item;
+  statementUrl?: string;
+  demoUrl?: string;
+  githubUrl?: string;
+  tutorialUrl?: string;
+  imgSource?: string;
+}
 
 export function Step({ alignment, disabled = false, item }: StepProps) {
   let icon = <></>;
