@@ -60,14 +60,19 @@ export default function Home() {
 }
 
 function Problems({ items }: { items: Item[] }) {
-  const [isDone, setDone] = useState(false);
+  const [status, setStatus] = useState<boolean[]>(new Array(30).fill(false));
 
   function itemToStep(item: Item, index: number, items: Item[]) {
+    function handleSetDone(isDone: boolean) {
+      const statusCopi = [...status];
+      statusCopi[index] = isDone;
+      setStatus(statusCopi);
+    }
     return (
       <Step
         number={index + 1}
-        isDone={isDone}
-        setDone={setDone}
+        isDone={status[index]}
+        setDone={handleSetDone}
         disabled={!item.completed}
         item={item}
       ></Step>
