@@ -47,10 +47,10 @@ export function Step({
         <p className="p-[1rem] py-4">{item.description}</p>
         <p>{item.completed === true ? "Complete" : "Incomplete"}</p>
         <div className="flex w-full justify-between">
-          <MyButton url={item.statementUrl} name="Statement" />
-          <MyButton url={item.githubUrl} name="GitHub" />
-          <MyButton url={item.demoUrl} name="Demo" />
-          <MyButton url={item.tutorialUrl} name="Tutorial" />
+          <MyButton url={item.statementUrl} type="github" name="Statement" />
+          <MyButton url={item.githubUrl} name="GitHub" type="github" />
+          <MyButton url={item.demoUrl} name="Demo" type="github" />
+          <MyButton url={item.tutorialUrl} name="Tutorial" type="github" />
         </div>
       </div>
       <button
