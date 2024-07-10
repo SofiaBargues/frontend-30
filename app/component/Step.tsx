@@ -42,15 +42,15 @@ export function Step({
       <div className="flex h-[200px] w-full justify-center md:h-[200px] md:w-[400px]">
         <img src={item.imgSource} alt="" className="rounded-lg" />
       </div>
-      <div className="m-3 flex w-full flex-col">
-        <h3 className="p-[1rem] text-lg font-bold">{item.name}</h3>
-        <p className="p-[1rem] py-4">{item.description}</p>
+      <div className="m-10 flex w-full flex-col">
+        <h3 className="text-lg font-bold">{item.name}</h3>
+        <p className=" ">{item.description}</p>
         <p>{item.completed === true ? "Complete" : "Incomplete"}</p>
         <div className="flex w-full justify-between">
-          <MyButton url={item.statementUrl} type="github" name="Statement" />
+          <MyButton url={item.statementUrl} name="Statement" type="statement" />
           <MyButton url={item.githubUrl} name="GitHub" type="github" />
-          <MyButton url={item.demoUrl} name="Demo" type="github" />
-          <MyButton url={item.tutorialUrl} name="Tutorial" type="github" />
+          <MyButton url={item.demoUrl} name="Demo" type="demo" />
+          <MyButton url={item.tutorialUrl} name="Tutorial" type="tutorial" />
         </div>
       </div>
       <button
