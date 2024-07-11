@@ -2,6 +2,7 @@ import { Item } from "./Item";
 
 export const data: Item[] = [
   {
+    id: "qr-code-component",
     name: "QR code component",
     description: "Here the desciption",
     type: "start",
@@ -14,6 +15,7 @@ export const data: Item[] = [
     imgSource: "/qr-code-component.jpg",
   },
   {
+    id: "blog-preview-card",
     name: "Blog Preview Card",
     description: "Here the desciption",
     type: "start",
@@ -26,6 +28,7 @@ export const data: Item[] = [
     imgSource: "/blog-preview-card.jpg",
   },
   {
+    id: "social-links-profile",
     name: "Social links profile",
     description: "Here the desciption",
     type: "start",
@@ -38,6 +41,7 @@ export const data: Item[] = [
     imgSource: "/social-links-profile.jpg",
   },
   {
+    id: "recipe-page",
     name: "Recipe page",
     description: "Here the desciption",
     type: "start",
@@ -50,6 +54,7 @@ export const data: Item[] = [
     imgSource: "/recipe-page.jpg",
   },
   {
+    id: "testimonials-grid-section",
     name: "Testimonials grid section",
     description: "Here the desciption",
     type: "start",
@@ -64,6 +69,7 @@ export const data: Item[] = [
     imgSource: "/testimonials-grid-section.jpg",
   },
   {
+    id: "article-preview-component",
     name: "Article preview component",
     description: "Here the desciption",
     type: "start",
@@ -77,6 +83,7 @@ export const data: Item[] = [
     imgSource: "/article-preview.jpg",
   },
   {
+    id: "time-tracking-dashboard",
     name: "Time tracking dashboard",
     description: "Here the desciption",
     type: "start",
@@ -89,6 +96,7 @@ export const data: Item[] = [
     imgSource: "/time-tracking-dashboard.jpg",
   },
   {
+    id: "newsletter-sign-up-form-with-success-message",
     name: "Newsletter sign-up form with success message",
     description: "Here the desciption",
     type: "start",
@@ -102,6 +110,7 @@ export const data: Item[] = [
     imgSource: "/newsletter-singup-form.jpg",
   },
   {
+    id: "expenses-chart-component",
     name: "Expenses chart component",
     description: "Here the desciption",
     type: "start",
@@ -114,6 +123,7 @@ export const data: Item[] = [
     imgSource: "/expenses-chart-component.jpg",
   },
   {
+    id: "tip-calculator",
     name: "Tip calculator",
     description: "Here the desciption",
     type: "start",
@@ -126,6 +136,7 @@ export const data: Item[] = [
     imgSource: "/tip-calculator-app.jpg",
   },
   {
+    id: "pricing-component-with-toggle",
     name: "Pricing component with toggle",
     description: "Here the desciption",
     type: "start",
@@ -138,6 +149,7 @@ export const data: Item[] = [
     imgSource: "/pricing-component-with-toggle.jpg",
   },
   {
+    id: "age-calculator-app",
     name: "Age calculator app",
     description: "Here the desciption",
     type: "start",
@@ -150,6 +162,7 @@ export const data: Item[] = [
     imgSource: "/age-calculator-app.jpg",
   },
   {
+    id: "interactive-pricing-component",
     name: "Interactive pricing component",
     description: "Here the desciption",
     type: "start",
@@ -162,6 +175,7 @@ export const data: Item[] = [
     imgSource: "/interactive-pricing-component.jpg",
   },
   {
+    id: "social-media-dashboard",
     name: "Social media dashboard",
     description: "Here the desciption",
     type: "start",
@@ -175,6 +189,7 @@ export const data: Item[] = [
       "https://res.cloudinary.com/dz209s6jk/image/upload/v1703155661/Challenges/iyh3uk6keluskixx8pz6.jpg",
   },
   {
+    id: "advice-generator-app",
     name: "Advice generator app",
     description: "Here the desciption",
     type: "start",
@@ -188,6 +203,7 @@ export const data: Item[] = [
       "https://res.cloudinary.com/dz209s6jk/image/upload/v1703155661/Challenges/iyh3uk6keluskixx8pz6.jpg",
   },
   {
+    id: "weather-app",
     name: "Weather App",
     description: "Here the desciption",
     type: "start",

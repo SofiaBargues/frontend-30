@@ -2,7 +2,8 @@
 import { Book, Star, Cat } from "lucide-react";
 import { MyButton } from "./MyButton";
 import { Item } from "./Item";
-import { useState } from "react";
+import { MouseEvent, useState } from "react";
+import { idText } from "typescript";
 
 export interface StepProps {
   disabled?: boolean;
@@ -21,8 +22,7 @@ export function Step({
 }: StepProps) {
   let icon = <></>;
 
-  function handleClick({ event }: { event: any }) {
-    console.log(event);
+  function handleClick() {
     return setDone(!isDone);
   }
 

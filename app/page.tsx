@@ -88,6 +88,7 @@ function Problems({ items }: { items: Item[] }) {
     }
     return (
       <Step
+        key={item.id}
         number={index + 1}
         isDone={status[index]}
         setDone={handleSetDone}
