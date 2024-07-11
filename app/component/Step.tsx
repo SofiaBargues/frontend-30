@@ -33,9 +33,13 @@ export function Step({ item, number, isDone, setDone }: StepProps) {
         {number}
       </p>
       <div className="flex h-[200px] w-full justify-center md:h-[200px] md:w-[400px]">
-        <img src={item.imgSource} alt="" className="rounded-lg" />
+        <img
+          src={item.imgSource}
+          alt=""
+          className="rounded-lg object-cover md:h-[200px] md:w-[400px]"
+        />
       </div>
-      <div className="m-10 flex w-full flex-col">
+      <div className="m-10 flex flex-col">
         <h3 className="text-lg font-bold">{item.name}</h3>
         <p className=" ">{item.description}</p>
         <div className="flex w-full justify-between">
