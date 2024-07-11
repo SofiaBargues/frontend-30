@@ -92,7 +92,6 @@ function Problems({ items }: { items: Item[] }) {
         number={index + 1}
         isDone={status[index]}
         setDone={handleSetDone}
-        disabled={!item.completed}
         item={item}
       ></Step>
     );

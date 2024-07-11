@@ -6,20 +6,13 @@ import { MouseEvent, useState } from "react";
 import { idText } from "typescript";
 
 export interface StepProps {
-  disabled?: boolean;
   item: Item;
   number: number;
   isDone: boolean;
   setDone: (isDone: boolean) => void;
 }
 
-export function Step({
-  disabled = false,
-  item,
-  number,
-  isDone,
-  setDone,
-}: StepProps) {
+export function Step({ item, number, isDone, setDone }: StepProps) {
   let icon = <></>;
 
   function handleClick() {
@@ -45,7 +38,6 @@ export function Step({
       <div className="m-10 flex w-full flex-col">
         <h3 className="text-lg font-bold">{item.name}</h3>
         <p className=" ">{item.description}</p>
-        <p>{item.completed === true ? "Complete" : "Incomplete"}</p>
         <div className="flex w-full justify-between">
           <MyButton url={item.statementUrl} name="Statement" type="statement" />
           <MyButton url={item.githubUrl} name="GitHub" type="github" />
