@@ -122,7 +122,7 @@ export const data: Item[] = [
     statementUrl:
       "https://www.frontendmentor.io/challenges/tip-calculator-app-ugJNGbJUX",
     githubUrl: "https://github.com/SofiaBargues/tip-calculator-app-main",
-    demoUrl: "https://tip-calculator-app-main-ivory.vercel.app/",
+    demoUrl: "https://age-calculator-app-main-psi.vercel.app/",
     imgSource: "/tip-calculator-app.jpg",
   },
   {

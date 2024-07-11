@@ -8,7 +8,8 @@ import { LinkedIn } from "./component/LinkedIn";
 import { GitHub } from "./component/GitHub";
 import { Step } from "./component/Step";
 import { Hero } from "./component/Hero";
-import { useState } from "react";
+//   const [status, setStatus] = useState<boolean[]>(new Array(30).fill(false));
+import { useEffect, useState } from "react";
 
 export default function Home() {
   return (
@@ -60,7 +61,24 @@ export default function Home() {
 }
 
 function Problems({ items }: { items: Item[] }) {
-  const [status, setStatus] = useState<boolean[]>(new Array(30).fill(false));
+  const [status, setStatus] = useState<boolean[]>(Array(30).fill(false));
+  const [isFirstRender, setIsFirstRender] = useState<boolean>(true);
+
+  useEffect(() => {
+    if (isFirstRender) {
+      // Load from localstorage
+      if (typeof window !== "undefined") {
+        const stored = localStorage.getItem("sofiapp");
+        if (stored) {
+          setStatus(JSON.parse(stored));
+        }
+      }
+      setIsFirstRender(false);
+    } else {
+      // Save to localstorage
+      localStorage.setItem("sofiapp", JSON.stringify(status));
+    }
+  }, [status, isFirstRender]);
 
   function itemToStep(item: Item, index: number, items: Item[]) {
     function handleSetDone(isDone: boolean) {
