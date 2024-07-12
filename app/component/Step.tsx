@@ -22,9 +22,11 @@ export function Step({ item, number, isDone, setDone }: StepProps) {
   console.log(item.tags);
   return (
     <div className="flex w-full flex-col items-center justify-center rounded-lg border p-6 lg:flex-row">
+      {/* LABEL */}
       <p className="m-5 p-[1rem] py-4 text-5xl font-bold text-secondary">
         {number}
       </p>
+      {/* IMAGE */}
       <div className="flex h-[200px] w-full justify-center md:h-[200px] md:w-[400px]">
         <img
           src={item.imgSource}
@@ -32,6 +34,7 @@ export function Step({ item, number, isDone, setDone }: StepProps) {
           className="rounded-lg object-cover md:h-[200px] md:w-[400px]"
         />
       </div>
+      {/* CUERPO */}
       <div className="m-10 flex flex-col gap-5">
         <h3 className="text-lg font-bold">{item.name}</h3>
         <p className=" ">{item.description}</p>
@@ -41,7 +44,6 @@ export function Step({ item, number, isDone, setDone }: StepProps) {
             <span key={index}>{tag}</span>
           ))}
         </div>
-
         <div className="flex w-full items-center justify-between gap-3">
           <MyButton url={item.statementUrl} name="Statement" type="statement" />
           <MyButton url={item.githubUrl} name="GitHub" type="github" />
@@ -49,6 +51,7 @@ export function Step({ item, number, isDone, setDone }: StepProps) {
           <MyButton url={item.tutorialUrl} name="Tutorial" type="tutorial" />
         </div>
       </div>
+      {/*  BOTONES */}
       <button
         onClick={handleClick}
         className={`flex h-9 w-9 items-center rounded-full text-sm font-semibold transition-colors duration-300 md:h-14 md:w-14 lg:self-start ${
