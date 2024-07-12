@@ -14,18 +14,20 @@ export interface StepProps {
 
 function StepImage({ number, item }: { number: number; item: Item }) {
   return (
-    <>
-      <div className="abs flex flex-col items-center justify-stretch bg-secondary text-5xl font-bold text-base-100">
-        <p className="flex h-full flex-col justify-center">{number}</p>
+    <div className="flex flex-col rounded-lg bg-secondary lg:flex-row">
+      <div className="flex h-full items-center justify-stretch text-5xl font-bold text-base-100 lg:w-24">
+        <p className="flex h-full flex-col items-center justify-stretch">
+          {number}
+        </p>
       </div>
-      <div className="relative flex aspect-square h-[200px] w-full justify-center">
+      <div className="flex aspect-square h-[200px] w-full justify-center lg:justify-center">
         <img
           src={item.imgSource}
           alt=""
           className="rounded-lg object-cover md:h-[200px] md:w-[400px]"
         />
       </div>
-    </>
+    </div>
   );
 }
 
@@ -36,7 +38,6 @@ export function Step({ item, number, isDone, setDone }: StepProps) {
     return setDone(!isDone);
   }
 
-  console.log(item.tags);
   return (
     <div className="max-w-1/5 flex flex-col items-stretch justify-between rounded-lg border shadow-md shadow-gray-300 lg:flex-row">
       <StepImage number={number} item={item} />
