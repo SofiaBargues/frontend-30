@@ -43,13 +43,15 @@ export function Step({ item, number, isDone, setDone }: StepProps) {
       </div>
       <button
         onClick={handleClick}
-        className={`flex rounded-full px-4 py-2 text-sm font-semibold transition-colors duration-300 md:self-start ${
+        className={`flex rounded-full px-4 py-2 text-sm font-semibold transition-colors duration-300 md:h-14 md:w-14 md:self-start ${
           isDone
             ? "bg-success text-white hover:bg-success-content"
             : "bg-gray-200 text-gray-800 hover:bg-gray-300"
         }`}
       >
-        <div className="w-full">{isDone ? "✓" : "X"}</div>
+        <div className="w-full font-light md:text-4xl">
+          {isDone ? "✓" : "x"}
+        </div>
       </button>
     </div>
   );
