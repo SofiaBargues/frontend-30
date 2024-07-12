@@ -19,14 +19,6 @@ export function Step({ item, number, isDone, setDone }: StepProps) {
     return setDone(!isDone);
   }
 
-  if (item.type == "course") {
-    icon = <Book size={32} />;
-  } else if (item.type == "start") {
-    icon = <Star size={32} />;
-  } else {
-    icon = <Cat size={32} />;
-  }
-
   return (
     <div className="flex w-full flex-col items-center justify-center rounded-lg border-primary p-6 md:flex-row">
       <p className="m-5 p-[1rem] py-4 text-5xl font-bold text-secondary">
