@@ -20,7 +20,7 @@ export function Step({ item, number, isDone, setDone }: StepProps) {
   }
 
   return (
-    <div className="flex w-full flex-col items-center justify-center rounded-lg border-primary p-6 md:flex-row">
+    <div className="flex w-full flex-col items-center justify-center rounded-lg border p-6 lg:flex-row">
       <p className="m-5 p-[1rem] py-4 text-5xl font-bold text-secondary">
         {number}
       </p>

@@ -36,7 +36,8 @@ export function MyButton({
       <button
         className={
           buttonStyle[type].color +
-          " flex-none items-center rounded-lg border p-4"
+          " " +
+          " m-3 flex-none items-center rounded-lg border p-1 text-sm xl:p-4 xl:text-base"
         }
       >
         <div className="flex">
