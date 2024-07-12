@@ -2,7 +2,7 @@ import Typewriter from "typewriter-effect";
 
 export function Hero({}: {}) {
   return (
-    <div className="hero min-h-screen bg-base-200">
+    <div className="hero mt-11 min-h-[700px]">
       <div className="hero-content text-center">
         <div className="flex flex-col items-center">
           <h1 className="max-w-2xl text-5xl font-bold sm:text-7xl lg:text-8xl">

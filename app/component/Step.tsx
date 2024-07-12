@@ -31,10 +31,10 @@ export function Step({ item, number, isDone, setDone }: StepProps) {
           className="rounded-lg object-cover md:h-[200px] md:w-[400px]"
         />
       </div>
-      <div className="m-10 flex flex-col">
+      <div className="m-10 flex flex-col gap-5">
         <h3 className="text-lg font-bold">{item.name}</h3>
         <p className=" ">{item.description}</p>
-        <div className="flex w-full justify-between">
+        <div className="flex w-full items-center justify-between gap-3">
           <MyButton url={item.statementUrl} name="Statement" type="statement" />
           <MyButton url={item.githubUrl} name="GitHub" type="github" />
           <MyButton url={item.demoUrl} name="Demo" type="demo" />
@@ -43,9 +43,9 @@ export function Step({ item, number, isDone, setDone }: StepProps) {
       </div>
       <button
         onClick={handleClick}
-        className={`flex self-start rounded-full px-4 py-2 text-sm font-semibold transition-colors duration-300 ${
+        className={`flex rounded-full px-4 py-2 text-sm font-semibold transition-colors duration-300 md:self-start ${
           isDone
-            ? "bg-success text-white hover:bg-gray-300"
+            ? "bg-success text-white hover:bg-success-content"
             : "bg-gray-200 text-gray-800 hover:bg-gray-300"
         }`}
       >
