@@ -12,6 +12,23 @@ export interface StepProps {
   setDone: (isDone: boolean) => void;
 }
 
+function StepImage({ number, item }: { number: number; item: Item }) {
+  return (
+    <>
+      <div className="abs flex flex-col items-center justify-stretch bg-secondary text-5xl font-bold text-base-100">
+        <p className="flex h-full flex-col justify-center">{number}</p>
+      </div>
+      <div className="relative flex aspect-square h-[200px] w-full justify-center">
+        <img
+          src={item.imgSource}
+          alt=""
+          className="rounded-lg object-cover md:h-[200px] md:w-[400px]"
+        />
+      </div>
+    </>
+  );
+}
+
 export function Step({ item, number, isDone, setDone }: StepProps) {
   let icon = <></>;
 
@@ -21,22 +38,25 @@ export function Step({ item, number, isDone, setDone }: StepProps) {
 
   console.log(item.tags);
   return (
-    <div className="flex w-full flex-col items-center justify-center rounded-lg border p-6 lg:flex-row">
-      {/* LABEL */}
-      <p className="m-5 p-[1rem] py-4 text-5xl font-bold text-secondary">
-        {number}
-      </p>
-      {/* IMAGE */}
-      <div className="flex h-[200px] w-full justify-center md:h-[200px] md:w-[400px]">
-        <img
-          src={item.imgSource}
-          alt=""
-          className="rounded-lg object-cover md:h-[200px] md:w-[400px]"
-        />
-      </div>
+    <div className="max-w-1/5 flex flex-col items-stretch justify-between rounded-lg border shadow-md shadow-gray-300 lg:flex-row">
+      <StepImage number={number} item={item} />
       {/* CUERPO */}
-      <div className="m-10 flex flex-col gap-5">
-        <h3 className="text-lg font-bold">{item.name}</h3>
+      <div className="flex flex-col">
+        <div className="flex justify-between">
+          <h3 className="text-lg font-bold">{item.name}</h3>
+          <button
+            onClick={handleClick}
+            className={`flex aspect-square items-center rounded-full text-sm font-semibold transition-colors duration-300 md:h-14 md:w-14 lg:self-start ${
+              isDone
+                ? "bg-success text-white hover:bg-success-content"
+                : "bg-gray-200 text-gray-800 hover:bg-gray-300"
+            }`}
+          >
+            <div className="w-full md:text-4xl md:font-light">
+              {isDone ? "✓" : "X"}
+            </div>
+          </button>
+        </div>
         <p className=" ">{item.description}</p>
 
         <div className=" ">
@@ -52,18 +72,6 @@ export function Step({ item, number, isDone, setDone }: StepProps) {
         </div>
       </div>
       {/*  BOTONES */}
-      <button
-        onClick={handleClick}
-        className={`flex h-9 w-9 items-center rounded-full text-sm font-semibold transition-colors duration-300 md:h-14 md:w-14 lg:self-start ${
-          isDone
-            ? "bg-success text-white hover:bg-success-content"
-            : "bg-gray-200 text-gray-800 hover:bg-gray-300"
-        }`}
-      >
-        <div className="w-full md:text-4xl md:font-light">
-          {isDone ? "✓" : "X"}
-        </div>
-      </button>
     </div>
   );
 }
