@@ -4,7 +4,8 @@ export const data: Item[] = [
   {
     id: "qr-code-component",
     name: "QR code component",
-    description: "Here the desciption",
+    description: "Here the description",
+    tags: ["banana", "tomato", "lettuce"],
     type: "start",
     tutorialUrl: "https://www.youtube.com/watch?v=5BBYPntB-GY&t=7s",
     statementUrl:
@@ -16,9 +17,9 @@ export const data: Item[] = [
   {
     id: "blog-preview-card",
     name: "Blog Preview Card",
-    description: "Here the desciption",
+    description: "Here the description",
     type: "start",
-    tutorialUrl: "https://www.youtube.com/watch?v=3n22cowxoKU",
+    tags: [],
     statementUrl:
       "https://www.frontendmentor.io/challenges/blog-preview-card-ckPaj01IcS",
     githubUrl: "https://github.com/SofiaBargues/blog-preview-card",
@@ -28,9 +29,9 @@ export const data: Item[] = [
   {
     id: "social-links-profile",
     name: "Social links profile",
-    description: "Here the desciption",
+    description: "Here the description",
     type: "start",
-
+    tags: [],
     tutorialUrl: "https://www.youtube.com/watch?v=PlUOMi23qAc",
     statementUrl:
       "https://www.frontendmentor.io/challenges/social-links-profile-UG32l9m6dQ",
@@ -41,9 +42,9 @@ export const data: Item[] = [
   {
     id: "recipe-page",
     name: "Recipe page",
-    description: "Here the desciption",
+    description: "Here the description",
     type: "start",
-
+    tags: [],
     tutorialUrl: "https://www.youtube.com/watch?v=wF2DLQGeJS0&t=185s",
     statementUrl:
       "https://www.frontendmentor.io/challenges/recipe-page-KiTsR8QQKm",
@@ -54,9 +55,9 @@ export const data: Item[] = [
   {
     id: "testimonials-grid-section",
     name: "Testimonials grid section",
-    description: "Here the desciption",
+    description: "Here the description",
     type: "start",
-
+    tags: [],
     tutorialUrl:
       "https://www.youtube.com/watch?v=0TiIJjC7Olw&list=PLrVXEY3WfL-39_2q2HiKkuyNxelQI1XeV",
     statementUrl:
@@ -69,9 +70,9 @@ export const data: Item[] = [
   {
     id: "article-preview-component",
     name: "Article preview component",
-    description: "Here the desciption",
+    description: "Here the description",
     type: "start",
-
+    tags: [],
     tutorialUrl:
       "https://www.youtube.com/watch?v=SKhZ0IBk1_A&list=PLrVXEY3WfL-39_2q2HiKkuyNxelQI1XeV&index=2",
     statementUrl:
@@ -83,9 +84,9 @@ export const data: Item[] = [
   {
     id: "time-tracking-dashboard",
     name: "Time tracking dashboard",
-    description: "Here the desciption",
+    description: "Here the description",
     type: "start",
-
+    tags: [],
     tutorialUrl: "https://www.youtube.com/watch?v=l9Qw8y3LfCY",
     statementUrl:
       "https://www.frontendmentor.io/challenges/time-tracking-dashboard-UIQ7167Jw",
@@ -96,9 +97,9 @@ export const data: Item[] = [
   {
     id: "newsletter-sign-up-form-with-success-message",
     name: "Newsletter sign-up form with success message",
-    description: "Here the desciption",
+    description: "Here the description",
     type: "start",
-
+    tags: [],
     tutorialUrl:
       "https://www.youtube.com/watch?v=abdsoVJsWzQ&list=PLrVXEY3WfL-39_2q2HiKkuyNxelQI1XeV&index=3",
     statementUrl:
@@ -110,9 +111,9 @@ export const data: Item[] = [
   {
     id: "expenses-chart-component",
     name: "Expenses chart component",
-    description: "Here the desciption",
+    description: "Here the description",
     type: "start",
-
+    tags: [],
     tutorialUrl: "https://www.youtube.com/watch?v=s9CHPlY8J8I",
     statementUrl:
       "https://www.frontendmentor.io/challenges/expenses-chart-component-e7yJBUdjwt",
@@ -123,9 +124,9 @@ export const data: Item[] = [
   {
     id: "tip-calculator",
     name: "Tip calculator",
-    description: "Here the desciption",
+    description: "Here the description",
     type: "start",
-
+    tags: [],
     tutorialUrl: "https://www.youtube.com/watch?v=FYCauVeo8OY",
     statementUrl:
       "https://www.frontendmentor.io/challenges/tip-calculator-app-ugJNGbJUX",
@@ -136,9 +137,9 @@ export const data: Item[] = [
   {
     id: "pricing-component-with-toggle",
     name: "Pricing component with toggle",
-    description: "Here the desciption",
+    description: "Here the description",
     type: "start",
-
+    tags: [],
     tutorialUrl: "https://www.youtube.com/watch?v=3n22cowxoKU",
     statementUrl:
       "https://www.frontendmentor.io/challenges/pricing-component-with-toggle-8vPwRMIC",
@@ -149,9 +150,9 @@ export const data: Item[] = [
   {
     id: "age-calculator-app",
     name: "Age calculator app",
-    description: "Here the desciption",
+    description: "Here the description",
     type: "start",
-
+    tags: [],
     tutorialUrl: "https://www.youtube.com/watch?v=3n22cowxoKU",
     statementUrl:
       "https://www.frontendmentor.io/challenges/age-calculator-app-dF9DFFpj-Q",
@@ -162,9 +163,9 @@ export const data: Item[] = [
   {
     id: "interactive-pricing-component",
     name: "Interactive pricing component",
-    description: "Here the desciption",
+    description: "Here the description",
     type: "start",
-
+    tags: [],
     tutorialUrl: "https://www.youtube.com/watch?v=3n22cowxoKU",
     statementUrl:
       "https://www.frontendmentor.io/challenges/interactive-pricing-component-t0m8PIyY8",
@@ -175,9 +176,9 @@ export const data: Item[] = [
   {
     id: "social-media-dashboard",
     name: "Social media dashboard",
-    description: "Here the desciption",
+    description: "Here the description",
     type: "start",
-
+    tags: [],
     tutorialUrl: "https://www.youtube.com/watch?v=3n22cowxoKU",
     statementUrl:
       "https://www.frontendmentor.io/challenges/social-media-dashboard-with-theme-switcher-6oY8ozp_H",
@@ -189,9 +190,9 @@ export const data: Item[] = [
   {
     id: "advice-generator-app",
     name: "Advice generator app",
-    description: "Here the desciption",
+    description: "Here the description",
     type: "start",
-
+    tags: [],
     tutorialUrl: "https://www.youtube.com/watch?v=3n22cowxoKU",
     statementUrl:
       "https://www.frontendmentor.io/challenges/advice-generator-app-QdUG-13db",
@@ -203,9 +204,9 @@ export const data: Item[] = [
   {
     id: "weather-app",
     name: "Weather App",
-    description: "Here the desciption",
+    description: "Here the description",
     type: "start",
-
+    tags: [],
     tutorialUrl: "https://www.youtube.com/watch?v=3n22cowxoKU",
     statementUrl:
       "https://www.frontendmentor.io/challenges/blog-preview-card-ckPaj01IcS",

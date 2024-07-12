@@ -1,5 +1,5 @@
 "use client";
-import { Book, Star, Cat } from "lucide-react";
+import { Book, Star, Cat, Key } from "lucide-react";
 import { MyButton } from "./MyButton";
 import { Item } from "./Item";
 import { MouseEvent, useState } from "react";
@@ -19,6 +19,7 @@ export function Step({ item, number, isDone, setDone }: StepProps) {
     return setDone(!isDone);
   }
 
+  console.log(item.tags);
   return (
     <div className="flex w-full flex-col items-center justify-center rounded-lg border p-6 lg:flex-row">
       <p className="m-5 p-[1rem] py-4 text-5xl font-bold text-secondary">
@@ -34,6 +35,13 @@ export function Step({ item, number, isDone, setDone }: StepProps) {
       <div className="m-10 flex flex-col gap-5">
         <h3 className="text-lg font-bold">{item.name}</h3>
         <p className=" ">{item.description}</p>
+
+        <div className=" ">
+          {item.tags.map((tag, index) => (
+            <span key={index}>{tag}</span>
+          ))}
+        </div>
+
         <div className="flex w-full items-center justify-between gap-3">
           <MyButton url={item.statementUrl} name="Statement" type="statement" />
           <MyButton url={item.githubUrl} name="GitHub" type="github" />

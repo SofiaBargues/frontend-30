@@ -86,6 +86,7 @@ function Problems({ items }: { items: Item[] }) {
       statusCopi[index] = isDone;
       setStatus(statusCopi);
     }
+
     return (
       <Step
         key={item.id}
