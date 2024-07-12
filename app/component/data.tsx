@@ -6,7 +6,7 @@ export const data: Item[] = [
     name: "QR code component",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam a dapibus mi, nec pulvinar odio. Quisque quis nunc lacinia, vestibulum enim ut, accumsan metus.  ",
-    tags: ["banana", "tomato", "lettuce"],
+    tags: [],
     type: "start",
     tutorialUrl: "https://www.youtube.com/watch?v=5BBYPntB-GY&t=7s",
     statementUrl:
@@ -55,7 +55,7 @@ export const data: Item[] = [
   },
   {
     id: "testimonials-grid-section",
-    name: "Testimonials grid section",
+    name: "Testimonials grid",
     description: "Here the description",
     type: "start",
     tags: [],
@@ -70,7 +70,7 @@ export const data: Item[] = [
   },
   {
     id: "article-preview-component",
-    name: "Article preview component",
+    name: "Article preview",
     description: "Here the description",
     type: "start",
     tags: [],
@@ -84,7 +84,7 @@ export const data: Item[] = [
   },
   {
     id: "time-tracking-dashboard",
-    name: "Time tracking dashboard",
+    name: "Time tracking",
     description: "Here the description",
     type: "start",
     tags: [],
@@ -97,7 +97,7 @@ export const data: Item[] = [
   },
   {
     id: "newsletter-sign-up-form-with-success-message",
-    name: "Newsletter sign-up form with success message",
+    name: "Newsletter sign-up",
     description: "Here the description",
     type: "start",
     tags: [],
@@ -111,7 +111,7 @@ export const data: Item[] = [
   },
   {
     id: "expenses-chart-component",
-    name: "Expenses chart component",
+    name: "Expenses chart",
     description: "Here the description",
     type: "start",
     tags: [],
@@ -137,7 +137,7 @@ export const data: Item[] = [
   },
   {
     id: "pricing-component-with-toggle",
-    name: "Pricing component with toggle",
+    name: "Pricing component",
     description: "Here the description",
     type: "start",
     tags: [],
@@ -163,7 +163,7 @@ export const data: Item[] = [
   },
   {
     id: "interactive-pricing-component",
-    name: "Interactive pricing component",
+    name: "Interactive pricing",
     description: "Here the description",
     type: "start",
     tags: [],
@@ -175,45 +175,44 @@ export const data: Item[] = [
     imgSource: "/interactive-pricing-component.jpg",
   },
   {
-    id: "social-media-dashboard",
-    name: "Social media dashboard",
+    id: "Coming soon",
+    name: "Coming soon",
     description: "Here the description",
     type: "start",
     tags: [],
-    tutorialUrl: "https://www.youtube.com/watch?v=3n22cowxoKU",
-    statementUrl:
-      "https://www.frontendmentor.io/challenges/social-media-dashboard-with-theme-switcher-6oY8ozp_H",
-    githubUrl: "https://github.com/SofiaBargues/blog-preview-card",
-    demoUrl: "https://blog-preview-card-xi-gules.vercel.app/",
+    tutorialUrl: "https://www.youtube.com/",
+    statementUrl: "https://www.frontendmentor.io",
+    githubUrl: "https://github.com/SofiaBargues",
+    demoUrl: "https://frontend-30.vercel.app/",
     imgSource:
-      "https://res.cloudinary.com/dz209s6jk/image/upload/v1703155661/Challenges/iyh3uk6keluskixx8pz6.jpg",
+      "https://www.practiceportuguese.com/cdn-cgi/image/width=800,quality=90,format=auto,onerror=redirect,metadata=none/wp-content/uploads/2020/06/asking-questions-800x534.jpg",
   },
-  {
-    id: "advice-generator-app",
-    name: "Advice generator app",
-    description: "Here the description",
-    type: "start",
-    tags: [],
-    tutorialUrl: "https://www.youtube.com/watch?v=3n22cowxoKU",
-    statementUrl:
-      "https://www.frontendmentor.io/challenges/advice-generator-app-QdUG-13db",
-    githubUrl: "https://github.com/SofiaBargues/blog-preview-card",
-    demoUrl: "https://blog-preview-card-xi-gules.vercel.app/",
-    imgSource:
-      "https://res.cloudinary.com/dz209s6jk/image/upload/v1703155661/Challenges/iyh3uk6keluskixx8pz6.jpg",
-  },
-  {
-    id: "weather-app",
-    name: "Weather App",
-    description: "Here the description",
-    type: "start",
-    tags: [],
-    tutorialUrl: "https://www.youtube.com/watch?v=3n22cowxoKU",
-    statementUrl:
-      "https://www.frontendmentor.io/challenges/blog-preview-card-ckPaj01IcS",
-    githubUrl: "https://github.com/SofiaBargues/blog-preview-card",
-    demoUrl: "https://blog-preview-card-xi-gules.vercel.app/",
-    imgSource:
-      "https://res.cloudinary.com/dz209s6jk/image/upload/v1703155661/Challenges/iyh3uk6keluskixx8pz6.jpg",
-  },
+  // {
+  //   id: "advice-generator-app",
+  //   name: "Advice generator app",
+  //   description: "Here the description",
+  //   type: "start",
+  //   tags: [],
+  //   tutorialUrl: "https://www.youtube.com/watch?v=3n22cowxoKU",
+  //   statementUrl:
+  //     "https://www.frontendmentor.io/challenges/advice-generator-app-QdUG-13db",
+  //   githubUrl: "https://github.com/SofiaBargues/blog-preview-card",
+  //   demoUrl: "https://blog-preview-card-xi-gules.vercel.app/",
+  //   imgSource:
+  //     "https://res.cloudinary.com/dz209s6jk/image/upload/v1703155661/Challenges/iyh3uk6keluskixx8pz6.jpg",
+  // },
+  // {
+  //   id: "weather-app",
+  //   name: "Weather App",
+  //   description: "Here the description",
+  //   type: "start",
+  //   tags: [],
+  //   tutorialUrl: "https://www.youtube.com/watch?v=3n22cowxoKU",
+  //   statementUrl:
+  //     "https://www.frontendmentor.io/challenges/blog-preview-card-ckPaj01IcS",
+  //   githubUrl: "https://github.com/SofiaBargues/blog-preview-card",
+  //   demoUrl: "https://blog-preview-card-xi-gules.vercel.app/",
+  //   imgSource:
+  //     "https://res.cloudinary.com/dz209s6jk/image/upload/v1703155661/Challenges/iyh3uk6keluskixx8pz6.jpg",
+  // },
 ];

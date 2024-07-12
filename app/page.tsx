@@ -13,7 +13,7 @@ import { useEffect, useState } from "react";
 
 export default function Home() {
   return (
-    <div className="flex min-h-screen flex-col items-center bg-base-100 text-base-content">
+    <div className="flex min-h-screen flex-col items-center bg-base-200 text-base-content">
       <nav className="navbar fixed top-0 z-10 justify-between border-b-2 border-b-primary bg-base-300 text-base-content">
         <Link href="/">
           <div id="group1 " className="btn-ghost btn ml-2 flex gap-2">
@@ -98,8 +98,8 @@ function Problems({ items }: { items: Item[] }) {
     );
   }
   return (
-    <section className="flex w-full flex-col items-stretch">
-      <div className="flex flex-col items-center gap-8 pb-8">
+    <section className="flex w-full flex-col items-center justify-center">
+      <div className="flex w-full max-w-4xl flex-col items-center justify-between gap-8 pb-8">
         {items.map(itemToStep)}
       </div>
     </section>

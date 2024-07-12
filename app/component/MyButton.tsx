@@ -11,7 +11,7 @@ const buttonStyle = {
   github: {
     color: "border-black text-black ",
     bgColor: " hover:border-black hover:text-base-100 hover:bg-black ",
-    img: <GithubIcon />,
+    img: <GithubIcon className="h-4 w-4 md:h-4 md:w-4" />,
   },
   statement: {
     color: " border-blue-500 text-blue-500 ",
@@ -52,12 +52,13 @@ export function MyButton({
           buttonStyle[type].color +
           buttonStyle[type].bgColor +
           " " +
-          " rounded-lg border p-1 text-sm xl:p-4 xl:text-base"
+          " rounded-lg border p-1 text-xs xl:p-2 xl:text-sm"
         }
       >
-        <div className="flex items-center">
-          {buttonStyle[type].img}
-          {name}
+        <div className="flex items-center justify-center gap-1">
+          {/* // TODO: Insert icon again */}
+          {/* <div className="h-4 w-4">{buttonStyle[type].img}</div> */}
+          <p>{name}</p>
         </div>
       </button>
     </a>

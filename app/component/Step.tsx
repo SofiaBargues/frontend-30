@@ -18,11 +18,11 @@ function StepImage({ number, item }: { number: number; item: Item }) {
       <div className="flex h-full items-center justify-center text-5xl font-bold text-base-100 lg:w-24">
         <p className="flex lg:flex-col">{number}</p>
       </div>
-      <div className="flex aspect-square h-[200px] w-full justify-center lg:justify-center">
+      <div className="flex h-[300px] w-full justify-center lg:w-[400px] lg:justify-center">
         <img
           src={item.imgSource}
           alt=""
-          className="rounded-lg object-cover md:h-[200px] md:w-[400px]"
+          className="rounded-lg object-cover lg:h-[300px] lg:w-[400px]"
         />
       </div>
     </div>
@@ -37,15 +37,15 @@ export function Step({ item, number, isDone, setDone }: StepProps) {
   }
 
   return (
-    <div className="max-w-1/5 flex flex-col items-stretch justify-between rounded-lg border shadow-md shadow-gray-300 lg:flex-row">
+    <div className="max-w- flex w-full flex-col items-stretch rounded-lg bg-base-100 shadow-md shadow-gray-300 lg:flex-row">
       <StepImage number={number} item={item} />
       {/* CUERPO */}
-      <div className="flex flex-col">
+      <div className="items m-5 flex flex-col justify-center gap-5 lg:w-full">
         <div className="flex justify-between">
-          <h3 className="text-lg font-bold">{item.name}</h3>
+          <h3 className="text-3xl font-bold">{item.name}</h3>
           <button
             onClick={handleClick}
-            className={`flex aspect-square items-center rounded-full text-sm font-semibold transition-colors duration-300 md:h-14 md:w-14 lg:self-start ${
+            className={`flex aspect-square min-w-[55px] items-center rounded-full text-sm font-semibold transition-colors duration-300 md:h-14 md:w-14 lg:self-start ${
               isDone
                 ? "bg-success text-white hover:bg-success-content"
                 : "bg-gray-200 text-gray-800 hover:bg-gray-300"
@@ -56,14 +56,14 @@ export function Step({ item, number, isDone, setDone }: StepProps) {
             </div>
           </button>
         </div>
-        <p className=" ">{item.description}</p>
+        {/* <p className=" ">{item.description}</p> */}
 
         <div className=" ">
           {item.tags.map((tag, index) => (
             <span key={index}>{tag}</span>
           ))}
         </div>
-        <div className="flex w-full items-center justify-between gap-3">
+        <div className="mt-7 flex w-full items-center justify-between gap-3">
           <MyButton url={item.statementUrl} name="Statement" type="statement" />
           <MyButton url={item.githubUrl} name="GitHub" type="github" />
           <MyButton url={item.demoUrl} name="Demo" type="demo" />
