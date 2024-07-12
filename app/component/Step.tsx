@@ -15,10 +15,8 @@ export interface StepProps {
 function StepImage({ number, item }: { number: number; item: Item }) {
   return (
     <div className="flex flex-col rounded-lg bg-secondary lg:flex-row">
-      <div className="flex h-full items-center justify-stretch text-5xl font-bold text-base-100 lg:w-24">
-        <p className="flex h-full flex-col items-center justify-stretch">
-          {number}
-        </p>
+      <div className="flex h-full items-center text-5xl font-bold text-base-100 lg:w-24">
+        <p className="flex flex-col">{number}</p>
       </div>
       <div className="flex aspect-square h-[200px] w-full justify-center lg:justify-center">
         <img
