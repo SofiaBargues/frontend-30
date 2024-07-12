@@ -43,9 +43,9 @@ export function Step({ item, number, isDone, setDone }: StepProps) {
       </div>
       <button
         onClick={handleClick}
-        className={`rounded-full px-4 py-2 text-sm font-semibold transition-colors duration-300 ${
+        className={`flex self-start rounded-full px-4 py-2 text-sm font-semibold transition-colors duration-300 ${
           isDone
-            ? "bg-green-500 text-white hover:bg-green-600"
+            ? "bg-success text-white hover:bg-gray-300"
             : "bg-gray-200 text-gray-800 hover:bg-gray-300"
         }`}
       >
