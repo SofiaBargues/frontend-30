@@ -4,7 +4,8 @@ export const data: Item[] = [
   {
     id: "qr-code-component",
     name: "QR code component",
-    description: "Here the description",
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam a dapibus mi, nec pulvinar odio. Quisque quis nunc lacinia, vestibulum enim ut, accumsan metus.  ",
     tags: ["banana", "tomato", "lettuce"],
     type: "start",
     tutorialUrl: "https://www.youtube.com/watch?v=5BBYPntB-GY&t=7s",
