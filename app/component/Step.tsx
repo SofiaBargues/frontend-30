@@ -37,7 +37,7 @@ export function Step({ item, number, isDone, setDone }: StepProps) {
   }
 
   return (
-    <div className="max-w- flex w-full flex-col items-stretch rounded-lg bg-base-100 shadow-md shadow-gray-300 lg:flex-row">
+    <div className="max-w- shadow-black[50%] flex w-full flex-col items-stretch rounded-lg bg-base-100 shadow-md lg:flex-row">
       <StepImage number={number} item={item} />
       {/* CUERPO */}
       <div className="items m-5 flex flex-col justify-center gap-5 lg:w-full">
