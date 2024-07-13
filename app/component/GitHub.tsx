@@ -9,7 +9,7 @@ export function GitHub() {
         <a
           aria-label="Github"
           target="_blank"
-          href="https://github.com/SofiaBargues/roadmap"
+          href="https://github.com/SofiaBargues"
           rel="noopener, noreferrer"
           className="btn-ghost drawer-button btn-square btn normal-case"
         >
