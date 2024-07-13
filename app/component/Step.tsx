@@ -45,7 +45,7 @@ export function Step({ item, number, isDone, setDone }: StepProps) {
           <h3 className="text-3xl font-bold">{item.name}</h3>
           <button
             onClick={handleClick}
-            className={`flex aspect-square min-w-[55px] items-center rounded-full text-sm font-semibold transition-colors duration-300 md:h-14 md:w-14 lg:self-start ${
+            className={`flex aspect-square h-7 w-7 items-center rounded-full text-sm font-semibold transition-colors duration-300 md:h-10 md:w-10 lg:h-14 lg:w-14 lg:min-w-[55px] lg:self-start ${
               isDone
                 ? "bg-success text-white hover:bg-success-content"
                 : "bg-gray-200 text-gray-800 hover:bg-gray-300"
