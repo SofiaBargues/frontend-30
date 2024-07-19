@@ -158,7 +158,7 @@ export const data: Item[] = [
     statementUrl:
       "https://www.frontendmentor.io/challenges/age-calculator-app-dF9DFFpj-Q",
     githubUrl: "https://github.com/SofiaBargues/blog-preview-card",
-    demoUrl: "https://blog-preview-card-xi-gules.vercel.app/",
+    demoUrl: "https://age-calculator-app-main-psi.vercel.app/",
     imgSource: "/age-calculator-app.jpg",
   },
   {
@@ -171,7 +171,7 @@ export const data: Item[] = [
     statementUrl:
       "https://www.frontendmentor.io/challenges/interactive-pricing-component-t0m8PIyY8",
     githubUrl: "https://github.com/SofiaBargues/blog-preview-card",
-    demoUrl: "https://blog-preview-card-xi-gules.vercel.app/",
+    demoUrl: "https://interactive-pricing-component-six-kappa.vercel.app/",
     imgSource: "/interactive-pricing-component.jpg",
   },
   {
