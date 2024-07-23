@@ -162,19 +162,7 @@ export const data: Item[] = [
     demoUrl: "https://age-calculator-app-main-psi.vercel.app/",
     imgSource: "/age-calculator-app.jpg",
   },
-  {
-    id: "advice-generator",
-    name: "Advice generator app",
-    description: "Here the description",
-    type: "start",
-    tags: [],
-    tutorialUrl: "",
-    statementUrl:
-      "https://www.frontendmentor.io/challenges/advice-generator-app-QdUG-13db",
-    githubUrl: "https://github.com/SofiaBargues/advice-generator-app",
-    demoUrl: "",
-    imgSource: "/advice-generator.jpg",
-  },
+
   {
     id: "interactive-pricing-component",
     name: "Interactive pricing",
@@ -187,6 +175,19 @@ export const data: Item[] = [
     githubUrl: "https://github.com/SofiaBargues/interactive-pricing-component",
     demoUrl: "https://interactive-pricing-component-six-kappa.vercel.app/",
     imgSource: "/interactive-pricing-component.jpg",
+  },
+  {
+    id: "advice-generator",
+    name: "Advice generator app",
+    description: "Here the description",
+    type: "start",
+    tags: [],
+    tutorialUrl: "",
+    statementUrl:
+      "https://www.frontendmentor.io/challenges/advice-generator-app-QdUG-13db",
+    githubUrl: "https://github.com/SofiaBargues/advice-generator-app",
+    demoUrl: "",
+    imgSource: "/advice-generator.jpg",
   },
   {
     id: "Coming soon",
