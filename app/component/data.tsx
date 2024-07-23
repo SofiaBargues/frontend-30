@@ -142,7 +142,7 @@ export const data: Item[] = [
     description: "Here the description",
     type: "start",
     tags: [],
-    tutorialUrl: "https://www.youtube.com/watch?v=3n22cowxoKU",
+    tutorialUrl: "https://www.youtube.com/watch?v=u02jD-Sj4yg",
     statementUrl:
       "https://www.frontendmentor.io/challenges/pricing-component-with-toggle-8vPwRMIC",
     githubUrl: "https://github.com/SofiaBargues/pricing-component-with-toggle",
@@ -158,7 +158,7 @@ export const data: Item[] = [
     tutorialUrl: "https://www.youtube.com/watch?v=3n22cowxoKU",
     statementUrl:
       "https://www.frontendmentor.io/challenges/age-calculator-app-dF9DFFpj-Q",
-    githubUrl: "https://github.com/SofiaBargues/blog-preview-card",
+    githubUrl: "https://github.com/SofiaBargues/age-calculator-app-main",
     demoUrl: "https://age-calculator-app-main-psi.vercel.app/",
     imgSource: "/age-calculator-app.jpg",
   },
@@ -171,7 +171,7 @@ export const data: Item[] = [
     tutorialUrl: "https://www.youtube.com/watch?v=3n22cowxoKU",
     statementUrl:
       "https://www.frontendmentor.io/challenges/interactive-pricing-component-t0m8PIyY8",
-    githubUrl: "https://github.com/SofiaBargues/blog-preview-card",
+    githubUrl: "https://github.com/SofiaBargues/interactive-pricing-component",
     demoUrl: "https://interactive-pricing-component-six-kappa.vercel.app/",
     imgSource: "/interactive-pricing-component.jpg",
   },
