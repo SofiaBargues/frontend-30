@@ -163,19 +163,6 @@ export const data: Item[] = [
     imgSource: "/age-calculator-app.jpg",
   },
   {
-    id: "interactive-pricing-component",
-    name: "Interactive pricing",
-    description: "Here the description",
-    type: "start",
-    tags: [],
-    tutorialUrl: "https://www.youtube.com/watch?v=dg7vy9FzFUo",
-    statementUrl:
-      "https://www.frontendmentor.io/challenges/interactive-pricing-component-t0m8PIyY8",
-    githubUrl: "https://github.com/SofiaBargues/interactive-pricing-component",
-    demoUrl: "https://interactive-pricing-component-six-kappa.vercel.app/",
-    imgSource: "/interactive-pricing-component.jpg",
-  },
-  {
     id: "advice-generator",
     name: "Advice generator app",
     description: "Here the description",
@@ -187,6 +174,19 @@ export const data: Item[] = [
     githubUrl: "https://github.com/SofiaBargues/advice-generator-app",
     demoUrl: "",
     imgSource: "/advice-generator.jpg",
+  },
+  {
+    id: "interactive-pricing-component",
+    name: "Interactive pricing",
+    description: "Here the description",
+    type: "start",
+    tags: [],
+    tutorialUrl: "https://www.youtube.com/watch?v=dg7vy9FzFUo",
+    statementUrl:
+      "https://www.frontendmentor.io/challenges/interactive-pricing-component-t0m8PIyY8",
+    githubUrl: "https://github.com/SofiaBargues/interactive-pricing-component",
+    demoUrl: "https://interactive-pricing-component-six-kappa.vercel.app/",
+    imgSource: "/interactive-pricing-component.jpg",
   },
   {
     id: "Coming soon",
