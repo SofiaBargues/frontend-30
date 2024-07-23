@@ -168,7 +168,7 @@ export const data: Item[] = [
     description: "Here the description",
     type: "start",
     tags: [],
-    tutorialUrl: "https://www.youtube.com/watch?v=3n22cowxoKU",
+    tutorialUrl: "https://www.youtube.com/watch?v=dg7vy9FzFUo",
     statementUrl:
       "https://www.frontendmentor.io/challenges/interactive-pricing-component-t0m8PIyY8",
     githubUrl: "https://github.com/SofiaBargues/interactive-pricing-component",
