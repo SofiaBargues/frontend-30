@@ -172,6 +172,19 @@ export const data: Item[] = [
     statementUrl:
       "https://www.frontendmentor.io/challenges/interactive-pricing-component-t0m8PIyY8",
     githubUrl: "https://github.com/SofiaBargues/interactive-pricing-component",
+    demoUrl: "",
+    imgSource: "/advice-generator.jpg",
+  },
+  {
+    id: "advice-generator-app",
+    name: "Advice generator app",
+    description: "Here the description",
+    type: "start",
+    tags: [],
+    tutorialUrl: "",
+    statementUrl:
+      "https://www.frontendmentor.io/challenges/advice-generator-app-QdUG-13db",
+    githubUrl: "https://github.com/SofiaBargues/advice-generator-app",
     demoUrl: "https://interactive-pricing-component-six-kappa.vercel.app/",
     imgSource: "/interactive-pricing-component.jpg",
   },
