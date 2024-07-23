@@ -21,6 +21,7 @@ export const data: Item[] = [
     description: "Here the description",
     type: "start",
     tags: [],
+    tutorialUrl: "https://www.youtube.com/watch?v=3n22cowxoKU",
     statementUrl:
       "https://www.frontendmentor.io/challenges/blog-preview-card-ckPaj01IcS",
     githubUrl: "https://github.com/SofiaBargues/blog-preview-card",
