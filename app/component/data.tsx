@@ -186,7 +186,7 @@ export const data: Item[] = [
     statementUrl:
       "https://www.frontendmentor.io/challenges/advice-generator-app-QdUG-13db",
     githubUrl: "https://github.com/SofiaBargues/advice-generator-app",
-    demoUrl: "",
+    demoUrl: "https://advice-generator-app-tau-six.vercel.app/",
     imgSource: "/advice-generator.jpg",
   },
   {
