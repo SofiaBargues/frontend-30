@@ -190,6 +190,19 @@ export const data: Item[] = [
     imgSource: "/advice-generator.jpg",
   },
   {
+    id: "ip-address-tracker",
+    name: "Advice generator app",
+    description: "Here the description",
+    type: "start",
+    tags: [],
+    tutorialUrl: "",
+    statementUrl:
+      "https://www.frontendmentor.io/challenges/ip-address-tracker-I8-0yYAH0",
+    githubUrl: "https://github.com/SofiaBargues/ip-address-tracker",
+    demoUrl: "",
+    imgSource: "/ip-address-tracker.jpg",
+  },
+  {
     id: "Coming soon",
     name: "Coming soon",
     description: "Here the description",
@@ -202,32 +215,4 @@ export const data: Item[] = [
     imgSource:
       "https://www.practiceportuguese.com/cdn-cgi/image/width=800,quality=90,format=auto,onerror=redirect,metadata=none/wp-content/uploads/2020/06/asking-questions-800x534.jpg",
   },
-  // {
-  //   id: "advice-generator-app",
-  //   name: "Advice generator app",
-  //   description: "Here the description",
-  //   type: "start",
-  //   tags: [],
-  //   tutorialUrl: "https://www.youtube.com/watch?v=3n22cowxoKU",
-  //   statementUrl:
-  //     "https://www.frontendmentor.io/challenges/advice-generator-app-QdUG-13db",
-  //   githubUrl: "https://github.com/SofiaBargues/blog-preview-card",
-  //   demoUrl: "https://blog-preview-card-xi-gules.vercel.app/",
-  //   imgSource:
-  //     "https://res.cloudinary.com/dz209s6jk/image/upload/v1703155661/Challenges/iyh3uk6keluskixx8pz6.jpg",
-  // },
-  // {
-  //   id: "weather-app",
-  //   name: "Weather App",
-  //   description: "Here the description",
-  //   type: "start",
-  //   tags: [],
-  //   tutorialUrl: "https://www.youtube.com/watch?v=3n22cowxoKU",
-  //   statementUrl:
-  //     "https://www.frontendmentor.io/challenges/blog-preview-card-ckPaj01IcS",
-  //   githubUrl: "https://github.com/SofiaBargues/blog-preview-card",
-  //   demoUrl: "https://blog-preview-card-xi-gules.vercel.app/",
-  //   imgSource:
-  //     "https://res.cloudinary.com/dz209s6jk/image/upload/v1703155661/Challenges/iyh3uk6keluskixx8pz6.jpg",
-  // },
 ];
