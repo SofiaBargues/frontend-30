@@ -198,8 +198,8 @@ export const data: Item[] = [
     tutorialUrl: "",
     statementUrl:
       "https://www.frontendmentor.io/challenges/ip-address-tracker-I8-0yYAH0",
-    githubUrl: "https://github.com/SofiaBargues/ip-address-tracker",
-    demoUrl: "",
+    githubUrl: "https://github.com/SofiaBargues/ip-address-tracker-1",
+    demoUrl: "https://ip-address-tracker-1.vercel.app/",
     imgSource: "/ip-address-tracker.jpg",
   },
   {
