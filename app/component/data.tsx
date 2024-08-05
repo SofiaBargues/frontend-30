@@ -203,6 +203,18 @@ export const data: Item[] = [
     imgSource: "/ip-address-tracker.jpg",
   },
   {
+    id: "country-capital-game",
+    name: "Country Capital Game",
+    description: "Here the description",
+    type: "start",
+    tags: [],
+    tutorialUrl: "",
+    statementUrl:
+      "https://devtools.tech/questions/s/build-country-capital-game-or-microsoft-frontend-interview-question-or-javascript-or-react-js---qid---yPb5g7MLCSf6j2F3qjqj",
+    githubUrl: "https://github.com/SofiaBargues/country-capital-game",
+    imgSource: "/country-capital-game.webp",
+  },
+  {
     id: "Coming soon",
     name: "Coming soon",
     description: "Here the description",
