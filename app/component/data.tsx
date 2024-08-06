@@ -212,6 +212,7 @@ export const data: Item[] = [
     statementUrl:
       "https://devtools.tech/questions/s/build-country-capital-game-or-microsoft-frontend-interview-question-or-javascript-or-react-js---qid---yPb5g7MLCSf6j2F3qjqj",
     githubUrl: "https://github.com/SofiaBargues/country-capital-game",
+    demoUrl: "https://country-capital-game-gamma.vercel.app/",
     imgSource: "/country-capital-game.webp",
   },
   {
