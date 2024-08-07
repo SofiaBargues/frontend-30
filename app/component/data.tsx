@@ -203,6 +203,19 @@ export const data: Item[] = [
     imgSource: "/ip-address-tracker.jpg",
   },
   {
+    id: "accordion-component",
+    name: "Accordion Component",
+    description: "Here the description",
+    type: "start",
+    tags: [],
+    tutorialUrl: "https://www.youtube.com/watch?v=dkh9-zICMQg&t=504s",
+    statementUrl:
+      "https://devtools.tech/questions/s/implement-accordion-component-in-reactjs-or-javascript-interview-question---qid---3pRN4mOqn69FJ94mrh1A",
+    githubUrl: "https://github.com/SofiaBargues/accordion-component",
+    demoUrl: "https://accordion-component-bay.vercel.app/",
+    imgSource: "/accordion-component.png",
+  },
+  {
     id: "country-capital-game",
     name: "Country Capital Game",
     description: "Here the description",
