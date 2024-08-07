@@ -19,8 +19,8 @@ export default function Home() {
           <div id="group1 " className="btn-ghost btn ml-2 flex gap-2">
             <div>
               <label className="avatar">
-                <div className="w-10 rounded-full border-2">
-                  <img src="/avatarColor.png" alt=" " />
+                <div className="w-10">
+                  <img src="/route.svg" alt=" " />
                 </div>
               </label>
             </div>
