@@ -15,7 +15,7 @@ const buttonStyle = {
   },
   statement: {
     color: " border-blue-500 text-blue-500 ",
-    bgColor: "  hover:text-base-100 hover:bg-blue-500 ",
+    bgColor: " hover:text-base-100 hover:bg-blue-500 ",
     img: <StatementIcon />,
   },
   demo: {
@@ -49,16 +49,16 @@ export function MyButton({
     >
       <button
         className={
-          buttonStyle[type].color +
-          buttonStyle[type].bgColor +
-          " " +
-          " rounded-lg border p-1 text-xs xl:p-2 xl:text-sm"
+          // buttonStyle[type].color +
+          // buttonStyle[type].bgColor +
+          // buttonStyle[type].bgColor +
+          " " + " text-xs xl:p-2 xl:text-sm"
         }
       >
         <div className="flex items-center justify-center gap-1">
           {/* // TODO: Insert icon again */}
-          {/* <div className="h-4 w-4">{buttonStyle[type].img}</div> */}
-          <p>{name}</p>
+          <div className="h-4 w-4">{buttonStyle[type].img}</div>
+          {/* <p>{name}</p> */}
         </div>
       </button>
     </a>
