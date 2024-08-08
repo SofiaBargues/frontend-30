@@ -31,8 +31,8 @@ We welcome contributions from the community! To contribute to this project:
 
 
 ## Contact
-- Author: [Your Name](mailto:barguessofia@gmail.com)
-- GitHub: [Your GitHub Profile](https://github.com/SofiaBargues)
+- Author: [Sofia Bargues](mailto:barguessofia@gmail.com)
+- GitHub: [Sofia Bargues](https://github.com/SofiaBargues)
 
 ## Acknowledgments
 - Built by various online learning resources.
