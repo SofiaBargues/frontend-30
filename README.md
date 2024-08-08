@@ -1,4 +1,4 @@
-# ⚛️React developer 30-projects Roadmap 🌼
+# ⚛️ React developer 30-projects Roadmap
 
 ## Description
 This project presents a roadmap featuring 30 challenges designed to enhance your skills in web development. The challenges focus on **React ⚛️**, **Tailwind 🌬️**, and **TypeScript ⌨️**. Whether you're a beginner or looking to refine your existing knowledge, this roadmap allows you to tackle challenges in any order, making it a flexible learning tool.
@@ -36,4 +36,7 @@ We welcome contributions from the community! To contribute to this project:
 
 ## Acknowledgments
 - Built by various free online learning resources.
-  
+
+
+## Give a Star 🌟 
+If you find this project helpful, click the star to show your support!
