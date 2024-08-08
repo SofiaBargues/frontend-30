@@ -35,5 +35,5 @@ We welcome contributions from the community! To contribute to this project:
 - GitHub: [Sofia Bargues](https://github.com/SofiaBargues)
 
 ## Acknowledgments
-- Built by various online learning resources.
+- Built by various free online learning resources.
   
