@@ -99,7 +99,7 @@ function Problems({ items }: { items: Item[] }) {
   }
   return (
     <section className="flex w-full flex-col items-center justify-center">
-      <div className="flex w-full max-w-4xl flex-col items-center justify-between gap-8 pb-8">
+      <div className="flex w-full max-w-4xl flex-col items-center justify-between pb-8">
         {items.map(itemToStep)}
       </div>
     </section>
