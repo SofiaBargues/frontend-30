@@ -229,6 +229,19 @@ export const data: Item[] = [
     imgSource: "/country-capital-game.webp",
   },
   {
+    id: "confluence-like-sidebar",
+    name: "Confluence-like Sidebar",
+    description: "Here the description",
+    type: "start",
+    tags: [],
+    tutorialUrl: "",
+    statementUrl:
+      "https://devtools.tech/questions/s/build-country-capital-game-or-microsoft-frontend-interview-question-or-javascript-or-react-js---qid---yPb5g7MLCSf6j2F3qjqj",
+    githubUrl: "https://github.com/SofiaBargues/country-capital-game",
+    demoUrl: "https://country-capital-game-gamma.vercel.app/",
+    imgSource: "/confluence-like-sidebar.webp",
+  },
+  {
     id: "Coming soon",
     name: "Coming soon",
     description: "Here the description",
