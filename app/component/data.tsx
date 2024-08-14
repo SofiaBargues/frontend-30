@@ -235,9 +235,10 @@ export const data: Item[] = [
       "In this question, the candidate needs to build a sidebar that contains a collapsible tree-like UI.",
     type: "start",
     tags: [],
-    tutorialUrl: "",
+    tutorialUrl: "https://www.youtube.com/watch?v=3OxMsnP78zg",
     statementUrl:
       "https://www.devtools.tech/questions/s/how-to-build-a-confluence-like-sidebar-with-tree-structure-or-atlassian-frontend-interview-question-or-react-js---qid---3r7988VsESMQBt9vP1Zi",
+    githubUrl: "https://github.com/SofiaBargues/confluence-like-sidebar",
     demoUrl: "https://confluence-like-sidebar.vercel.app/",
     imgSource: "/confluence-like-sidebar.webp",
   },
