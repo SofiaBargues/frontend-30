@@ -231,14 +231,14 @@ export const data: Item[] = [
   {
     id: "confluence-like-sidebar",
     name: "Confluence-like Sidebar",
-    description: "Here the description",
+    description:
+      "In this question, the candidate needs to build a sidebar that contains a collapsible tree-like UI.",
     type: "start",
     tags: [],
     tutorialUrl: "",
     statementUrl:
-      "https://devtools.tech/questions/s/build-country-capital-game-or-microsoft-frontend-interview-question-or-javascript-or-react-js---qid---yPb5g7MLCSf6j2F3qjqj",
-    githubUrl: "https://github.com/SofiaBargues/country-capital-game",
-    demoUrl: "https://country-capital-game-gamma.vercel.app/",
+      "https://www.devtools.tech/questions/s/how-to-build-a-confluence-like-sidebar-with-tree-structure-or-atlassian-frontend-interview-question-or-react-js---qid---3r7988VsESMQBt9vP1Zi",
+    demoUrl: "https://confluence-like-sidebar.vercel.app/",
     imgSource: "/confluence-like-sidebar.webp",
   },
   {
