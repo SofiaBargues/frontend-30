@@ -243,6 +243,20 @@ export const data: Item[] = [
     imgSource: "/confluence-like-sidebar.webp",
   },
   {
+    id: "password-strength-checker",
+    name: "Password Strength Checker",
+    description:
+      "In this question, you need to build a password strength checker in React.js that shows the strength of the password.",
+    type: "start",
+    tags: [],
+    tutorialUrl: "https://www.youtube.com/watch?v=CM-MXPl0-wE",
+    statementUrl:
+      "https://www.devtools.tech/questions/s/how-to-build-a-password-strength-checker-in-react-js-or-frontend-interview-question-or-javascript---qid---tQR3mRIXsSK1tDfCliYj",
+    githubUrl: "https://github.com/SofiaBargues/password-strength-checker",
+    demoUrl: "https://password-strength-checker-red.vercel.app/",
+    imgSource: "/password-strength-checker.png",
+  },
+  {
     id: "Coming soon",
     name: "Coming soon",
     description: "Here the description",
