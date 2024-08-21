@@ -257,6 +257,20 @@ export const data: Item[] = [
     imgSource: "/password-strength-checker.png",
   },
   {
+    id: "text-autocomplete",
+    name: "Text Autocomplete",
+    description:
+      "In this coding challenge, you need to build an autocomplete that will act as a payment page where users can enter their UPI.",
+    type: "start",
+    tags: [],
+    tutorialUrl: "https://www.youtube.com/watch?v=qMkUziVZvzs",
+    statementUrl:
+      "https://www.devtools.tech/questions/s/build-an-autocomplete-using-reactjs-or-type-one-or-frontend-coding-challenge-or-javascript-interview-question---qid---wIsJwxPV1Ka0GdmTIXQX",
+    githubUrl: "https://github.com/SofiaBargues/autocomplete",
+    demoUrl: "https://autocomplete-6ix2.vercel.app/",
+    imgSource: "/autocomplete.png",
+  },
+  {
     id: "Coming soon",
     name: "Coming soon",
     description: "Here the description",
