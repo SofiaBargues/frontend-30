@@ -102,7 +102,7 @@ function Problems({ items }: { items: Item[] }) {
   }
   return (
     <section className="flex w-full flex-col items-center justify-center">
-      <div className="shadow-black[50%] flex w-full flex-row items-center border border-gray-300 bg-base-100 p-10 shadow-md"></div>
+      {/* <div className="shadow-black[50%] flex w-full flex-row items-center border border-gray-300 bg-base-100 p-10 shadow-md"></div> */}
       <div className="flex w-full max-w-4xl flex-col items-center justify-between pb-8">
         {items.map(itemToStep)}
       </div>
