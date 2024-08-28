@@ -271,6 +271,20 @@ export const data: Item[] = [
     imgSource: "/autocomplete.png",
   },
   {
+    id: "circles-game",
+    name: "Circles Game",
+    description:
+      "In this UI coding challenge, the candidate needs to build a simple React app where a circle should appear wherever user clicks on the screen.",
+    type: "start",
+    tags: [],
+    tutorialUrl: "https://www.youtube.com/watch?v=h05uGv0PEuQ",
+    statementUrl:
+      "https://www.devtools.tech/questions/s/how-to-build-circles-game-in-react-js-frontend-coding-challenge---qid---Y8acly7B5CmIVAaT5knP",
+    githubUrl: "https://github.com/SofiaBargues/circles-game",
+    demoUrl: "https://circles-game.vercel.app/",
+    imgSource: "/circles-game.png",
+  },
+  {
     id: "Coming soon",
     name: "Coming soon",
     description: "Here the description",
