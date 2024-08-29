@@ -285,6 +285,20 @@ export const data: Item[] = [
     imgSource: "/circles-game.png",
   },
   {
+    id: "multiple-progress-bars",
+    name: "Multiple Progress Bars",
+    description:
+      "In this UI coding challenge, the candidate needs to build a simple React app where a circle should appear wherever user clicks on the screen.",
+    type: "start",
+    tags: [],
+    tutorialUrl: "https://www.youtube.com/watch?v=h05uGv0PEuQ",
+    statementUrl:
+      "https://www.devtools.tech/questions/s/how-to-animate-multiple-progress-bars-in-a-sequence-or-uber-frontend-interview-question-or-react-js-or-javascript-or-html-or-css---qid---0pJDOORWvcix4ymghsB9",
+    githubUrl: "https://github.com/SofiaBargues/circles-game",
+    demoUrl: "https://multiple-progress-bars.vercel.app/",
+    imgSource: "/circles-game.png",
+  },
+  {
     id: "Coming soon",
     name: "Coming soon",
     description: "Here the description",
