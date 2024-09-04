@@ -299,6 +299,35 @@ export const data: Item[] = [
     imgSource: "/multiple-progress-bars.webp",
   },
   {
+    id: "shape-based-UI",
+    name: "Shape Based UI",
+    description:
+      "Create a shape based on a given 2D array. A shape is a collection of empty boxes placed at values that are true in the provided array.",
+    type: "start",
+    tags: [],
+    tutorialUrl: "https://www.youtube.com/watch?v=DCoIeGt4g7M&t=2s",
+    statementUrl:
+      "https://www.devtools.tech/questions/s/how-to-create-an-interactive-shape-based-ui-uber-frontend-interview-question-or-javascript-or-react-js---qid---6FVH1ZMWMXd4uZ8WAGEi",
+    githubUrl: "https://github.com/SofiaBargues/shape-based-ui",
+    demoUrl: "https://shape-based-ui.vercel.app/",
+    imgSource: "/shape-based-UI.png",
+  },
+  {
+    id: "color-guessing-game",
+    name: "Color Guessing Game",
+    description:
+      "The challenge is to create a game where a randomly generated color is displayed, and the user must select the correct hexadecimal code from three options.",
+    type: "start",
+    tags: [],
+    tutorialUrl:
+      "https://www.youtube.com/watch?v=QNYljS0_TOE&list=PL6x5Q-Sj_Bla3_wMqhETxMBjFml0XJNPI",
+    statementUrl:
+      "https://github.com/SofiaBargues/colorguessing-game/blob/main/README.md",
+    githubUrl: "https://github.com/SofiaBargues/colorguessing-game",
+    demoUrl: "https://colorguessing-game-six.vercel.app",
+    imgSource: "/color-guessing-game.png",
+  },
+  {
     id: "Coming soon",
     name: "Coming soon",
     description: "Here the description",
