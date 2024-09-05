@@ -328,6 +328,20 @@ export const data: Item[] = [
     imgSource: "/color-guessing-game.png",
   },
   {
+    id: "stoplight-component",
+    name: "Stoplight Component",
+    description:
+      "Build a React stoplight component that cycles between colors at set intervals, using hooks to manage state.",
+    type: "start",
+    tags: [],
+    tutorialUrl: "https://www.youtube.com/watch?v=plFo3jJRTdE",
+    statementUrl:
+      "https://github.com/SofiaBargues/stoplight-component/blob/main/README.md",
+    githubUrl: "https://github.com/SofiaBargues/colorguessing-game",
+    demoUrl: "https://stoplight-component.vercel.app/",
+    imgSource: "/stoplight-component.png",
+  },
+  {
     id: "Coming soon",
     name: "Coming soon",
     description: "Here the description",
