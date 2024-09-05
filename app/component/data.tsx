@@ -337,7 +337,7 @@ export const data: Item[] = [
     tutorialUrl: "https://www.youtube.com/watch?v=plFo3jJRTdE",
     statementUrl:
       "https://github.com/SofiaBargues/stoplight-component/blob/main/README.md",
-    githubUrl: "https://github.com/SofiaBargues/colorguessing-game",
+    githubUrl: "https://github.com/SofiaBargues/stoplight-component",
     demoUrl: "https://stoplight-component.vercel.app/",
     imgSource: "/stoplight-component.png",
   },
