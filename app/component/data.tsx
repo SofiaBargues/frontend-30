@@ -348,7 +348,8 @@ export const data: Item[] = [
       "The challenge is to create an image slider (carousel) component with functionality for navigating between images, automatic cycling with play/stop controls, and basic sliding animations.",
     type: "start",
     tags: [],
-    tutorialUrl: "https://www.youtube.com/watch?v=plFo3jJRTdE",
+    tutorialUrl:
+      "https://www.youtube.com/watch?v=1eO3LQ1rptA&list=PL6x5Q-Sj_Bla3_wMqhETxMBjFml0XJNPI&index=10",
     statementUrl:
       "https://github.com/SofiaBargues/image-slider/blob/main/README.md",
     githubUrl: "https://github.com/SofiaBargues/image-slider",
