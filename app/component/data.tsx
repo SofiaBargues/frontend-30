@@ -342,6 +342,20 @@ export const data: Item[] = [
     imgSource: "/stoplight-component.png",
   },
   {
+    id: "image-slider",
+    name: "Image Slider",
+    description:
+      "The challenge is to create an image slider (carousel) component with functionality for navigating between images, automatic cycling with play/stop controls, and basic sliding animations.",
+    type: "start",
+    tags: [],
+    tutorialUrl: "https://www.youtube.com/watch?v=plFo3jJRTdE",
+    statementUrl:
+      "https://github.com/SofiaBargues/image-slider/blob/main/README.md",
+    githubUrl: "https://github.com/SofiaBargues/image-slider",
+    demoUrl: "https://image-slider-wheat-mu.vercel.app/",
+    imgSource: "/image-slider.png",
+  },
+  {
     id: "Coming soon",
     name: "Coming soon",
     description: "Here the description",
