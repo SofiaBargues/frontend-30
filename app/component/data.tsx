@@ -316,6 +316,21 @@ export const data: Item[] = [
     id: "color-guessing-game",
     name: "Color Guessing Game",
     description:
+      "Create a component that shows a number input challenge, requiring users to enter a correct 4-digit code. When the right code is input, the component transitions to a different view or content.",
+    type: "start",
+    tags: [],
+    tutorialUrl:
+      "https://www.youtube.com/watch?v=x7yoUNV3qJI&list=PL6x5Q-Sj_Bla3_wMqhETxMBjFml0XJNPI&index=10",
+    statementUrl:
+      "https://github.com/SofiaBargues/lock-screen-password/blob/main/README.md",
+    githubUrl: "https://github.com/SofiaBargues/lock-screen-password",
+    demoUrl: "https://lock-screen-password.vercel.app/",
+    imgSource: "/lock-screen-password.png",
+  },
+  {
+    id: "lock-screen-password",
+    name: "Lock Screen Password",
+    description:
       "The challenge is to create a game where a randomly generated color is displayed, and the user must select the correct hexadecimal code from three options.",
     type: "start",
     tags: [],
@@ -355,6 +370,21 @@ export const data: Item[] = [
     githubUrl: "https://github.com/SofiaBargues/image-slider",
     demoUrl: "https://image-slider-wheat-mu.vercel.app/",
     imgSource: "/image-slider.png",
+  },
+  {
+    id: "memory-game",
+    name: "Memory Game",
+    description:
+      "The Memory Game Challenge involves building a 4x4 memory game, where players match tiles by clicking on them. The challenge focuses on state management, dynamic rendering, and event handling, with optional features like a timer and move tracking to enhance gameplay.",
+    type: "start",
+    tags: [],
+    tutorialUrl:
+      "https://www.youtube.com/watch?v=5UcfBfSP2T4&list=PL6x5Q-Sj_Bla3_wMqhETxMBjFml0XJNPI&index=6",
+    statementUrl:
+      "https://github.com/SofiaBargues/memory-game/blob/main/README.md",
+    githubUrl: "https://github.com/SofiaBargues/memory-game",
+    demoUrl: "https://memory-game-gilt-psi.vercel.app/",
+    imgSource: "/memory-game.png",
   },
   {
     id: "Coming soon",
