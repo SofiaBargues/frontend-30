@@ -204,7 +204,8 @@ export const data: Item[] = [
   {
     id: "ip-address-tracker",
     name: "Advice generator app",
-    description: "Here the description",
+    description:
+      "In this challenge, you'll be using two separate APIs together to create an IP Address Tracking app.",
     type: "start",
     tags: [],
     tutorialUrl: "",
@@ -217,7 +218,8 @@ export const data: Item[] = [
   {
     id: "accordion-component",
     name: "Accordion Component",
-    description: "Here the description",
+    description:
+      "This challenge involves building an Accordion component from scratch, where candidates implement a UI component based on a problem statement.",
     type: "start",
     tags: [],
     tutorialUrl: "https://www.youtube.com/watch?v=dkh9-zICMQg&t=504s",
@@ -230,10 +232,11 @@ export const data: Item[] = [
   {
     id: "country-capital-game",
     name: "Country Capital Game",
-    description: "Here the description",
+    description:
+      "In this frontend coding challenge, implement a game to match countries with their capitals.",
     type: "start",
     tags: [],
-    tutorialUrl: "",
+    tutorialUrl: "https://www.youtube.com/watch?v=Iv1gZN900uc",
     statementUrl:
       "https://devtools.tech/questions/s/build-country-capital-game-or-microsoft-frontend-interview-question-or-javascript-or-react-js---qid---yPb5g7MLCSf6j2F3qjqj",
     githubUrl: "https://github.com/SofiaBargues/country-capital-game",
