@@ -5,7 +5,7 @@ export const data: Item[] = [
     id: "qr-code-component",
     name: "QR code component",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam a dapibus mi, nec pulvinar odio. Quisque quis nunc lacinia, vestibulum enim ut, accumsan metus.  ",
+      "A perfect first challenge if you're new to HTML and CSS. The card layout doesn't shift, so it's ideal if you haven't learned about building responsive layouts yet.",
     tags: [],
     type: "start",
     tutorialUrl: "https://www.youtube.com/watch?v=5BBYPntB-GY&t=7s",
@@ -18,7 +18,8 @@ export const data: Item[] = [
   {
     id: "blog-preview-card",
     name: "Blog Preview Card",
-    description: "Here the description",
+    description:
+      "This HTML & CSS-only challenge is a perfect project for beginners getting up to speed with HTML and CSS fundamentals, like HTML structure and the box model.",
     type: "start",
     tags: [],
     tutorialUrl: "https://www.youtube.com/watch?v=3n22cowxoKU",
@@ -31,7 +32,8 @@ export const data: Item[] = [
   {
     id: "social-links-profile",
     name: "Social links profile",
-    description: "Here the description",
+    description:
+      "In this small project, you'll build out your social link-sharing profile. You can even personalize it and use it to share all your social profiles!.",
     type: "start",
     tags: [],
     tutorialUrl: "https://www.youtube.com/watch?v=PlUOMi23qAc",
@@ -44,7 +46,8 @@ export const data: Item[] = [
   {
     id: "recipe-page",
     name: "Recipe page",
-    description: "Here the description",
+    description:
+      "This challenge will help you focus on writing semantic HTML. Ensure you think through what HTML elements are most appropriate for each piece of content.",
     type: "start",
     tags: [],
     tutorialUrl: "https://www.youtube.com/watch?v=wF2DLQGeJS0&t=185s",
@@ -57,7 +60,8 @@ export const data: Item[] = [
   {
     id: "testimonials-grid-section",
     name: "Testimonials grid",
-    description: "Here the description",
+    description:
+      "This challenge will be perfect practice for anyone wanting to test their CSS Grid skills. Grid is such a powerful addition to CSS, so it's worth getting to grips with it!",
     type: "start",
     tags: [],
     tutorialUrl:
@@ -72,7 +76,8 @@ export const data: Item[] = [
   {
     id: "article-preview-component",
     name: "Article preview",
-    description: "Here the description",
+    description:
+      "Practice your layout skills with this article preview component. There's lots of fun to be had playing around with animations for the sharing icons as well.",
     type: "start",
     tags: [],
     tutorialUrl:
@@ -86,7 +91,8 @@ export const data: Item[] = [
   {
     id: "time-tracking-dashboard",
     name: "Time tracking",
-    description: "Here the description",
+    description:
+      "A perfect opportunity to practice your CSS Grid skills. For anyone wanting to take it up a notch, we provide a JSON data file to practice working with data.",
     type: "start",
     tags: [],
     tutorialUrl: "https://www.youtube.com/watch?v=l9Qw8y3LfCY",
@@ -99,13 +105,14 @@ export const data: Item[] = [
   {
     id: "newsletter-sign-up-form-with-success-message",
     name: "Newsletter sign-up",
-    description: "Here the description",
+    description:
+      "This will test your skills with basic form structure, validation, and submission. The success state will also be an excellent opportunity to work with DOM manipulation.",
     type: "start",
     tags: [],
     tutorialUrl:
       "https://www.youtube.com/watch?v=abdsoVJsWzQ&list=PLrVXEY3WfL-39_2q2HiKkuyNxelQI1XeV&index=3",
     statementUrl:
-      "https://www.frontendmentor.io/challenges/newsletter-signup-form-with-success-message-3FC1AZbNrv/hub",
+      "https://www.frontendmentor.io/challenges/newsletter-signup-form-with-success-message-3FC1AZbNrv",
     githubUrl: "https://github.com/SofiaBargues/newsletter-sign-up",
     demoUrl: "https://frontend-mentor-newsletter-signup-form-ruby.vercel.app/",
     imgSource: "/newsletter-singup-form.jpg",
@@ -113,7 +120,8 @@ export const data: Item[] = [
   {
     id: "expenses-chart-component",
     name: "Expenses chart",
-    description: "Here the description",
+    description:
+      "In this challenge, you'll create a bar chart component from scratch. We provide a local JSON file, so you can add the chart data dynamically if you choose.",
     type: "start",
     tags: [],
     tutorialUrl: "https://www.youtube.com/watch?v=s9CHPlY8J8I",
@@ -126,7 +134,8 @@ export const data: Item[] = [
   {
     id: "tip-calculator",
     name: "Tip calculator",
-    description: "Here the description",
+    description:
+      "This small app is perfect for anyone starting to get to grips with JavaScript. The calculator functionality will be a nice test!",
     type: "start",
     tags: [],
     tutorialUrl: "https://www.youtube.com/watch?v=FYCauVeo8OY",
@@ -139,7 +148,8 @@ export const data: Item[] = [
   {
     id: "pricing-component-with-toggle",
     name: "Pricing component",
-    description: "Here the description",
+    description:
+      "This challenge will get you thinking about building an accessible custom toggle control and also test your layout skills.",
     type: "start",
     tags: [],
     tutorialUrl: "https://www.youtube.com/watch?v=u02jD-Sj4yg",
