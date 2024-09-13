@@ -177,7 +177,8 @@ export const data: Item[] = [
   {
     id: "interactive-pricing-component",
     name: "Interactive pricing",
-    description: "Here the description",
+    description:
+      "In this project, you'll build out an interactive pricing component complete with custom range input slider and pricing toggle. A perfect way to test your JS skills!",
     type: "start",
     tags: [],
     tutorialUrl: "https://www.youtube.com/watch?v=dg7vy9FzFUo",
@@ -203,7 +204,7 @@ export const data: Item[] = [
   },
   {
     id: "ip-address-tracker",
-    name: "Advice generator app",
+    name: "IP Address Tracker",
     description:
       "In this challenge, you'll be using two separate APIs together to create an IP Address Tracking app.",
     type: "start",
