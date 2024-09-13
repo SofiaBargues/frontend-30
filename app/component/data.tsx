@@ -417,16 +417,18 @@ export const data: Item[] = [
     imgSource: "/memory-game.png",
   },
   {
-    id: "Coming soon",
-    name: "Coming soon",
-    description: "Here the description",
+    id: "wack-a-mole",
+    name: "Wack-a-Mole",
+    description:
+      "In this beginner-level React challenge, you'll create a 3x3 grid-based Whack-a-Mole game. The objective is to click on the moles before they disappear, increasing your score.",
     type: "start",
     tags: [],
-    tutorialUrl: "https://www.youtube.com/",
-    statementUrl: "https://www.frontendmentor.io",
-    githubUrl: "https://github.com/SofiaBargues",
+    tutorialUrl:
+      "https://www.youtube.com/watch?v=x01eEjSFKig&list=PL6x5Q-Sj_Bla3_wMqhETxMBjFml0XJNPI&index=15",
+    statementUrl:
+      "https://github.com/SofiaBargues/whack-a-mole-game/blob/main/README.md",
+    githubUrl: "https://github.com/SofiaBargues/whack-a-mole-game",
     demoUrl: "https://frontend-30.vercel.app/",
-    imgSource:
-      "https://www.practiceportuguese.com/cdn-cgi/image/width=800,quality=90,format=auto,onerror=redirect,metadata=none/wp-content/uploads/2020/06/asking-questions-800x534.jpg",
+    imgSource: "/wack-a-mole.png",
   },
 ];
