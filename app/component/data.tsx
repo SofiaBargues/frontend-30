@@ -162,10 +162,11 @@ export const data: Item[] = [
   {
     id: "age-calculator-app",
     name: "Age calculator app",
-    description: "Here the description",
+    description:
+      "This challenge is designed to sharpen your JavaScript and form validation skills. Working with dates in JavaScript can be tricky, so this will be a nice test!",
     type: "start",
     tags: [],
-    tutorialUrl: "https://www.youtube.com/watch?v=3n22cowxoKU",
+    tutorialUrl: "https://www.youtube.com/watch?v=U4N9xwSPasY",
     statementUrl:
       "https://www.frontendmentor.io/challenges/age-calculator-app-dF9DFFpj-Q",
     githubUrl: "https://github.com/SofiaBargues/age-calculator-app-main",
@@ -189,10 +190,11 @@ export const data: Item[] = [
   {
     id: "advice-generator",
     name: "Advice generator app",
-    description: "Here the description",
+    description:
+      "The perfect project if you're learning how to interact with 3rd-party APIs. This challenge uses the Advice Slip API to generate random quotes of advice.",
     type: "start",
     tags: [],
-    tutorialUrl: "",
+    tutorialUrl: "https://www.youtube.com/watch?v=ipTfXOXBCoQ&t=1106s",
     statementUrl:
       "https://www.frontendmentor.io/challenges/advice-generator-app-QdUG-13db",
     githubUrl: "https://github.com/SofiaBargues/advice-generator-app",
