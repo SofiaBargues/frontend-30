@@ -429,7 +429,7 @@ export const data: Item[] = [
     statementUrl:
       "https://github.com/SofiaBargues/whack-a-mole-game/blob/main/README.md",
     githubUrl: "https://github.com/SofiaBargues/whack-a-mole-game",
-    demoUrl: "https://frontend-30.vercel.app/",
+    demoUrl: "https://whack-a-mole-game-ecru.vercel.app/",
     imgSource: "/wack-a-mole.png",
   },
 ];
