@@ -107,12 +107,12 @@ function Problems({ items }: { items: Item[] }) {
         <div className="text-2xl font-semibold">Progress</div>
         <div className="flex">
           <div className="">{completedStr}/30</div>
-          <div className="z-20 flex h-4 w-[300px] rounded-full bg-gray-100">
+          <div className="relative flex h-4 w-[300px] rounded-full bg-gray-200">
             <div
               style={{
                 width: completedStr + "0px",
               }}
-              className="z-60 relative flex h-4 rounded-full bg-emerald-400"
+              className="relative flex h-4 rounded-full bg-emerald-400"
             ></div>
           </div>
         </div>
