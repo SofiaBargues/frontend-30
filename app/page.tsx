@@ -10,6 +10,7 @@ import { Step } from "./component/Step";
 import { Hero } from "./component/Hero";
 //   const [status, setStatus] = useState<boolean[]>(new Array(30).fill(false));
 import { useEffect, useState } from "react";
+import { Filter } from "lucide-react";
 
 export default function Home() {
   return (
@@ -63,9 +64,7 @@ export default function Home() {
 function Problems({ items }: { items: Item[] }) {
   const [status, setStatus] = useState<boolean[]>(Array(30).fill(false));
   const [isFirstRender, setIsFirstRender] = useState<boolean>(true);
-
-  let numProblems;
-  let numCompleted;
+  const [completedAverage, setcompletedAverage] = useState<number>(0);
 
   useEffect(() => {
     if (isFirstRender) {
@@ -89,7 +88,6 @@ function Problems({ items }: { items: Item[] }) {
       statusCopi[index] = isDone;
       setStatus(statusCopi);
     }
-
     return (
       <Step
         key={item.id}
@@ -100,9 +98,25 @@ function Problems({ items }: { items: Item[] }) {
       ></Step>
     );
   }
+  let completed = status.filter((x) => x != true).length;
+  let completedStr = completed.toString();
+  console.log(completedStr);
   return (
     <section className="flex w-full flex-col items-center justify-center">
-      {/* <div className="shadow-black[50%] flex w-full flex-row items-center border border-gray-300 bg-base-100 p-10 shadow-md"></div> */}
+      <div className="shadow-black[50%] items- center flex w-full max-w-4xl flex-row justify-between border border-gray-300 bg-base-100 p-10 shadow-md">
+        <div className="text-2xl font-semibold">Progress</div>
+        <div className="flex">
+          <div className="">{completedStr}/30</div>
+          <div className="z-20 flex h-4 w-[300px] rounded-full bg-gray-100">
+            <div
+              style={{
+                width: completedStr + "0px",
+              }}
+              className="z-60 relative flex h-4 rounded-full bg-emerald-400"
+            ></div>
+          </div>
+        </div>
+      </div>
       <div className="flex w-full max-w-4xl flex-col items-center justify-between pb-8">
         {items.map(itemToStep)}
       </div>
