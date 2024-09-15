@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 "use client";
 import { Book, Star, Cat, Key } from "lucide-react";
 import { MyButton } from "./MyButton";
@@ -12,7 +13,7 @@ export interface StepProps {
   setDone: (isDone: boolean) => void;
 }
 
-function StepImage({ number, item }: { number: number; item: Item }) {
+function StepNumber({ number, item }: { number: number; item: Item }) {
   return (
     <div className="ml-4 flex h-full items-center justify-start text-7xl text-slate-700 lg:w-24">
       <div className="flex text-left lg:flex-col">{number}</div>
@@ -28,16 +29,25 @@ export function Step({ item, number, isDone, setDone }: StepProps) {
   }
 
   return (
-    <div className="shadow-black[50%] flex w-full flex-row items-center border border-gray-300 bg-base-100 p-10 shadow-md">
-      <StepImage number={number} item={item} />
-      {/* CUERPO */}
-      <div className="items m-5 flex w-full flex-col gap-2">
+    <div className="shadow-black[50%] relative flex w-full flex-row items-center border border-gray-300 bg-base-100 p-10 shadow-md">
+      <img
+        alt={item.imgSource}
+        src={item.imgSource}
+        style={{ opacity: 0.4 }}
+        className={
+          "absolute left-[10px] z-0 ml-6 flex max-h-[200px] max-w-[200px] rounded-md " +
+          (number % 2 === 0 ? " -rotate-12" : " rotate-12")
+        }
+      ></img>
+      <div className="z-30">
+        <StepNumber number={number} item={item} />
+      </div>
+      <div className="items relative m-5 flex w-full flex-col gap-2">
         <div className="flex justify-between">
           <h3 className="text-3xl font-bold">{item.name}</h3>
         </div>
         <p className=" ">{item.description}</p>
-
-        <div className=" ">
+        <div className="">
           {item.tags.map((tag, index) => (
             <span key={index}>{tag}</span>
           ))}

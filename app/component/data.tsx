@@ -256,7 +256,7 @@ export const data: Item[] = [
       "https://www.devtools.tech/questions/s/how-to-build-a-confluence-like-sidebar-with-tree-structure-or-atlassian-frontend-interview-question-or-react-js---qid---3r7988VsESMQBt9vP1Zi",
     githubUrl: "https://github.com/SofiaBargues/confluence-like-sidebar",
     demoUrl: "https://confluence-like-sidebar.vercel.app/",
-    imgSource: "/confluence-like-sidebar.webp",
+    imgSource: "/18.png",
   },
   {
     id: "password-strength-checker",
