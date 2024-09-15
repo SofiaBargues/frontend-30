@@ -8,6 +8,54 @@ export function Hero({}: {}) {
           <h1 className="max-w-2xl text-5xl font-bold sm:text-7xl lg:text-8xl">
             30
             <br />
+            <img
+              alt="/age-calculator-app.jpg"
+              src="/age-calculator-app.jpg"
+              // style={{ opacity: 0.4 }}
+              className={
+                "absolute left-[10px] z-0 ml-6 flex max-h-[200px] max-w-[200px] -rotate-12 rounded-md"
+              }
+            ></img>
+            <img
+              alt="/recipe-page.jpg"
+              src="/recipe-page.jpg"
+              // style={{ opacity: 0.4 }}
+              className={
+                "absolute left-[10px] z-0 ml-6 mt-40 max-h-[200px] max-w-[200px] -rotate-12 rounded-md"
+              }
+            ></img>
+            <img
+              alt="/tip-calculator-app.jpg"
+              src="/tip-calculator-app.jpg"
+              // style={{ opacity: 0.4 }}
+              className={
+                "absolute left-[10px] z-0 ml-6 mt-80 max-h-[200px] max-w-[200px] -rotate-12 rounded-md"
+              }
+            ></img>
+            <img
+              alt="/mole.png"
+              src="/mole.png"
+              // style={{ opacity: 0.4 }}
+              className={
+                "absolute left-[10px] z-0 ml-6 mt-40 max-h-[200px] max-w-[200px] -rotate-12 rounded-md"
+              }
+            ></img>
+            <img
+              alt="/payment-graphic.png"
+              src="/payment-graphic.png"
+              // style={{ opacity: 0.4 }}
+              className={
+                "absolute right-44 z-0 ml-6 mt-80 max-h-[200px] max-w-[200px] -rotate-12 rounded-md"
+              }
+            ></img>
+            <img
+              alt="/cards.png"
+              src="/cards.png"
+              // style={{ opacity: 0.4 }}
+              className={
+                "absolute right-20 z-0 ml-6 mt-80 max-h-[200px] max-w-[200px] -rotate-12 rounded-md"
+              }
+            ></img>
             <div className="h-12 text-primary sm:h-[4.5rem] lg:h-24">
               Frontend
               {/* <Typewriter

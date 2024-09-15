@@ -106,7 +106,7 @@ function Problems({ items }: { items: Item[] }) {
       <div className="shadow-black[50%] items- center flex w-full max-w-4xl flex-row justify-between border border-gray-300 bg-base-100 p-10 shadow-md">
         <div className="text-2xl font-semibold">Progress</div>
         <div className="flex">
-          <div className="">{completedStr}/30</div>
+          <div className="mr-5">{completedStr}/30 </div>
           <div className="relative flex h-4 w-[300px] rounded-full bg-gray-200">
             <div
               style={{
