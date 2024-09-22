@@ -5,6 +5,7 @@ import { MyButton } from "./MyButton";
 import { Item } from "./Item";
 import { MouseEvent, useState } from "react";
 import { idText } from "typescript";
+import { MyStatementButton } from "./MyStatementButton";
 
 export interface StepProps {
   item: Item;
@@ -76,8 +77,12 @@ export function Step({ item, number, isDone, setDone }: StepProps) {
             <span key={index}>{tag}</span>
           ))}
         </div>
-        <div className="flex gap-3">
-          <MyButton url={item.statementUrl} name="Statement" type="statement" />
+        <div className="flex items-center gap-3">
+          <MyStatementButton
+            url={item.statementUrl}
+            name="Statement"
+            type="statement"
+          />
           <MyButton url={item.githubUrl} name="GitHub" type="github" />
           <MyButton url={item.demoUrl} name="Demo" type="demo" />
           <MyButton url={item.tutorialUrl} name="Tutorial" type="tutorial" />
