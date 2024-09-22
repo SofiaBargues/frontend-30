@@ -41,7 +41,7 @@ export function Step({ item, number, isDone, setDone }: StepProps) {
         style={{ opacity: 0.3 }}
         className={
           (isDone ? "grayscale filter " : "") +
-          "absolute left-[10px] z-0 ml-6 flex max-h-[200px] max-w-[200px] rounded-md" +
+          "absolute left-[10px] z-0 ml-6 mt-6 flex max-h-[100px] max-w-[100px] rounded-md md:max-h-[200px] md:max-w-[200px]" +
           (number % 2 === 0 ? " -rotate-12" : " rotate-12")
         }
       ></img>
