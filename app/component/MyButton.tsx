@@ -9,9 +9,9 @@ type ButtonTypes = "github" | "statement" | "demo" | "tutorial";
 
 const buttonStyle = {
   github: {
-    color: "border-black text-black ",
-    bgColor: " hover:border-black hover:text-base-100 hover:bg-black ",
-    img: <GithubIcon className="h-4 w-4 md:h-4 md:w-4" />,
+    color: "border-black text-black",
+    bgColor: " hover:border-black hover:text-base-100 hover:bg-black",
+    img: <GithubIcon />,
   },
   statement: {
     color: " border-blue-500 text-blue-500 ",
@@ -25,9 +25,9 @@ const buttonStyle = {
   },
 
   tutorial: {
-    color: " border-red-600 text-red-600",
+    color: " border-red-600 text-red-600 ",
     bgColor: " hover:border-red-600 hover:text-base-100 hover:bg-red-600 ",
-    img: <YoutubeIcon />,
+    img: <YoutubeIcon className="h-4 w-4 sm:h-6 sm:w-6" />,
   },
 };
 
@@ -61,8 +61,7 @@ export function MyButton({
             }
           >
             <div className="flex items-center justify-center gap-1">
-              {/* // TODO: Insert icon again */}
-              <div className="h-4 w-4">{buttonStyle[type].img}</div>
+              <div className="">{buttonStyle[type].img}</div>
               {/* <p>{name}</p> */}
             </div>
           </button>

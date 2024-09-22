@@ -10,7 +10,7 @@ export function Youtube() {
       strokeWidth="2"
       strokeLinecap="round"
       strokeLinejoin="round"
-      className="lucide lucide-book-open-check"
+      className="lucide lucide-github h-4 w-4 sm:h-6 sm:w-6"
     >
       <path d="M8 3H2v15h7c1.7 0 3 1.3 3 3V7c0-2.2-1.8-4-4-4Z" />
       <path d="m16 12 2 2 4-4" />

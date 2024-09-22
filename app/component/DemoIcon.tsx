@@ -10,7 +10,7 @@ export function DemoIcon() {
       strokeWidth="2"
       strokeLinecap="round"
       strokeLinejoin="round"
-      className="lucide lucide-globe"
+      className="lucide lucide-globe h-4 w-4 sm:h-6 sm:w-6"
     >
       <circle cx="12" cy="12" r="10" />
       <path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20" />
