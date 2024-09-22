@@ -2,9 +2,9 @@ import Typewriter from "typewriter-effect";
 
 export function Hero({}: {}) {
   return (
-    <div className="hero relative mt-11 min-h-[700px]">
+    <div className="hero relative mt-11 min-h-[560px] sm:min-h-[650px] md:min-h-[700px]">
       <div className="hero-content text-center">
-        <div className="absolute top-16 grid grid-cols-3 justify-items-center gap-x-[50px] gap-y-[390px] grayscale filter md:top-20 md:grid-cols-2 md:gap-x-[600px] md:gap-y-[80px]">
+        <div className="absolute top-10 grid h-full w-full grid-cols-3 justify-items-center gap-x-[20px] gap-y-[200px] grayscale filter sm:gap-y-[300px] md:top-20 md:h-auto md:w-auto md:grid-cols-2 md:gap-x-[600px] md:gap-y-[80px]">
           <img
             alt="age-calculator-app"
             src="/age-calculator-app.jpg"
