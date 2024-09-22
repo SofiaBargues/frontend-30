@@ -1,37 +1,7 @@
 "use client";
 import { useEffect } from "react";
 import { themeChange } from "theme-change";
-export const themes = [
-  { id: "light" },
-  { id: "dark" },
-  { id: "cupcake" },
-  { id: "bumblebee" },
-  { id: "emerald" },
-  { id: "corporate" },
-  { id: "synthwave" },
-  { id: "retro" },
-  { id: "cyberpunk" },
-  { id: "valentine" },
-  { id: "halloween" },
-  { id: "garden" },
-  { id: "forest" },
-  { id: "aqua" },
-  { id: "lofi" },
-  { id: "pastel" },
-  { id: "fantasy" },
-  { id: "wireframe" },
-  { id: "black" },
-  { id: "luxury" },
-  { id: "dracula" },
-  { id: "cmyk" },
-  { id: "autumn" },
-  { id: "business" },
-  { id: "acid" },
-  { id: "lemonade" },
-  { id: "night" },
-  { id: "coffee" },
-  { id: "winter" },
-];
+export const themes = [{ id: "emerald" }, { id: "forest" }];
 export function ThemeChange({
   dropdownClasses = "",
   btnClasses = "btn-ghost",
@@ -92,27 +62,26 @@ export function ThemeChange({
                   data-theme={theme.id}
                   className="w-full cursor-pointer bg-base-100 font-sans text-base-content"
                 >
-                  <div className="grid grid-cols-5 grid-rows-3">
-                    <div className="col-span-5 row-span-3 row-start-1 flex items-center gap-2 px-4 py-3">
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="16"
-                        height="16"
-                        viewBox="0 0 24 24"
-                        fill="currentColor"
-                        className="invisible h-3 w-3 shrink-0"
-                      >
-                        <path d="M20.285 2l-11.285 11.567-5.286-5.011-3.714 3.716 9 8.728 15-15.285z" />
-                      </svg>
-                      <div className="flex-grow text-sm">{theme.id}</div>
-                      <div className="flex h-full flex-shrink-0 flex-wrap gap-1">
-                        <div className="w-2 rounded bg-primary" />
-                        <div className="w-2 rounded bg-secondary" />
-                        <div className="w-2 rounded bg-accent" />
-                        <div className="w-2 rounded bg-neutral" />
-                      </div>
-                    </div>
-                  </div>
+                  <button
+                    data-v-ace21af6=""
+                    data-v-0a96652a=""
+                    data-v-02702ac2=""
+                    className="VPSwitch VPSwitchAppearance"
+                    type="button"
+                    role="switch"
+                    title="Switch to light theme"
+                    aria-checked="true"
+                  >
+                    <span data-v-ace21af6="" className="check">
+                      <span data-v-ace21af6="" className="icon">
+                        <span data-v-0a96652a="" className="vpi-sun sun"></span>
+                        <span
+                          data-v-0a96652a=""
+                          className="vpi-moon moon"
+                        ></span>
+                      </span>
+                    </span>
+                  </button>
                 </div>
               </button>
             ))}
