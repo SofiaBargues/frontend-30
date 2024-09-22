@@ -4,36 +4,36 @@ export function Hero({}: {}) {
   return (
     <div className="hero relative mt-11 min-h-[700px]">
       <div className="hero-content text-center">
-        <div className="absolute top-20 grid grid-cols-3 gap-x-[200px] gap-y-[10px] grayscale filter md:grid-cols-2 md:justify-items-center md:gap-x-[600px] md:gap-y-[80px]">
+        <div className="absolute top-16 grid grid-cols-3 gap-x-[90px] gap-y-[390px] grayscale filter md:top-20 md:grid-cols-2 md:justify-items-center md:gap-x-[600px] md:gap-y-[80px]">
           <img
             alt="age-calculator-app"
             src="/age-calculator-app.jpg"
-            className="max-w-[50px] -rotate-12 rounded-md md:max-w-[150px]"
+            className="max-w-[100px] -rotate-12 rounded-md md:max-w-[150px]"
           />
           <img
             alt="recipe-page"
             src="/recipe-page.jpg"
-            className="max-h-[50px] max-w-[50px] rotate-12 rounded-md md:max-h-[150px] md:max-w-[150px]"
+            className="max-h-[100px] max-w-[100px] rotate-12 rounded-md md:max-h-[150px] md:max-w-[150px]"
           />
           <img
             alt="mole"
             src="/mole.png"
-            className="max-h-[50px] max-w-[50px] -rotate-12 rounded-md md:max-h-[150px] md:max-w-[150px]"
+            className="max-h-[100px] max-w-[100px] -rotate-12 rounded-md md:max-h-[150px] md:max-w-[150px]"
           />
           <img
             alt="tip-calculator-app"
             src="/tip-calculator-app.jpg"
-            className="max-h-[50px] max-w-[50px] -rotate-12 rounded-md md:max-h-[150px] md:max-w-[150px]"
+            className="max-h-[100px] max-w-[100px] -rotate-12 rounded-md md:max-h-[150px] md:max-w-[150px]"
           />
           <img
             alt="payment-graphic"
             src="/payment-graphic.png"
-            className="max-h-[50px] max-w-[50px] -rotate-12 rounded-md md:max-h-[150px] md:max-w-[150px]"
+            className="max-h-[100px] max-w-[100px] -rotate-12 rounded-md md:max-h-[150px] md:max-w-[150px]"
           />
           <img
             alt="cards"
             src="/cards.png"
-            className="max-h-[50px] max-w-[50px] -rotate-12 rounded-md md:max-h-[150px] md:max-w-[150px]"
+            className="max-h-[100px] max-w-[100px] -rotate-12 rounded-md md:max-h-[150px] md:max-w-[150px]"
           />
         </div>{" "}
         <div className="flex flex-col items-center">
