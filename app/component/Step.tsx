@@ -31,7 +31,7 @@ export function Step({ item, number, isDone, setDone }: StepProps) {
   return (
     <div
       className={
-        "shadow-black[50%] relative flex w-full flex-row items-center border border-gray-300 bg-base-100 p-10 shadow-md"
+        "shadow-black[50%] relative flex w-full flex-col items-center border border-gray-300 bg-base-100 p-10 shadow-md md:flex-row"
       }
     >
       <img
@@ -44,11 +44,28 @@ export function Step({ item, number, isDone, setDone }: StepProps) {
           (number % 2 === 0 ? " -rotate-12" : " rotate-12")
         }
       ></img>
-      <div className="z-30">
+      <div className="z-30 hidden sm:block">
         <StepNumber number={number} item={item} />
       </div>
       <div className="items relative m-5 flex w-full flex-col gap-2">
-        <div className="flex justify-between">
+        <div className="flex items-center justify-between">
+          <div className="m-6 flex flex-col justify-center md:hidden">
+            <button
+              onClick={handleClick}
+              className={`duration-00 flex aspect-square h-7 w-7 self-start rounded-full border-2 text-sm font-semibold transition-colors md:h-14 md:w-14 md:border-4 lg:min-w-[55px] ${
+                isDone
+                  ? "border-gray-300 text-gray-300 hover:border-gray-400 hover:text-gray-400"
+                  : "border-green-400 text-green-400 hover:border-green-600 hover:text-green-600"
+              }`}
+            >
+              <div className="w-full text-lg md:mt-2 md:text-4xl">
+                {isDone ? "✓" : "✓"}
+              </div>
+            </button>
+          </div>
+          <div className="z-30 block sm:block sm:hidden">
+            <StepNumber number={number} item={item} />
+          </div>
           <h3 className="text-xl font-bold sm:text-3xl">{item.name}</h3>
         </div>
         <p className="text-sm sm:text-xl">{item.description}</p>
@@ -64,7 +81,7 @@ export function Step({ item, number, isDone, setDone }: StepProps) {
           <MyButton url={item.tutorialUrl} name="Tutorial" type="tutorial" />
         </div>
       </div>
-      <div className="m-6 flex flex-col justify-center">
+      <div className="m-6 hidden flex-col justify-center md:block">
         <button
           onClick={handleClick}
           className={`duration-00 flex aspect-square h-7 w-7 self-start rounded-full border-2 text-sm font-semibold transition-colors md:h-14 md:w-14 md:border-4 lg:min-w-[55px] ${
