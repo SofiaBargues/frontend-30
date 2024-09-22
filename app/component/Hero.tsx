@@ -2,60 +2,44 @@ import Typewriter from "typewriter-effect";
 
 export function Hero({}: {}) {
   return (
-    <div className="hero mt-11 min-h-[700px]">
+    <div className="hero relative mt-11 min-h-[700px]">
       <div className="hero-content text-center">
+        <div className="absolute top-20 grid grid-cols-3 gap-x-[200px] gap-y-[10px] grayscale filter md:grid-cols-2 md:justify-items-center md:gap-x-[600px] md:gap-y-[80px]">
+          <img
+            alt="age-calculator-app"
+            src="/age-calculator-app.jpg"
+            className="max-w-[50px] -rotate-12 rounded-md md:max-w-[150px]"
+          />
+          <img
+            alt="recipe-page"
+            src="/recipe-page.jpg"
+            className="max-h-[50px] max-w-[50px] rotate-12 rounded-md md:max-h-[150px] md:max-w-[150px]"
+          />
+          <img
+            alt="mole"
+            src="/mole.png"
+            className="max-h-[50px] max-w-[50px] -rotate-12 rounded-md md:max-h-[150px] md:max-w-[150px]"
+          />
+          <img
+            alt="tip-calculator-app"
+            src="/tip-calculator-app.jpg"
+            className="max-h-[50px] max-w-[50px] -rotate-12 rounded-md md:max-h-[150px] md:max-w-[150px]"
+          />
+          <img
+            alt="payment-graphic"
+            src="/payment-graphic.png"
+            className="max-h-[50px] max-w-[50px] -rotate-12 rounded-md md:max-h-[150px] md:max-w-[150px]"
+          />
+          <img
+            alt="cards"
+            src="/cards.png"
+            className="max-h-[50px] max-w-[50px] -rotate-12 rounded-md md:max-h-[150px] md:max-w-[150px]"
+          />
+        </div>{" "}
         <div className="flex flex-col items-center">
           <h1 className="max-w-2xl text-5xl font-bold sm:text-7xl lg:text-8xl">
             30
             <br />
-            <img
-              alt="/age-calculator-app.jpg"
-              src="/age-calculator-app.jpg"
-              // style={{ opacity: 0.4 }}
-              className={
-                "absolute left-[10px] z-0 ml-6 flex max-h-[200px] max-w-[200px] -rotate-12 rounded-md"
-              }
-            ></img>
-            <img
-              alt="/recipe-page.jpg"
-              src="/recipe-page.jpg"
-              // style={{ opacity: 0.4 }}
-              className={
-                "absolute left-[10px] z-0 ml-6 mt-40 max-h-[200px] max-w-[200px] -rotate-12 rounded-md"
-              }
-            ></img>
-            <img
-              alt="/tip-calculator-app.jpg"
-              src="/tip-calculator-app.jpg"
-              // style={{ opacity: 0.4 }}
-              className={
-                "absolute left-[10px] z-0 ml-6 mt-80 max-h-[200px] max-w-[200px] -rotate-12 rounded-md"
-              }
-            ></img>
-            <img
-              alt="/mole.png"
-              src="/mole.png"
-              // style={{ opacity: 0.4 }}
-              className={
-                "absolute left-[10px] z-0 ml-6 mt-40 max-h-[200px] max-w-[200px] -rotate-12 rounded-md"
-              }
-            ></img>
-            <img
-              alt="/payment-graphic.png"
-              src="/payment-graphic.png"
-              // style={{ opacity: 0.4 }}
-              className={
-                "absolute right-44 z-0 ml-6 mt-80 max-h-[200px] max-w-[200px] -rotate-12 rounded-md"
-              }
-            ></img>
-            <img
-              alt="/cards.png"
-              src="/cards.png"
-              // style={{ opacity: 0.4 }}
-              className={
-                "absolute right-20 z-0 ml-6 mt-80 max-h-[200px] max-w-[200px] -rotate-12 rounded-md"
-              }
-            ></img>
             <div className="h-12 text-primary sm:h-[4.5rem] lg:h-24">
               Frontend
               {/* <Typewriter

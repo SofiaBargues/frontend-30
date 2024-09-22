@@ -99,18 +99,16 @@ function Problems({ items }: { items: Item[] }) {
     );
   }
   let completed = status.filter((x) => x != true).length;
-  let completedStr = completed.toString();
-  console.log(completedStr);
   return (
     <section className="flex w-full flex-col items-center justify-center">
-      <div className="shadow-black[50%] items- center flex w-full max-w-4xl flex-row justify-between border border-gray-300 bg-base-100 p-10 shadow-md">
+      <div className="shadow-black[50%] items- center flex w-full max-w-4xl flex-row justify-between gap-4 border border-gray-300 bg-base-100 p-10 shadow-md">
         <div className="text-2xl font-semibold">Progress</div>
-        <div className="flex">
-          <div className="mr-5">{completedStr}/30 </div>
-          <div className="relative flex h-4 w-[300px] rounded-full bg-gray-200">
+        <div className="flex w-full items-center justify-end gap-2">
+          <span className="">{completed}/30 </span>
+          <div className="relative flex h-4 w-full max-w-[300px] rounded-full bg-gray-200">
             <div
               style={{
-                width: completedStr + "0px",
+                width: (completed * 100) / 30 + "%",
               }}
               className="relative flex h-4 rounded-full bg-emerald-400"
             ></div>
