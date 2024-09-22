@@ -15,7 +15,7 @@ export interface StepProps {
 
 function StepNumber({ number, item }: { number: number; item: Item }) {
   return (
-    <div className="ml-4 flex h-full items-center justify-start text-2xl text-slate-700 md:text-7xl lg:w-24">
+    <div className="ml-4 flex h-full items-center justify-start text-2xl md:text-7xl lg:w-24">
       <div className="flex text-left lg:flex-col">{number}</div>
     </div>
   );
