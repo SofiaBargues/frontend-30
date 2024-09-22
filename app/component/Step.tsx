@@ -49,6 +49,10 @@ export function Step({ item, number, isDone, setDone }: StepProps) {
       </div>
       <div className="items relative m-5 flex w-full flex-col gap-2">
         <div className="flex items-center justify-between">
+          <div className="z-30 block sm:block sm:hidden">
+            <StepNumber number={number} item={item} />
+          </div>
+          <h3 className="text-xl font-bold sm:text-3xl">{item.name}</h3>{" "}
           <div className="m-6 flex flex-col justify-center md:hidden">
             <button
               onClick={handleClick}
@@ -63,10 +67,6 @@ export function Step({ item, number, isDone, setDone }: StepProps) {
               </div>
             </button>
           </div>
-          <div className="z-30 block sm:block sm:hidden">
-            <StepNumber number={number} item={item} />
-          </div>
-          <h3 className="text-xl font-bold sm:text-3xl">{item.name}</h3>
         </div>
         <p className="text-sm sm:text-xl">{item.description}</p>
         <div className="">
