@@ -15,7 +15,7 @@ export interface StepProps {
 
 function StepNumber({ number, item }: { number: number; item: Item }) {
   return (
-    <div className="ml-4 flex h-full items-center justify-start text-2xl md:text-7xl lg:w-24">
+    <div className="flex h-full items-center justify-start text-2xl font-semibold md:ml-4 md:text-7xl lg:w-24">
       <div className="flex text-left lg:flex-col">{number}</div>
     </div>
   );
@@ -37,7 +37,7 @@ export function Step({ item, number, isDone, setDone }: StepProps) {
       <img
         alt={item.imgSource}
         src={item.imgSource}
-        style={{ opacity: 0.4 }}
+        style={{ opacity: 0.3 }}
         className={
           (isDone ? "grayscale filter " : "") +
           "absolute left-[10px] z-0 ml-6 flex max-h-[200px] max-w-[200px] rounded-md" +
@@ -49,10 +49,12 @@ export function Step({ item, number, isDone, setDone }: StepProps) {
       </div>
       <div className="items relative m-5 flex w-full flex-col gap-2">
         <div className="flex items-center justify-between">
-          <div className="z-30 block sm:block sm:hidden">
-            <StepNumber number={number} item={item} />
-          </div>
-          <h3 className="text-xl font-bold sm:text-3xl">{item.name}</h3>{" "}
+          <span className="flex gap-4">
+            <div className="z-30 block sm:block sm:hidden">
+              <StepNumber number={number} item={item} />
+            </div>
+            <h3 className="text-xl font-bold sm:text-3xl">{item.name}</h3>{" "}
+          </span>
           <div className="m-6 flex flex-col justify-center md:hidden">
             <button
               onClick={handleClick}
