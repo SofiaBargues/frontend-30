@@ -32,7 +32,7 @@ export function Step({ item, number, isDone, setDone }: StepProps) {
   return (
     <div
       className={
-        "shadow-black[50%] relative flex w-full flex-col items-center border border-gray-300 bg-base-100 p-10 shadow-md md:flex-row"
+        "shadow-black[50%] relative flex w-full flex-col items-center border border-gray-300 bg-base-100 p-4 shadow-md md:flex-row md:p-10"
       }
     >
       <img
@@ -48,8 +48,8 @@ export function Step({ item, number, isDone, setDone }: StepProps) {
       <div className="z-30 hidden sm:block">
         <StepNumber number={number} item={item} />
       </div>
-      <div className="items relative m-5 flex w-full flex-col gap-2">
-        <div className="flex items-center justify-between">
+      <div className="items relative m-3 flex w-full flex-col gap-2 md:m-5">
+        <div className="flex h-3 items-center justify-between md:h-auto">
           <span className="flex gap-4">
             <div className="z-30 block sm:block sm:hidden">
               <StepNumber number={number} item={item} />
