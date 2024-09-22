@@ -29,13 +29,18 @@ export function Step({ item, number, isDone, setDone }: StepProps) {
   }
 
   return (
-    <div className="shadow-black[50%] relative flex w-full flex-row items-center border border-gray-300 bg-base-100 p-10 shadow-md">
+    <div
+      className={
+        "shadow-black[50%] relative flex w-full flex-row items-center border border-gray-300 bg-base-100 p-10 shadow-md"
+      }
+    >
       <img
         alt={item.imgSource}
         src={item.imgSource}
         style={{ opacity: 0.4 }}
         className={
-          "absolute left-[10px] z-0 ml-6 flex max-h-[200px] max-w-[200px] rounded-md " +
+          (isDone ? "grayscale filter " : "") +
+          "absolute left-[10px] z-0 ml-6 flex max-h-[200px] max-w-[200px] rounded-md" +
           (number % 2 === 0 ? " -rotate-12" : " rotate-12")
         }
       ></img>
