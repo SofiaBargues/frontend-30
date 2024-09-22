@@ -15,8 +15,8 @@ import { Filter } from "lucide-react";
 export default function Home() {
   return (
     <div className="flex min-h-screen flex-col items-center bg-base-200 text-base-content">
-      <nav className="navbar fixed top-0 z-10 justify-between border-b-2 border-b-primary bg-base-300 text-base-content">
-        <Link href="/">
+      <nav className="navbar fixed top-0 z-50 justify-between border-b-2 border-b-primary bg-base-300 text-base-content">
+        <Link href="/" className="">
           <div id="group1 " className="btn-ghost btn ml-2 flex gap-2">
             <div>
               <label className="avatar">
@@ -43,7 +43,7 @@ export default function Home() {
           <Problems items={data} />
         </div>
       </main>
-      <footer className="footer footer-center fixed bottom-0 mt-20 bg-primary p-4 text-primary-content">
+      <footer className="footer footer-center fixed bottom-0 z-50 mt-20 bg-primary p-4 text-primary-content">
         <div>
           <p>
             Sofia Bargues - 2024 -

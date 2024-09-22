@@ -44,9 +44,9 @@ export function Step({ item, number, isDone, setDone }: StepProps) {
       </div>
       <div className="items relative m-5 flex w-full flex-col gap-2">
         <div className="flex justify-between">
-          <h3 className="text-3xl font-bold">{item.name}</h3>
+          <h3 className="text-xl font-bold sm:text-3xl">{item.name}</h3>
         </div>
-        <p className=" ">{item.description}</p>
+        <p className="text-sm sm:text-xl">{item.description}</p>
         <div className="">
           {item.tags.map((tag, index) => (
             <span key={index}>{tag}</span>
@@ -62,13 +62,15 @@ export function Step({ item, number, isDone, setDone }: StepProps) {
       <div className="m-6 flex flex-col justify-center">
         <button
           onClick={handleClick}
-          className={`duration-00 flex aspect-square h-14 w-14 self-start rounded-full border-4 text-sm font-semibold transition-colors lg:min-w-[55px] ${
+          className={`duration-00 flex aspect-square h-7 w-7 self-start rounded-full border-2 text-sm font-semibold transition-colors md:h-14 md:w-14 md:border-4 lg:min-w-[55px] ${
             isDone
               ? "border-gray-300 text-gray-300 hover:border-gray-400 hover:text-gray-400"
               : "border-green-400 text-green-400 hover:border-green-600 hover:text-green-600"
           }`}
         >
-          <div className="mt-2 w-full text-4xl">{isDone ? "✓" : "✓"}</div>
+          <div className="w-full text-lg md:mt-2 md:text-4xl">
+            {isDone ? "✓" : "✓"}
+          </div>
         </button>
       </div>
     </div>
