@@ -17,11 +17,29 @@ export default function Home() {
     <div className="flex min-h-screen flex-col items-center bg-base-200 text-base-content">
       <nav className="navbar fixed top-0 z-50 justify-between border-b-2 border-b-primary bg-base-300 text-base-content">
         <Link href="/" className="">
-          <div id="group1 " className="btn-ghost btn ml-2 flex gap-2">
+          <div
+            id="group1 "
+            className="btn-ghost btn ml-2 flex gap-2 align-middle"
+          >
             <div>
               <label className="avatar">
-                <div className="w-10">
-                  <img src="/route.svg" alt=" " />
+                <div className="">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="32"
+                    height="32"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    className="lucide lucide-route text-base"
+                  >
+                    <circle cx="6" cy="19" r="3" />
+                    <path d="M9 19h8.5a3.5 3.5 0 0 0 0-7h-11a3.5 3.5 0 0 1 0-7H15" />
+                    <circle cx="18" cy="5" r="3" />
+                  </svg>
                 </div>
               </label>
             </div>
@@ -34,7 +52,7 @@ export default function Home() {
         <div id="group2" className="flex gap-2">
           <GitHub />
           <LinkedIn />
-          <ThemeChange dropdownClasses="..." />
+          <ThemeChange />
         </div>
       </nav>
       <main className="container flex w-full flex-col items-center pb-24">
