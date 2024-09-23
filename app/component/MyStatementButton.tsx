@@ -39,7 +39,7 @@ export function MyStatementButton({
               // buttonStyle[type].bgColor +
               // buttonStyle[type].bgColor +
               " " +
-              " border-1 rounded-lg border border-primary p-2 text-xs sm:border-2 md:p-3 xl:p-2 xl:text-sm"
+              " border-1 rounded-lg border border-primary p-2 text-xs hover:bg-primary sm:border-2 md:p-3 xl:p-2 xl:text-sm"
             }
           >
             <div className="flex items-center justify-center gap-1 font-semibold md:text-xl">

@@ -259,8 +259,8 @@ export const data: Item[] = [
     imgSource: "/18.png",
   },
   {
-    id: "password-strength-checker",
-    name: "Password Strength Checker",
+    id: "password-checker",
+    name: "Password Checker",
     description:
       "In this question, you need to build a password strength checker in React.js that shows the strength of the password.",
     type: "start",
