@@ -1,6 +1,6 @@
 /* eslint-disable @next/next/no-img-element */
 "use client";
-import { Book, Star, Cat, Key } from "lucide-react";
+import { Book, Star, Cat, Key, CircleCheck } from "lucide-react";
 import { MyButton } from "./MyButton";
 import { Item } from "./Item";
 import { MouseEvent, useState } from "react";
@@ -32,7 +32,7 @@ export function Step({ item, number, isDone, setDone }: StepProps) {
   return (
     <div
       className={
-        "shadow-black[50%] relative flex w-full flex-col items-center border border-gray-300 bg-base-100 p-7 shadow-md md:flex-row md:p-10"
+        "shadow-black[50%] relative flex w-full flex-col items-center overflow-hidden border border-gray-300 bg-base-100 p-7 shadow-md md:flex-row md:p-10"
       }
     >
       <img
@@ -48,7 +48,7 @@ export function Step({ item, number, isDone, setDone }: StepProps) {
       <div className="z-30 hidden sm:block">
         <StepNumber number={number} item={item} />
       </div>
-      <div className="items relative m-3 flex w-full flex-col gap-2 md:m-5">
+      <div className="items relative m-3 flex w-full flex-col gap-2 rounded bg-base-100/50 sm:p-2 md:m-5">
         <div className="flex h-3 items-center justify-between gap-4 md:h-auto">
           <div className="z-30 block sm:hidden">
             <StepNumber number={number} item={item} />
@@ -58,20 +58,20 @@ export function Step({ item, number, isDone, setDone }: StepProps) {
             <div className="m-1 flex flex-col justify-center md:hidden">
               <button
                 onClick={handleClick}
-                className={`duration-00 flex aspect-square h-7 w-7 self-start rounded-full border-2 text-sm font-semibold transition-colors md:h-14 md:w-14 md:border-4 lg:min-w-[55px] ${
+                className={`duration-00 flex aspect-square h-7 w-7 self-start rounded-full text-sm font-semibold transition-colors md:h-14 md:w-14 md:border-4 lg:min-w-[55px] ${
                   isDone
                     ? "border-gray-300 text-gray-300 hover:border-gray-400 hover:text-gray-400"
                     : "border-green-400 text-green-400 hover:border-green-600 hover:text-green-600"
                 }`}
               >
-                <div className="w-full text-lg md:mt-2 md:text-4xl">
-                  {isDone ? "✓" : "✓"}
-                </div>
+                <CircleCheck />
               </button>
             </div>
           </span>
         </div>
-        <p className="my-3 text-sm sm:text-xl">{item.description}</p>
+
+        <p className="my-3 text-xs sm:text-base">{item.description}</p>
+
         <div className="">
           {item.tags.map((tag, index) => (
             <span key={index}>{tag}</span>
@@ -91,15 +91,13 @@ export function Step({ item, number, isDone, setDone }: StepProps) {
       <div className="hidden flex-col justify-center md:block">
         <button
           onClick={handleClick}
-          className={`duration-00 flex aspect-square h-7 w-7 self-start rounded-full border-2 text-sm font-semibold transition-colors md:h-14 md:w-14 md:border-4 lg:min-w-[55px] ${
+          className={`duration-00 flex aspect-square h-7 w-7 self-start text-sm font-semibold transition-colors md:h-14 md:w-14 lg:min-w-[55px] ${
             isDone
               ? "border-gray-300 text-gray-300 hover:border-gray-400 hover:text-gray-400"
               : "border-green-400 text-green-400 hover:border-green-600 hover:text-green-600"
           }`}
         >
-          <div className="w-full text-lg md:mt-2 md:text-4xl">
-            {isDone ? "✓" : "✓"}
-          </div>
+          <CircleCheck className="h-4 w-4 sm:h-12 sm:w-12" />
         </button>
       </div>
     </div>

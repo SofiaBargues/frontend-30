@@ -18,8 +18,8 @@ export default function Home() {
       <nav className="navbar fixed top-0 z-50 justify-between border-b-2 border-b-primary bg-base-300 text-base-content">
         <Link href="/" className="">
           <div
-            id="group1 "
-            className="btn-ghost btn ml-2 flex gap-2 align-middle"
+            id="group1"
+            className="btn-ghost btn m-2 flex gap-2 align-middle"
           >
             <div>
               <label className="avatar">
@@ -33,8 +33,7 @@ export default function Home() {
             </div>
           </div>
         </Link>
-
-        <div id="group2" className="flex gap-2">
+        <div id="group2" className="m-2 flex gap-2 pr-2">
           <GitHubRepo />
           <LinkedIn />
           <ThemeChange />

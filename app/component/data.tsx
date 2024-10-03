@@ -389,7 +389,7 @@ export const data: Item[] = [
   },
   {
     id: "multi-select-state-dropdown",
-    name: "Multi-Select State Dropdown",
+    name: "Multi-Select Dropdown",
     description:
       "The Multi-Select Dropdown Component Challenge involves creating a React component that allows users to select multiple US states from a dropdown menu and displays the count of selected states in real-time. This challenge tests your skills in React, state management, and dynamic user input handling.",
     type: "start",

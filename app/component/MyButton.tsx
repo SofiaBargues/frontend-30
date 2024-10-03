@@ -8,12 +8,12 @@ const buttonStyle = {
   github: {
     color: "border-black text-black",
     bgColor: " hover:border-black hover:text-base-100 hover:bg-black",
-    img: <GithubIcon />,
+    img: <GithubIcon className="h-4 w-4 sm:h-6 sm:w-6" />,
   },
   demo: {
     color: " border-secondary text-secondary",
     bgColor: " hover:border-secondary hover:text-base-100 hover:bg-secondary ",
-    img: <Globe />,
+    img: <Globe className="h-4 w-4 sm:h-6 sm:w-6" />,
   },
 
   tutorial: {
