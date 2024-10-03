@@ -2,7 +2,7 @@
 
 import { GithubIcon, Globe, YoutubeIcon } from "lucide-react";
 
-type ButtonTypes = "github" | "statement" | "demo" | "tutorial";
+type ButtonTypes = "github" | "demo" | "tutorial";
 
 const buttonStyle = {
   github: {
