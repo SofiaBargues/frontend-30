@@ -8,7 +8,7 @@ export function Hero({}: {}) {
           <img
             alt="age-calculator-app"
             src="/age-calculator-app.jpg"
-            className="max-w-[100px] -rotate-12 rounded-md grayscale transition hover:scale-110 hover:grayscale-0 md:max-w-[150px]"
+            className="mt-5 max-w-[100px] -rotate-12 rounded-md grayscale transition hover:scale-110 hover:grayscale-0 md:mt-0 md:max-w-[150px]"
           />
           <img
             alt="recipe-page"
@@ -18,7 +18,7 @@ export function Hero({}: {}) {
           <img
             alt="mole"
             src="/mole.png"
-            className="max-h-[100px] max-w-[100px] rotate-12 rounded-md grayscale transition hover:scale-110 hover:grayscale-0 md:max-h-[150px] md:max-w-[150px]"
+            className="mt-5 max-h-[100px] max-w-[100px] rotate-12 rounded-md grayscale transition hover:scale-110 hover:grayscale-0 md:mt-0 md:max-h-[150px] md:max-w-[150px]"
           />
           <img
             alt="tip-calculator-app"
