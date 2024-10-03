@@ -4,36 +4,36 @@ export function Hero({}: {}) {
   return (
     <div className="hero relative mt-11 min-h-[560px] sm:min-h-[650px] md:min-h-[700px]">
       <div className="hero-content text-center">
-        <div className="absolute top-10 -z-10 grid h-full w-full grid-cols-3 justify-items-center gap-x-[20px] gap-y-[200px] grayscale filter sm:gap-y-[300px] md:top-20 md:h-auto md:w-auto md:grid-cols-2 md:gap-x-[600px] md:gap-y-[80px]">
+        <div className="absolute top-10 -z-10 grid h-full w-full grid-cols-3 justify-items-center gap-x-[20px] gap-y-[200px] filter sm:gap-y-[300px] md:top-20 md:h-auto md:w-auto md:grid-cols-2 md:gap-x-[600px] md:gap-y-[80px]">
           <img
             alt="age-calculator-app"
             src="/age-calculator-app.jpg"
-            className="max-w-[100px] -rotate-12 rounded-md transition hover:scale-110 md:max-w-[150px]"
+            className="max-w-[100px] -rotate-12 rounded-md grayscale transition hover:scale-110 hover:grayscale-0 md:max-w-[150px]"
           />
           <img
             alt="recipe-page"
             src="/recipe-page.jpg"
-            className="max-h-[100px] max-w-[100px] rotate-12 rounded-md transition hover:scale-110 md:max-h-[150px] md:max-w-[150px]"
+            className="max-h-[100px] max-w-[100px] rotate-12 rounded-md grayscale transition hover:scale-110 hover:grayscale-0 md:max-h-[150px] md:max-w-[150px]"
           />
           <img
             alt="mole"
             src="/mole.png"
-            className="max-h-[100px] max-w-[100px] rotate-12 rounded-md transition hover:scale-110 md:max-h-[150px] md:max-w-[150px]"
+            className="max-h-[100px] max-w-[100px] rotate-12 rounded-md grayscale transition hover:scale-110 hover:grayscale-0 md:max-h-[150px] md:max-w-[150px]"
           />
           <img
             alt="tip-calculator-app"
             src="/tip-calculator-app.jpg"
-            className="max-h-[100px] max-w-[100px] -rotate-12 rounded-md transition hover:scale-110 md:max-h-[150px] md:max-w-[150px]"
+            className="max-h-[100px] max-w-[100px] -rotate-12 rounded-md grayscale transition hover:scale-110 hover:grayscale-0 md:max-h-[150px] md:max-w-[150px]"
           />
           <img
             alt="payment-graphic"
             src="/payment-graphic.png"
-            className="max-h-[100px] max-w-[100px] -rotate-12 rounded-md transition hover:scale-110 md:max-h-[150px] md:max-w-[150px]"
+            className="max-h-[100px] max-w-[100px] -rotate-12 rounded-md grayscale transition hover:scale-110 hover:grayscale-0 md:max-h-[150px] md:max-w-[150px]"
           />
           <img
             alt="cards"
             src="/cards.png"
-            className="max-h-[100px] max-w-[100px] rotate-12 rounded-md transition hover:scale-110 md:max-h-[150px] md:max-w-[150px]"
+            className="max-h-[100px] max-w-[100px] rotate-12 rounded-md grayscale transition hover:scale-110 hover:grayscale-0 md:max-h-[150px] md:max-w-[150px]"
           />
         </div>
         <div className="relative z-0 flex flex-col items-center">
