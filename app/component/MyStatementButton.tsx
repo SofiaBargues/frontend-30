@@ -1,16 +1,7 @@
 "use client";
 
-import { StatementIcon } from "./StatementIcon";
 
 type ButtonTypes = "statement";
-
-const buttonStyle = {
-  statement: {
-    color: " border-blue-500 text-blue-500 ",
-    bgColor: " hover:text-base-100 hover:bg-blue-500 ",
-    img: <StatementIcon />,
-  },
-};
 
 export function MyStatementButton({
   url,

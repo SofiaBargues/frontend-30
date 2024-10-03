@@ -1,9 +1,6 @@
 "use client";
 
-import { YoutubeIcon } from "lucide-react";
-import { GitHub, GithubIcon } from "./GitHub";
-import { StatementIcon } from "./StatementIcon";
-import { DemoIcon } from "./DemoIcon";
+import { GithubIcon, Globe, YoutubeIcon } from "lucide-react";
 
 type ButtonTypes = "github" | "statement" | "demo" | "tutorial";
 
@@ -13,15 +10,10 @@ const buttonStyle = {
     bgColor: " hover:border-black hover:text-base-100 hover:bg-black",
     img: <GithubIcon />,
   },
-  statement: {
-    color: " border-blue-500 text-blue-500 ",
-    bgColor: " hover:text-base-100 hover:bg-blue-500 ",
-    img: <StatementIcon />,
-  },
   demo: {
     color: " border-secondary text-secondary",
     bgColor: " hover:border-secondary hover:text-base-100 hover:bg-secondary ",
-    img: <DemoIcon />,
+    img: <Globe />,
   },
 
   tutorial: {
