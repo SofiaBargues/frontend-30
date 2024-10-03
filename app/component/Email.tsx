@@ -1,19 +1,19 @@
 "use client";
 
-import { Linkedin } from "lucide-react";
+import { Linkedin, LucideTentTree, Mail } from "lucide-react";
 
-export function LinkedIn() {
+export function Email() {
   return (
     <span className="tooltip tooltip-bottom before:text-xs before:content-[attr(data-tip)]">
       <div className="flex-none items-center">
         <a
           aria-label="LinkedIn"
           target="_blank"
-          href="https://www.linkedin.com/in/sofia-bargues/"
+          href="mailto: barguessofia@gmail.com"
           rel="noopener, noreferrer"
-          className="link normal-case"
+          className="drawer-button link normal-case"
         >
-          <Linkedin className="h-4 w-4" />
+          <Mail className="h-4 w-4" />
         </a>
       </div>
     </span>

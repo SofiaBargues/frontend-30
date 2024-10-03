@@ -11,6 +11,7 @@ import { Hero } from "./component/Hero";
 //   const [status, setStatus] = useState<boolean[]>(new Array(30).fill(false));
 import { useEffect, useState } from "react";
 import { Filter, Route } from "lucide-react";
+import { Email } from "./component/Email";
 
 export default function Home() {
   return (
@@ -35,7 +36,6 @@ export default function Home() {
         </Link>
         <div id="group2" className="m-2 flex gap-2 pr-2">
           <GitHubRepo />
-          <LinkedIn />
           <ThemeChange />
         </div>
       </nav>
@@ -45,18 +45,11 @@ export default function Home() {
           <Problems items={data} />
         </div>
       </main>
-      <footer className="footer footer-center fixed bottom-0 z-50 mt-20 bg-primary p-4 text-primary-content">
-        <div>
-          <p>
-            Sofia Bargues - 2024 -
-            <a
-              className="link hover:text-primary-content/80"
-              target="_blank"
-              href="mailto: barguessofia@gmail.com"
-            >
-              barguessofia@gmail.com
-            </a>
-          </p>
+      <footer className="footer footer-center fixed bottom-0 z-50 mt-10 bg-primary p-2 text-primary-content">
+        <div className="flex items-center">
+          <p className="font-semibold">Sofia Bargues</p>
+          <LinkedIn />
+          <Email />
         </div>
       </footer>
     </div>
