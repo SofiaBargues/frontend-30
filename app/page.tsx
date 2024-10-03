@@ -93,7 +93,7 @@ function Problems({ items }: { items: Item[] }) {
       ></Step>
     );
   }
-  let completed = status.filter((x) => x != true).length;
+  let completed = status.filter((x) => x === true).length;
   return (
     <section className="flex w-full flex-col items-center justify-center">
       <div className="shadow-black[50%] items- center flex w-full max-w-4xl flex-row justify-between gap-4 border border-gray-300 bg-base-100 p-10 shadow-md">

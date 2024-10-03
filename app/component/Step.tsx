@@ -40,7 +40,7 @@ export function Step({ item, number, isDone, setDone }: StepProps) {
         src={item.imgSource}
         style={{ opacity: 0.3 }}
         className={
-          (isDone ? "grayscale filter " : "") +
+          (!isDone ? "grayscale filter " : "") +
           "absolute left-[10px] z-0 ml-6 mt-6 flex max-h-[100px] max-w-[100px] rounded-md md:max-h-[200px] md:max-w-[200px]" +
           (number % 2 === 0 ? " -rotate-12" : " rotate-12")
         }
@@ -59,7 +59,7 @@ export function Step({ item, number, isDone, setDone }: StepProps) {
               <button
                 onClick={handleClick}
                 className={`duration-00 flex aspect-square h-7 w-7 self-start rounded-full text-sm font-semibold transition-colors md:h-14 md:w-14 md:border-4 lg:min-w-[55px] ${
-                  isDone
+                  !isDone
                     ? "border-gray-300 text-gray-300 hover:border-gray-400 hover:text-gray-400"
                     : "border-green-400 text-green-400 hover:border-green-600 hover:text-green-600"
                 }`}
@@ -92,7 +92,7 @@ export function Step({ item, number, isDone, setDone }: StepProps) {
         <button
           onClick={handleClick}
           className={`duration-00 flex aspect-square h-7 w-7 self-start text-sm font-semibold transition-colors md:h-14 md:w-14 lg:min-w-[55px] ${
-            isDone
+            !isDone
               ? "border-gray-300 text-gray-300 hover:border-gray-400 hover:text-gray-400"
               : "border-green-400 text-green-400 hover:border-green-600 hover:text-green-600"
           }`}
