@@ -55,7 +55,7 @@ export function Hero({}: {}) {
           </h1>
           <p className="mt-2 max-w-xl py-6 sm:text-xl lg:text-2xl">
             {
-              "Project-based learning is awesome, learn or test your frontend skills with these progressive challenges!"
+              "Project-based learning is awesome, learn or test your frontend skills with these challenges!"
             }
           </p>
           {/* <button className="btn btn-primary">Get Started</button> */}

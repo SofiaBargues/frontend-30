@@ -7,7 +7,7 @@ const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Frontend 30",
-  description: "The courses and projects to start working on",
+  description: "Learn or test your frontend skills with these challenges",
 };
 
 export default function RootLayout({
