@@ -329,8 +329,8 @@ export const data: Item[] = [
     imgSource: "/shape-based-UI.png",
   },
   {
-    id: "color-guessing-game",
-    name: "Color Guessing Game",
+    id: "lock-screen-password",
+    name: "Lock Screen Password",
     description:
       "Create a component that shows a number input challenge, requiring users to enter a correct 4-digit code. When the right code is input, the component transitions to a different view or content.",
     type: "start",
@@ -344,8 +344,8 @@ export const data: Item[] = [
     imgSource: "/lock-screen-password.png",
   },
   {
-    id: "lock-screen-password",
-    name: "Lock Screen Password",
+    id: "color-guessing-game",
+    name: "Color Guessing Game",
     description:
       "The challenge is to create a game where a randomly generated color is displayed, and the user must select the correct hexadecimal code from three options.",
     type: "start",
