@@ -8,34 +8,34 @@ export function Hero({}: {}) {
           <img
             alt="age-calculator-app"
             src="/age-calculator-app.jpg"
-            className="max-w-[100px] -rotate-12 rounded-md md:max-w-[150px]"
+            className="max-w-[100px] -rotate-12 rounded-md transition hover:scale-110 md:max-w-[150px]"
           />
           <img
             alt="recipe-page"
             src="/recipe-page.jpg"
-            className="max-h-[100px] max-w-[100px] rotate-12 rounded-md md:max-h-[150px] md:max-w-[150px]"
+            className="max-h-[100px] max-w-[100px] rotate-12 rounded-md transition hover:scale-110 md:max-h-[150px] md:max-w-[150px]"
           />
           <img
             alt="mole"
             src="/mole.png"
-            className="max-h-[100px] max-w-[100px] rotate-12 rounded-md md:max-h-[150px] md:max-w-[150px]"
+            className="max-h-[100px] max-w-[100px] rotate-12 rounded-md transition hover:scale-110 md:max-h-[150px] md:max-w-[150px]"
           />
           <img
             alt="tip-calculator-app"
             src="/tip-calculator-app.jpg"
-            className="max-h-[100px] max-w-[100px] -rotate-12 rounded-md md:max-h-[150px] md:max-w-[150px]"
+            className="max-h-[100px] max-w-[100px] -rotate-12 rounded-md transition hover:scale-110 md:max-h-[150px] md:max-w-[150px]"
           />
           <img
             alt="payment-graphic"
             src="/payment-graphic.png"
-            className="max-h-[100px] max-w-[100px] -rotate-12 rounded-md md:max-h-[150px] md:max-w-[150px]"
+            className="max-h-[100px] max-w-[100px] -rotate-12 rounded-md transition hover:scale-110 md:max-h-[150px] md:max-w-[150px]"
           />
           <img
             alt="cards"
             src="/cards.png"
-            className="max-h-[100px] max-w-[100px] rotate-12 rounded-md md:max-h-[150px] md:max-w-[150px]"
+            className="max-h-[100px] max-w-[100px] rotate-12 rounded-md transition hover:scale-110 md:max-h-[150px] md:max-w-[150px]"
           />
-        </div>{" "}
+        </div>
         <div className="relative z-0 flex flex-col items-center">
           <h1 className="max-w-2xl text-5xl font-bold sm:text-7xl lg:text-8xl">
             30
