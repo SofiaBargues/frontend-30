@@ -1,6 +1,6 @@
 # Frontend 30 Projects
 
-![alt text](public/frontend30.png)
+![alt text](app/opengraph-image.png)
 
 ## Visit
 
@@ -18,7 +18,7 @@ To get started, follow the instructions provided in each challenge folder.
 
 ## Contributing
 
-We welcome contributions from the community! 
+We welcome contributions from the community!
 
 ## Acknowledgments
 
