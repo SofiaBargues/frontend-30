@@ -9,7 +9,7 @@ export function ThemeChange({}) {
   const isDark = theme != lightTheme;
 
   return (
-    <label className="swap btn-ghost drawer-button swap-rotate btn-square btn normal-case">
+    <label className="swap btn-ghost drawer-button swap-rotate btn h-9 min-h-0 w-9 p-1 normal-case">
       {/* this hidden checkbox controls the state */}
       <input
         checked={isDark}

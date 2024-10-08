@@ -18,7 +18,7 @@ import { StarOnGithubButton } from "./component/StarOnGithubButton";
 export default function Home() {
   return (
     <div className="flex min-h-screen flex-col items-center bg-base-200 text-base-content">
-      <nav className="navbar fixed top-0 z-50 justify-between border-b-2 border-b-primary bg-base-300 text-base-content">
+      <nav className="navbar min-h-8 fixed top-0 z-50 justify-between border-b-2 border-b-primary bg-base-300 p-1 text-base-content">
         <Link href="/" className="">
           <div
             id="group1"
@@ -37,7 +37,7 @@ export default function Home() {
           </div>
         </Link>
         <div id="group2" className="m-2 flex gap-2 pr-2">
-          <StarOnGithubButton/>
+          <StarOnGithubButton />
           <ThemeChange />
         </div>
       </nav>
