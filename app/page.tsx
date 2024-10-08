@@ -12,6 +12,8 @@ import { Hero } from "./component/Hero";
 import { useEffect, useState } from "react";
 import { Filter, Route } from "lucide-react";
 import { Email } from "./component/Email";
+import { MyButton } from "./component/MyButton";
+import { StarOnGithubButton } from "./component/StarOnGithubButton";
 
 export default function Home() {
   return (
@@ -35,7 +37,7 @@ export default function Home() {
           </div>
         </Link>
         <div id="group2" className="m-2 flex gap-2 pr-2">
-          <GitHubRepo />
+          <StarOnGithubButton/>
           <ThemeChange />
         </div>
       </nav>
@@ -48,6 +50,7 @@ export default function Home() {
       <footer className="footer footer-center fixed bottom-0 z-50 mt-10 bg-primary p-2 text-primary-content">
         <div className="flex items-center">
           <p className="font-semibold">Sofia Bargues</p>
+          <GitHubRepo />
           <LinkedIn />
           <Email />
         </div>
