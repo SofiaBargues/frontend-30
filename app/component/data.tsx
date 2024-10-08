@@ -83,7 +83,7 @@ export const data: Item[] = [
     tutorialUrl:
       "https://www.youtube.com/watch?v=SKhZ0IBk1_A&list=PLrVXEY3WfL-39_2q2HiKkuyNxelQI1XeV&index=2",
     statementUrl:
-      "https://www.frontendmentor.io/learning-paths/javascript-fundamentals-oR7g6-mTZ-/steps/665e1b4e6ec3887a3b142b16/challenge/start",
+      "https://www.frontendmentor.io/challenges/article-preview-component-dYBN_pYFT",
     githubUrl: "https://github.com/SofiaBargues/article-preview-component",
     demoUrl: "https://article-preview-component-sable.vercel.app/",
     imgSource: "/article-preview.jpg",
