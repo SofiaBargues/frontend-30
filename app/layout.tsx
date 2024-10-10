@@ -6,7 +6,7 @@ import { Providers } from "./providers";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Frontend 30 Projects",
+  title: "30 Frontend Challenges",
   description: "Test or enhance your frontend skills through these challenges.",
   metadataBase: process.env.VERCEL_URL
     ? new URL(`https://frontend-30.vercel.app/`)

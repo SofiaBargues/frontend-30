@@ -1,4 +1,4 @@
-# 🚀 Frontend 30 Projects
+# 🚀 30 Frontend Challenges
 
 ![Frontend 30](app/opengraph-image.png)
 
