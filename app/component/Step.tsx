@@ -1,6 +1,6 @@
 /* eslint-disable @next/next/no-img-element */
 "use client";
-import { Book, Star, Cat, Key, CircleCheck } from "lucide-react";
+import { CircleCheck } from "lucide-react";
 import { MyButton } from "./MyButton";
 import { Item } from "./Item";
 import { MouseEvent, useState } from "react";
@@ -69,14 +69,16 @@ export function Step({ item, number, isDone, setDone }: StepProps) {
             </div>
           </span>
         </div>
+        <div className="">
+          {item.tags.map((tag, index) => (
+            <span className="badge badge-primary h-4 text-[10px]" key={index}>
+              {tag}
+            </span>
+          ))}
+        </div>
 
         <p className="my-3 text-xs sm:text-base">{item.description}</p>
 
-        <div className="">
-          {item.tags.map((tag, index) => (
-            <span key={index}>{tag}</span>
-          ))}
-        </div>
         <div className="flex items-center gap-3">
           <MyStatementButton
             url={item.statementUrl}

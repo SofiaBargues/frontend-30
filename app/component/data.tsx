@@ -6,7 +6,7 @@ export const data: Item[] = [
     name: "QR code component",
     description:
       "A perfect first challenge if you're new to HTML and CSS. The card layout doesn't shift, so it's ideal if you haven't learned about building responsive layouts yet.",
-    tags: [],
+    tags: ["Frontend Mentor"],
     type: "start",
     tutorialUrl: "https://www.youtube.com/watch?v=5BBYPntB-GY&t=7s",
     statementUrl:
@@ -21,7 +21,7 @@ export const data: Item[] = [
     description:
       "This HTML & CSS-only challenge is a perfect project for beginners getting up to speed with HTML and CSS fundamentals, like HTML structure and the box model.",
     type: "start",
-    tags: [],
+    tags: ["Frontend Mentor"],
     tutorialUrl: "https://www.youtube.com/watch?v=3n22cowxoKU",
     statementUrl:
       "https://www.frontendmentor.io/challenges/blog-preview-card-ckPaj01IcS",
@@ -35,7 +35,7 @@ export const data: Item[] = [
     description:
       "In this small project, you'll build out your social link-sharing profile. You can even personalize it and use it to share all your social profiles!.",
     type: "start",
-    tags: [],
+    tags: ["Frontend Mentor"],
     tutorialUrl: "https://www.youtube.com/watch?v=PlUOMi23qAc",
     statementUrl:
       "https://www.frontendmentor.io/challenges/social-links-profile-UG32l9m6dQ",
@@ -49,7 +49,7 @@ export const data: Item[] = [
     description:
       "This challenge will help you focus on writing semantic HTML. Ensure you think through what HTML elements are most appropriate for each piece of content.",
     type: "start",
-    tags: [],
+    tags: ["Frontend Mentor"],
     tutorialUrl: "https://www.youtube.com/watch?v=wF2DLQGeJS0&t=185s",
     statementUrl:
       "https://www.frontendmentor.io/challenges/recipe-page-KiTsR8QQKm",
@@ -63,7 +63,7 @@ export const data: Item[] = [
     description:
       "This challenge will be perfect practice for anyone wanting to test their CSS Grid skills. Grid is such a powerful addition to CSS, so it's worth getting to grips with it!",
     type: "start",
-    tags: [],
+    tags: ["Frontend Mentor"],
     tutorialUrl:
       "https://www.youtube.com/watch?v=0TiIJjC7Olw&list=PLrVXEY3WfL-39_2q2HiKkuyNxelQI1XeV",
     statementUrl:
@@ -79,7 +79,7 @@ export const data: Item[] = [
     description:
       "Practice your layout skills with this article preview component. There's lots of fun to be had playing around with animations for the sharing icons as well.",
     type: "start",
-    tags: [],
+    tags: ["Frontend Mentor"],
     tutorialUrl:
       "https://www.youtube.com/watch?v=SKhZ0IBk1_A&list=PLrVXEY3WfL-39_2q2HiKkuyNxelQI1XeV&index=2",
     statementUrl:
@@ -94,7 +94,7 @@ export const data: Item[] = [
     description:
       "A perfect opportunity to practice your CSS Grid skills. For anyone wanting to take it up a notch, we provide a JSON data file to practice working with data.",
     type: "start",
-    tags: [],
+    tags: ["Frontend Mentor"],
     tutorialUrl: "https://www.youtube.com/watch?v=l9Qw8y3LfCY",
     statementUrl:
       "https://www.frontendmentor.io/challenges/time-tracking-dashboard-UIQ7167Jw",
@@ -108,7 +108,7 @@ export const data: Item[] = [
     description:
       "This will test your skills with basic form structure, validation, and submission. The success state will also be an excellent opportunity to work with DOM manipulation.",
     type: "start",
-    tags: [],
+    tags: ["Frontend Mentor"],
     tutorialUrl:
       "https://www.youtube.com/watch?v=abdsoVJsWzQ&list=PLrVXEY3WfL-39_2q2HiKkuyNxelQI1XeV&index=3",
     statementUrl:
@@ -123,7 +123,7 @@ export const data: Item[] = [
     description:
       "In this challenge, you'll create a bar chart component from scratch. We provide a local JSON file, so you can add the chart data dynamically if you choose.",
     type: "start",
-    tags: [],
+    tags: ["Frontend Mentor"],
     tutorialUrl: "https://www.youtube.com/watch?v=s9CHPlY8J8I",
     statementUrl:
       "https://www.frontendmentor.io/challenges/expenses-chart-component-e7yJBUdjwt",
@@ -137,7 +137,7 @@ export const data: Item[] = [
     description:
       "This small app is perfect for anyone starting to get to grips with JavaScript. The calculator functionality will be a nice test!",
     type: "start",
-    tags: [],
+    tags: ["Frontend Mentor"],
     tutorialUrl: "https://www.youtube.com/watch?v=FYCauVeo8OY",
     statementUrl:
       "https://www.frontendmentor.io/challenges/tip-calculator-app-ugJNGbJUX",
@@ -151,7 +151,7 @@ export const data: Item[] = [
     description:
       "This challenge will get you thinking about building an accessible custom toggle control and also test your layout skills.",
     type: "start",
-    tags: [],
+    tags: ["Frontend Mentor"],
     tutorialUrl: "https://www.youtube.com/watch?v=u02jD-Sj4yg",
     statementUrl:
       "https://www.frontendmentor.io/challenges/pricing-component-with-toggle-8vPwRMIC",
@@ -165,7 +165,7 @@ export const data: Item[] = [
     description:
       "This challenge is designed to sharpen your JavaScript and form validation skills. Working with dates in JavaScript can be tricky, so this will be a nice test!",
     type: "start",
-    tags: [],
+    tags: ["Frontend Mentor"],
     tutorialUrl: "https://www.youtube.com/watch?v=U4N9xwSPasY",
     statementUrl:
       "https://www.frontendmentor.io/challenges/age-calculator-app-dF9DFFpj-Q",
@@ -180,7 +180,7 @@ export const data: Item[] = [
     description:
       "In this project, you'll build out an interactive pricing component complete with custom range input slider and pricing toggle. A perfect way to test your JS skills!",
     type: "start",
-    tags: [],
+    tags: ["Frontend Mentor"],
     tutorialUrl: "https://www.youtube.com/watch?v=dg7vy9FzFUo",
     statementUrl:
       "https://www.frontendmentor.io/challenges/interactive-pricing-component-t0m8PIyY8",
@@ -194,7 +194,7 @@ export const data: Item[] = [
     description:
       "The perfect project if you're learning how to interact with 3rd-party APIs. This challenge uses the Advice Slip API to generate random quotes of advice.",
     type: "start",
-    tags: [],
+    tags: ["Frontend Mentor"],
     tutorialUrl: "https://www.youtube.com/watch?v=ipTfXOXBCoQ&t=1106s",
     statementUrl:
       "https://www.frontendmentor.io/challenges/advice-generator-app-QdUG-13db",
@@ -208,7 +208,7 @@ export const data: Item[] = [
     description:
       "In this challenge, you'll be using two separate APIs together to create an IP Address Tracking app.",
     type: "start",
-    tags: [],
+    tags: ["Frontend Mentor"],
     tutorialUrl: "",
     statementUrl:
       "https://www.frontendmentor.io/challenges/ip-address-tracker-I8-0yYAH0",
@@ -222,7 +222,7 @@ export const data: Item[] = [
     description:
       "This challenge involves building an Accordion component from scratch, where candidates implement a UI component based on a problem statement.",
     type: "start",
-    tags: [],
+    tags: ["Devtools"],
     tutorialUrl: "https://www.youtube.com/watch?v=dkh9-zICMQg&t=504s",
     statementUrl:
       "https://devtools.tech/questions/s/implement-accordion-component-in-reactjs-or-javascript-interview-question---qid---3pRN4mOqn69FJ94mrh1A",
@@ -236,7 +236,7 @@ export const data: Item[] = [
     description:
       "In this frontend coding challenge, implement a game to match countries with their capitals.",
     type: "start",
-    tags: [],
+    tags: ["Devtools"],
     tutorialUrl: "https://www.youtube.com/watch?v=Iv1gZN900uc",
     statementUrl:
       "https://devtools.tech/questions/s/build-country-capital-game-or-microsoft-frontend-interview-question-or-javascript-or-react-js---qid---yPb5g7MLCSf6j2F3qjqj",
@@ -250,7 +250,7 @@ export const data: Item[] = [
     description:
       "In this question, the candidate needs to build a sidebar that contains a collapsible tree-like UI.",
     type: "start",
-    tags: [],
+    tags: ["Devtools"],
     tutorialUrl: "https://www.youtube.com/watch?v=3OxMsnP78zg",
     statementUrl:
       "https://www.devtools.tech/questions/s/how-to-build-a-confluence-like-sidebar-with-tree-structure-or-atlassian-frontend-interview-question-or-react-js---qid---3r7988VsESMQBt9vP1Zi",
@@ -264,7 +264,7 @@ export const data: Item[] = [
     description:
       "In this question, you need to build a password strength checker in React.js that shows the strength of the password.",
     type: "start",
-    tags: [],
+    tags: ["Devtools"],
     tutorialUrl: "https://www.youtube.com/watch?v=CM-MXPl0-wE",
     statementUrl:
       "https://www.devtools.tech/questions/s/how-to-build-a-password-strength-checker-in-react-js-or-frontend-interview-question-or-javascript---qid---tQR3mRIXsSK1tDfCliYj",
@@ -278,7 +278,7 @@ export const data: Item[] = [
     description:
       "In this coding challenge, you need to build an autocomplete that will act as a payment page where users can enter their UPI.",
     type: "start",
-    tags: [],
+    tags: ["Devtools"],
     tutorialUrl: "https://www.youtube.com/watch?v=qMkUziVZvzs",
     statementUrl:
       "https://www.devtools.tech/questions/s/build-an-autocomplete-using-reactjs-or-type-one-or-frontend-coding-challenge-or-javascript-interview-question---qid---wIsJwxPV1Ka0GdmTIXQX",
@@ -292,7 +292,7 @@ export const data: Item[] = [
     description:
       "In this UI coding challenge, the candidate needs to build a simple React app where a circle should appear wherever user clicks on the screen.",
     type: "start",
-    tags: [],
+    tags: ["Devtools"],
     tutorialUrl: "https://www.youtube.com/watch?v=h05uGv0PEuQ",
     statementUrl:
       "https://www.devtools.tech/questions/s/how-to-build-circles-game-in-react-js-frontend-coding-challenge---qid---Y8acly7B5CmIVAaT5knP",
@@ -306,7 +306,7 @@ export const data: Item[] = [
     description:
       "In this question, the candidate needs to add and animate multiple progress bars on a button click.",
     type: "start",
-    tags: [],
+    tags: ["Devtools"],
     tutorialUrl: "",
     statementUrl:
       "https://www.devtools.tech/questions/s/how-to-animate-multiple-progress-bars-in-a-sequence-or-uber-frontend-interview-question-or-react-js-or-javascript-or-html-or-css---qid---0pJDOORWvcix4ymghsB9",
@@ -320,7 +320,7 @@ export const data: Item[] = [
     description:
       "Create a shape based on a given 2D array. A shape is a collection of empty boxes placed at values that are true in the provided array.",
     type: "start",
-    tags: [],
+    tags: ["Devtools"],
     tutorialUrl: "https://www.youtube.com/watch?v=DCoIeGt4g7M&t=2s",
     statementUrl:
       "https://www.devtools.tech/questions/s/how-to-create-an-interactive-shape-based-ui-uber-frontend-interview-question-or-javascript-or-react-js---qid---6FVH1ZMWMXd4uZ8WAGEi",
@@ -334,7 +334,7 @@ export const data: Item[] = [
     description:
       "Create a component that shows a number input challenge, requiring users to enter a correct 4-digit code. When the right code is input, the component transitions to a different view or content.",
     type: "start",
-    tags: [],
+    tags: ["Web Dev Cody"],
     tutorialUrl:
       "https://www.youtube.com/watch?v=x7yoUNV3qJI&list=PL6x5Q-Sj_Bla3_wMqhETxMBjFml0XJNPI&index=10",
     statementUrl:
@@ -349,7 +349,7 @@ export const data: Item[] = [
     description:
       "The challenge is to create a game where a randomly generated color is displayed, and the user must select the correct hexadecimal code from three options.",
     type: "start",
-    tags: [],
+    tags: ["Web Dev Cody"],
     tutorialUrl:
       "https://www.youtube.com/watch?v=QNYljS0_TOE&list=PL6x5Q-Sj_Bla3_wMqhETxMBjFml0XJNPI",
     statementUrl:
@@ -364,7 +364,7 @@ export const data: Item[] = [
     description:
       "Build a React stoplight component that cycles between colors at set intervals, using hooks to manage state.",
     type: "start",
-    tags: [],
+    tags: ["Web Dev Cody"],
     tutorialUrl: "https://www.youtube.com/watch?v=plFo3jJRTdE",
     statementUrl:
       "https://github.com/SofiaBargues/stoplight-component/blob/main/README.md",
@@ -378,7 +378,7 @@ export const data: Item[] = [
     description:
       "The challenge is to create an image slider (carousel) component with functionality for navigating between images, automatic cycling with play/stop controls, and basic sliding animations.",
     type: "start",
-    tags: [],
+    tags: ["Web Dev Cody"],
     tutorialUrl:
       "https://www.youtube.com/watch?v=1eO3LQ1rptA&list=PL6x5Q-Sj_Bla3_wMqhETxMBjFml0XJNPI&index=10",
     statementUrl:
@@ -393,7 +393,7 @@ export const data: Item[] = [
     description:
       "The Multi-Select Dropdown Component Challenge involves creating a React component that allows users to select multiple US states from a dropdown menu and displays the count of selected states in real-time. This challenge tests your skills in React, state management, and dynamic user input handling.",
     type: "start",
-    tags: [],
+    tags: ["Web Dev Cody"],
     tutorialUrl:
       "https://www.youtube.com/watch?v=V2zEAXLQbF4&list=PL6x5Q-Sj_Bla3_wMqhETxMBjFml0XJNPI&index=13",
     statementUrl:
@@ -408,7 +408,7 @@ export const data: Item[] = [
     description:
       "The Memory Game Challenge involves building a 4x4 memory game, where players match tiles by clicking on them. The challenge focuses on state management, dynamic rendering, and event handling, with optional features like a timer and move tracking to enhance gameplay.",
     type: "start",
-    tags: [],
+    tags: ["Web Dev Cody"],
     tutorialUrl:
       "https://www.youtube.com/watch?v=5UcfBfSP2T4&list=PL6x5Q-Sj_Bla3_wMqhETxMBjFml0XJNPI&index=6",
     statementUrl:
@@ -423,7 +423,7 @@ export const data: Item[] = [
     description:
       "In this beginner-level React challenge, you'll create a 3x3 grid-based Whack-a-Mole game. The objective is to click on the moles before they disappear, increasing your score.",
     type: "start",
-    tags: [],
+    tags: ["Web Dev Cody"],
     tutorialUrl:
       "https://www.youtube.com/watch?v=x01eEjSFKig&list=PL6x5Q-Sj_Bla3_wMqhETxMBjFml0XJNPI&index=15",
     statementUrl:
