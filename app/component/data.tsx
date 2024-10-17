@@ -187,6 +187,21 @@ export const data: Item[] = [
     demoUrl: "https://time-tracking-dashboard-pied.vercel.app/",
     imgSource: "/time-tracking-dashboard.jpg",
   },
+  {
+    id: "multi-select-state-dropdown",
+    name: "Multi-Select Dropdown",
+    description:
+      "The Multi-Select Dropdown Component Challenge involves creating a React component that allows users to select multiple US states from a dropdown menu and displays the count of selected states in real-time. This challenge tests your skills in React, state management, and dynamic user input handling.",
+    type: "start",
+    tags: ["Web Dev Cody"],
+    tutorialUrl:
+      "https://www.youtube.com/watch?v=V2zEAXLQbF4&list=PL6x5Q-Sj_Bla3_wMqhETxMBjFml0XJNPI&index=13",
+    statementUrl:
+      "https://github.com/SofiaBargues/multi-select-dropdown/blob/main/README.md",
+    githubUrl: "https://github.com/SofiaBargues/multi-select-dropdown",
+    demoUrl: "https://multi-select-dropdown-beta.vercel.app/",
+    imgSource: "/multi-select-dropdown.png",
+  },
 
   {
     id: "expenses-chart-component",
@@ -259,21 +274,7 @@ export const data: Item[] = [
     demoUrl: "https://interactive-pricing-component-six-kappa.vercel.app/",
     imgSource: "/interactive-pricing-component.jpg",
   },
-  {
-    id: "multi-select-state-dropdown",
-    name: "Multi-Select Dropdown",
-    description:
-      "The Multi-Select Dropdown Component Challenge involves creating a React component that allows users to select multiple US states from a dropdown menu and displays the count of selected states in real-time. This challenge tests your skills in React, state management, and dynamic user input handling.",
-    type: "start",
-    tags: ["Web Dev Cody"],
-    tutorialUrl:
-      "https://www.youtube.com/watch?v=V2zEAXLQbF4&list=PL6x5Q-Sj_Bla3_wMqhETxMBjFml0XJNPI&index=13",
-    statementUrl:
-      "https://github.com/SofiaBargues/multi-select-dropdown/blob/main/README.md",
-    githubUrl: "https://github.com/SofiaBargues/multi-select-dropdown",
-    demoUrl: "https://multi-select-dropdown-beta.vercel.app/",
-    imgSource: "/multi-select-dropdown.png",
-  },
+
   {
     id: "stoplight-component",
     name: "Stoplight Component",
