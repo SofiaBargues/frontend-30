@@ -30,6 +30,20 @@ export const data: Item[] = [
     imgSource: "/blog-preview-card.jpg",
   },
   {
+    id: "accordion-component",
+    name: "Accordion Component",
+    description:
+      "This challenge involves building an Accordion component from scratch, where candidates implement a UI component based on a problem statement.",
+    type: "start",
+    tags: ["Devtools"],
+    tutorialUrl: "https://www.youtube.com/watch?v=dkh9-zICMQg&t=504s",
+    statementUrl:
+      "https://devtools.tech/questions/s/implement-accordion-component-in-reactjs-or-javascript-interview-question---qid---3pRN4mOqn69FJ94mrh1A",
+    githubUrl: "https://github.com/SofiaBargues/accordion-component",
+    demoUrl: "https://accordion-component-bay.vercel.app/",
+    imgSource: "/accordion-component.png",
+  },
+  {
     id: "social-links-profile",
     name: "Social links profile",
     description:
@@ -58,20 +72,18 @@ export const data: Item[] = [
     imgSource: "/recipe-page.jpg",
   },
   {
-    id: "testimonials-grid-section",
-    name: "Testimonials grid",
+    id: "country-capital-game",
+    name: "Country Capital Game",
     description:
-      "This challenge will be perfect practice for anyone wanting to test their CSS Grid skills. Grid is such a powerful addition to CSS, so it's worth getting to grips with it!",
+      "In this frontend coding challenge, implement a game to match countries with their capitals.",
     type: "start",
-    tags: ["Frontend Mentor"],
-    tutorialUrl:
-      "https://www.youtube.com/watch?v=0TiIJjC7Olw&list=PLrVXEY3WfL-39_2q2HiKkuyNxelQI1XeV",
+    tags: ["Devtools"],
+    tutorialUrl: "https://www.youtube.com/watch?v=Iv1gZN900uc",
     statementUrl:
-      "https://www.frontendmentor.io/challenges/testimonials-grid-section-Nnw6J7Un7",
-    githubUrl: "https://github.com/SofiaBargues/testimonialsgrid-section",
-    demoUrl:
-      "https://testimonialsgrid-section-git-main-sofiabargues-projects.vercel.app/",
-    imgSource: "/testimonials-grid-section.jpg",
+      "https://devtools.tech/questions/s/build-country-capital-game-or-microsoft-frontend-interview-question-or-javascript-or-react-js---qid---yPb5g7MLCSf6j2F3qjqj",
+    githubUrl: "https://github.com/SofiaBargues/country-capital-game",
+    demoUrl: "https://country-capital-game-gamma.vercel.app/",
+    imgSource: "/country-capital-game.webp",
   },
   {
     id: "article-preview-component",
@@ -87,176 +99,6 @@ export const data: Item[] = [
     githubUrl: "https://github.com/SofiaBargues/article-preview-component",
     demoUrl: "https://article-preview-component-sable.vercel.app/",
     imgSource: "/article-preview.jpg",
-  },
-  {
-    id: "time-tracking-dashboard",
-    name: "Time tracking",
-    description:
-      "A perfect opportunity to practice your CSS Grid skills. For anyone wanting to take it up a notch, we provide a JSON data file to practice working with data.",
-    type: "start",
-    tags: ["Frontend Mentor"],
-    tutorialUrl: "https://www.youtube.com/watch?v=l9Qw8y3LfCY",
-    statementUrl:
-      "https://www.frontendmentor.io/challenges/time-tracking-dashboard-UIQ7167Jw",
-    githubUrl: "https://github.com/SofiaBargues/time-tracking-dashboard",
-    demoUrl: "https://time-tracking-dashboard-pied.vercel.app/",
-    imgSource: "/time-tracking-dashboard.jpg",
-  },
-  {
-    id: "newsletter-sign-up-form-with-success-message",
-    name: "Newsletter sign-up",
-    description:
-      "This will test your skills with basic form structure, validation, and submission. The success state will also be an excellent opportunity to work with DOM manipulation.",
-    type: "start",
-    tags: ["Frontend Mentor"],
-    tutorialUrl:
-      "https://www.youtube.com/watch?v=abdsoVJsWzQ&list=PLrVXEY3WfL-39_2q2HiKkuyNxelQI1XeV&index=3",
-    statementUrl:
-      "https://www.frontendmentor.io/challenges/newsletter-signup-form-with-success-message-3FC1AZbNrv",
-    githubUrl: "https://github.com/SofiaBargues/newsletter-sign-up",
-    demoUrl: "https://frontend-mentor-newsletter-signup-form-ruby.vercel.app/",
-    imgSource: "/newsletter-singup-form.jpg",
-  },
-  {
-    id: "expenses-chart-component",
-    name: "Expenses chart",
-    description:
-      "In this challenge, you'll create a bar chart component from scratch. We provide a local JSON file, so you can add the chart data dynamically if you choose.",
-    type: "start",
-    tags: ["Frontend Mentor"],
-    tutorialUrl: "https://www.youtube.com/watch?v=s9CHPlY8J8I",
-    statementUrl:
-      "https://www.frontendmentor.io/challenges/expenses-chart-component-e7yJBUdjwt",
-    githubUrl: "https://github.com/SofiaBargues/expensesChartComponent",
-    demoUrl: "https://expenses-chart-component-rho-amber.vercel.app/",
-    imgSource: "/expenses-chart-component.jpg",
-  },
-  {
-    id: "tip-calculator",
-    name: "Tip calculator",
-    description:
-      "This small app is perfect for anyone starting to get to grips with JavaScript. The calculator functionality will be a nice test!",
-    type: "start",
-    tags: ["Frontend Mentor"],
-    tutorialUrl: "https://www.youtube.com/watch?v=FYCauVeo8OY",
-    statementUrl:
-      "https://www.frontendmentor.io/challenges/tip-calculator-app-ugJNGbJUX",
-    githubUrl: "https://github.com/SofiaBargues/tip-calculator-app-main",
-    demoUrl: "https://tip-calculator-app-main-ivory.vercel.app/",
-    imgSource: "/tip-calculator-app.jpg",
-  },
-  {
-    id: "pricing-component-with-toggle",
-    name: "Pricing component",
-    description:
-      "This challenge will get you thinking about building an accessible custom toggle control and also test your layout skills.",
-    type: "start",
-    tags: ["Frontend Mentor"],
-    tutorialUrl: "https://www.youtube.com/watch?v=u02jD-Sj4yg",
-    statementUrl:
-      "https://www.frontendmentor.io/challenges/pricing-component-with-toggle-8vPwRMIC",
-    githubUrl: "https://github.com/SofiaBargues/pricing-component-with-toggle",
-    demoUrl: "https://pricing-component-with-toggle-two-phi.vercel.app/",
-    imgSource: "/pricing-component-with-toggle.jpg",
-  },
-  {
-    id: "age-calculator-app",
-    name: "Age calculator app",
-    description:
-      "This challenge is designed to sharpen your JavaScript and form validation skills. Working with dates in JavaScript can be tricky, so this will be a nice test!",
-    type: "start",
-    tags: ["Frontend Mentor"],
-    tutorialUrl: "https://www.youtube.com/watch?v=U4N9xwSPasY",
-    statementUrl:
-      "https://www.frontendmentor.io/challenges/age-calculator-app-dF9DFFpj-Q",
-    githubUrl: "https://github.com/SofiaBargues/age-calculator-app-main",
-    demoUrl: "https://age-calculator-app-main-psi.vercel.app/",
-    imgSource: "/age-calculator-app.jpg",
-  },
-
-  {
-    id: "interactive-pricing-component",
-    name: "Interactive pricing",
-    description:
-      "In this project, you'll build out an interactive pricing component complete with custom range input slider and pricing toggle. A perfect way to test your JS skills!",
-    type: "start",
-    tags: ["Frontend Mentor"],
-    tutorialUrl: "https://www.youtube.com/watch?v=dg7vy9FzFUo",
-    statementUrl:
-      "https://www.frontendmentor.io/challenges/interactive-pricing-component-t0m8PIyY8",
-    githubUrl: "https://github.com/SofiaBargues/interactive-pricing-component",
-    demoUrl: "https://interactive-pricing-component-six-kappa.vercel.app/",
-    imgSource: "/interactive-pricing-component.jpg",
-  },
-  {
-    id: "advice-generator",
-    name: "Advice generator app",
-    description:
-      "The perfect project if you're learning how to interact with 3rd-party APIs. This challenge uses the Advice Slip API to generate random quotes of advice.",
-    type: "start",
-    tags: ["Frontend Mentor"],
-    tutorialUrl: "https://www.youtube.com/watch?v=ipTfXOXBCoQ&t=1106s",
-    statementUrl:
-      "https://www.frontendmentor.io/challenges/advice-generator-app-QdUG-13db",
-    githubUrl: "https://github.com/SofiaBargues/advice-generator-app",
-    demoUrl: "https://advice-generator-app-tau-six.vercel.app/",
-    imgSource: "/advice-generator.jpg",
-  },
-  {
-    id: "ip-address-tracker",
-    name: "IP Address Tracker",
-    description:
-      "In this challenge, you'll be using two separate APIs together to create an IP Address Tracking app.",
-    type: "start",
-    tags: ["Frontend Mentor"],
-    tutorialUrl: "",
-    statementUrl:
-      "https://www.frontendmentor.io/challenges/ip-address-tracker-I8-0yYAH0",
-    githubUrl: "https://github.com/SofiaBargues/ip-address-tracker-1",
-    demoUrl: "https://ip-address-tracker-1.vercel.app/",
-    imgSource: "/ip-address-tracker.jpg",
-  },
-  {
-    id: "accordion-component",
-    name: "Accordion Component",
-    description:
-      "This challenge involves building an Accordion component from scratch, where candidates implement a UI component based on a problem statement.",
-    type: "start",
-    tags: ["Devtools"],
-    tutorialUrl: "https://www.youtube.com/watch?v=dkh9-zICMQg&t=504s",
-    statementUrl:
-      "https://devtools.tech/questions/s/implement-accordion-component-in-reactjs-or-javascript-interview-question---qid---3pRN4mOqn69FJ94mrh1A",
-    githubUrl: "https://github.com/SofiaBargues/accordion-component",
-    demoUrl: "https://accordion-component-bay.vercel.app/",
-    imgSource: "/accordion-component.png",
-  },
-  {
-    id: "country-capital-game",
-    name: "Country Capital Game",
-    description:
-      "In this frontend coding challenge, implement a game to match countries with their capitals.",
-    type: "start",
-    tags: ["Devtools"],
-    tutorialUrl: "https://www.youtube.com/watch?v=Iv1gZN900uc",
-    statementUrl:
-      "https://devtools.tech/questions/s/build-country-capital-game-or-microsoft-frontend-interview-question-or-javascript-or-react-js---qid---yPb5g7MLCSf6j2F3qjqj",
-    githubUrl: "https://github.com/SofiaBargues/country-capital-game",
-    demoUrl: "https://country-capital-game-gamma.vercel.app/",
-    imgSource: "/country-capital-game.webp",
-  },
-  {
-    id: "confluence-like-sidebar",
-    name: "Confluence-like Sidebar",
-    description:
-      "In this question, the candidate needs to build a sidebar that contains a collapsible tree-like UI.",
-    type: "start",
-    tags: ["Devtools"],
-    tutorialUrl: "https://www.youtube.com/watch?v=3OxMsnP78zg",
-    statementUrl:
-      "https://www.devtools.tech/questions/s/how-to-build-a-confluence-like-sidebar-with-tree-structure-or-atlassian-frontend-interview-question-or-react-js---qid---3r7988VsESMQBt9vP1Zi",
-    githubUrl: "https://github.com/SofiaBargues/confluence-like-sidebar",
-    demoUrl: "https://confluence-like-sidebar.vercel.app/",
-    imgSource: "/18.png",
   },
   {
     id: "password-checker",
@@ -287,18 +129,107 @@ export const data: Item[] = [
     imgSource: "/autocomplete.png",
   },
   {
-    id: "circles-game",
-    name: "Circles Game",
+    id: "testimonials-grid-section",
+    name: "Testimonials grid",
     description:
-      "In this UI coding challenge, the candidate needs to build a simple React app where a circle should appear wherever user clicks on the screen.",
+      "This challenge will be perfect practice for anyone wanting to test their CSS Grid skills. Grid is such a powerful addition to CSS, so it's worth getting to grips with it!",
+    type: "start",
+    tags: ["Frontend Mentor"],
+    tutorialUrl:
+      "https://www.youtube.com/watch?v=0TiIJjC7Olw&list=PLrVXEY3WfL-39_2q2HiKkuyNxelQI1XeV",
+    statementUrl:
+      "https://www.frontendmentor.io/challenges/testimonials-grid-section-Nnw6J7Un7",
+    githubUrl: "https://github.com/SofiaBargues/testimonialsgrid-section",
+    demoUrl:
+      "https://testimonialsgrid-section-git-main-sofiabargues-projects.vercel.app/",
+    imgSource: "/testimonials-grid-section.jpg",
+  },
+  {
+    id: "confluence-like-sidebar",
+    name: "Confluence-like Sidebar",
+    description:
+      "In this question, the candidate needs to build a sidebar that contains a collapsible tree-like UI.",
     type: "start",
     tags: ["Devtools"],
-    tutorialUrl: "https://www.youtube.com/watch?v=h05uGv0PEuQ",
+    tutorialUrl: "https://www.youtube.com/watch?v=3OxMsnP78zg",
     statementUrl:
-      "https://www.devtools.tech/questions/s/how-to-build-circles-game-in-react-js-frontend-coding-challenge---qid---Y8acly7B5CmIVAaT5knP",
-    githubUrl: "https://github.com/SofiaBargues/circles-game",
-    demoUrl: "https://circles-game.vercel.app/",
-    imgSource: "/circles-game.png",
+      "https://www.devtools.tech/questions/s/how-to-build-a-confluence-like-sidebar-with-tree-structure-or-atlassian-frontend-interview-question-or-react-js---qid---3r7988VsESMQBt9vP1Zi",
+    githubUrl: "https://github.com/SofiaBargues/confluence-like-sidebar",
+    demoUrl: "https://confluence-like-sidebar.vercel.app/",
+    imgSource: "/18.png",
+  },
+  {
+    id: "pricing-component-with-toggle",
+    name: "Pricing component",
+    description:
+      "This challenge will get you thinking about building an accessible custom toggle control and also test your layout skills.",
+    type: "start",
+    tags: ["Frontend Mentor"],
+    tutorialUrl: "https://www.youtube.com/watch?v=u02jD-Sj4yg",
+    statementUrl:
+      "https://www.frontendmentor.io/challenges/pricing-component-with-toggle-8vPwRMIC",
+    githubUrl: "https://github.com/SofiaBargues/pricing-component-with-toggle",
+    demoUrl: "https://pricing-component-with-toggle-two-phi.vercel.app/",
+    imgSource: "/pricing-component-with-toggle.jpg",
+  },
+
+  {
+    id: "time-tracking-dashboard",
+    name: "Time tracking",
+    description:
+      "A perfect opportunity to practice your CSS Grid skills. For anyone wanting to take it up a notch, we provide a JSON data file to practice working with data.",
+    type: "start",
+    tags: ["Frontend Mentor"],
+    tutorialUrl: "https://www.youtube.com/watch?v=l9Qw8y3LfCY",
+    statementUrl:
+      "https://www.frontendmentor.io/challenges/time-tracking-dashboard-UIQ7167Jw",
+    githubUrl: "https://github.com/SofiaBargues/time-tracking-dashboard",
+    demoUrl: "https://time-tracking-dashboard-pied.vercel.app/",
+    imgSource: "/time-tracking-dashboard.jpg",
+  },
+
+  {
+    id: "expenses-chart-component",
+    name: "Expenses chart",
+    description:
+      "In this challenge, you'll create a bar chart component from scratch. We provide a local JSON file, so you can add the chart data dynamically if you choose.",
+    type: "start",
+    tags: ["Frontend Mentor"],
+    tutorialUrl: "https://www.youtube.com/watch?v=s9CHPlY8J8I",
+    statementUrl:
+      "https://www.frontendmentor.io/challenges/expenses-chart-component-e7yJBUdjwt",
+    githubUrl: "https://github.com/SofiaBargues/expensesChartComponent",
+    demoUrl: "https://expenses-chart-component-rho-amber.vercel.app/",
+    imgSource: "/expenses-chart-component.jpg",
+  },
+  {
+    id: "tip-calculator",
+    name: "Tip calculator",
+    description:
+      "This small app is perfect for anyone starting to get to grips with JavaScript. The calculator functionality will be a nice test!",
+    type: "start",
+    tags: ["Frontend Mentor"],
+    tutorialUrl: "https://www.youtube.com/watch?v=FYCauVeo8OY",
+    statementUrl:
+      "https://www.frontendmentor.io/challenges/tip-calculator-app-ugJNGbJUX",
+    githubUrl: "https://github.com/SofiaBargues/tip-calculator-app-main",
+    demoUrl: "https://tip-calculator-app-main-ivory.vercel.app/",
+    imgSource: "/tip-calculator-app.jpg",
+  },
+
+  {
+    id: "age-calculator-app",
+    name: "Age calculator app",
+    description:
+      "This challenge is designed to sharpen your JavaScript and form validation skills. Working with dates in JavaScript can be tricky, so this will be a nice test!",
+    type: "start",
+    tags: ["Frontend Mentor"],
+    tutorialUrl: "https://www.youtube.com/watch?v=U4N9xwSPasY",
+    statementUrl:
+      "https://www.frontendmentor.io/challenges/age-calculator-app-dF9DFFpj-Q",
+    githubUrl: "https://github.com/SofiaBargues/age-calculator-app-main",
+    demoUrl: "https://age-calculator-app-main-psi.vercel.app/",
+    imgSource: "/age-calculator-app.jpg",
   },
   {
     id: "multiple-progress-bars",
@@ -314,6 +245,108 @@ export const data: Item[] = [
     demoUrl: "https://multiple-progress-bars.vercel.app/",
     imgSource: "/multiple-progress-bars.webp",
   },
+  {
+    id: "interactive-pricing-component",
+    name: "Interactive pricing",
+    description:
+      "In this project, you'll build out an interactive pricing component complete with custom range input slider and pricing toggle. A perfect way to test your JS skills!",
+    type: "start",
+    tags: ["Frontend Mentor"],
+    tutorialUrl: "https://www.youtube.com/watch?v=dg7vy9FzFUo",
+    statementUrl:
+      "https://www.frontendmentor.io/challenges/interactive-pricing-component-t0m8PIyY8",
+    githubUrl: "https://github.com/SofiaBargues/interactive-pricing-component",
+    demoUrl: "https://interactive-pricing-component-six-kappa.vercel.app/",
+    imgSource: "/interactive-pricing-component.jpg",
+  },
+  {
+    id: "multi-select-state-dropdown",
+    name: "Multi-Select Dropdown",
+    description:
+      "The Multi-Select Dropdown Component Challenge involves creating a React component that allows users to select multiple US states from a dropdown menu and displays the count of selected states in real-time. This challenge tests your skills in React, state management, and dynamic user input handling.",
+    type: "start",
+    tags: ["Web Dev Cody"],
+    tutorialUrl:
+      "https://www.youtube.com/watch?v=V2zEAXLQbF4&list=PL6x5Q-Sj_Bla3_wMqhETxMBjFml0XJNPI&index=13",
+    statementUrl:
+      "https://github.com/SofiaBargues/multi-select-dropdown/blob/main/README.md",
+    githubUrl: "https://github.com/SofiaBargues/multi-select-dropdown",
+    demoUrl: "https://multi-select-dropdown-beta.vercel.app/",
+    imgSource: "/multi-select-dropdown.png",
+  },
+  {
+    id: "stoplight-component",
+    name: "Stoplight Component",
+    description:
+      "Build a React stoplight component that cycles between colors at set intervals, using hooks to manage state.",
+    type: "start",
+    tags: ["Web Dev Cody"],
+    tutorialUrl: "https://www.youtube.com/watch?v=plFo3jJRTdE",
+    statementUrl:
+      "https://github.com/SofiaBargues/stoplight-component/blob/main/README.md",
+    githubUrl: "https://github.com/SofiaBargues/stoplight-component",
+    demoUrl: "https://stoplight-component.vercel.app/",
+    imgSource: "/stoplight-component.png",
+  },
+  {
+    id: "image-slider",
+    name: "Image Slider",
+    description:
+      "The challenge is to create an image slider (carousel) component with functionality for navigating between images, automatic cycling with play/stop controls, and basic sliding animations.",
+    type: "start",
+    tags: ["Web Dev Cody"],
+    tutorialUrl:
+      "https://www.youtube.com/watch?v=1eO3LQ1rptA&list=PL6x5Q-Sj_Bla3_wMqhETxMBjFml0XJNPI&index=10",
+    statementUrl:
+      "https://github.com/SofiaBargues/image-slider/blob/main/README.md",
+    githubUrl: "https://github.com/SofiaBargues/image-slider",
+    demoUrl: "https://image-slider-wheat-mu.vercel.app/",
+    imgSource: "/image-slider.png",
+  },
+  {
+    id: "advice-generator",
+    name: "Advice generator app",
+    description:
+      "The perfect project if you're learning how to interact with 3rd-party APIs. This challenge uses the Advice Slip API to generate random quotes of advice.",
+    type: "start",
+    tags: ["Frontend Mentor"],
+    tutorialUrl: "https://www.youtube.com/watch?v=ipTfXOXBCoQ&t=1106s",
+    statementUrl:
+      "https://www.frontendmentor.io/challenges/advice-generator-app-QdUG-13db",
+    githubUrl: "https://github.com/SofiaBargues/advice-generator-app",
+    demoUrl: "https://advice-generator-app-tau-six.vercel.app/",
+    imgSource: "/advice-generator.jpg",
+  },
+  {
+    id: "ip-address-tracker",
+    name: "IP Address Tracker",
+    description:
+      "In this challenge, you'll be using two separate APIs together to create an IP Address Tracking app.",
+    type: "start",
+    tags: ["Frontend Mentor"],
+    tutorialUrl: "",
+    statementUrl:
+      "https://www.frontendmentor.io/challenges/ip-address-tracker-I8-0yYAH0",
+    githubUrl: "https://github.com/SofiaBargues/ip-address-tracker-1",
+    demoUrl: "https://ip-address-tracker-1.vercel.app/",
+    imgSource: "/ip-address-tracker.jpg",
+  },
+
+  {
+    id: "circles-game",
+    name: "Circles Game",
+    description:
+      "In this UI coding challenge, the candidate needs to build a simple React app where a circle should appear wherever user clicks on the screen.",
+    type: "start",
+    tags: ["Devtools"],
+    tutorialUrl: "https://www.youtube.com/watch?v=h05uGv0PEuQ",
+    statementUrl:
+      "https://www.devtools.tech/questions/s/how-to-build-circles-game-in-react-js-frontend-coding-challenge---qid---Y8acly7B5CmIVAaT5knP",
+    githubUrl: "https://github.com/SofiaBargues/circles-game",
+    demoUrl: "https://circles-game.vercel.app/",
+    imgSource: "/circles-game.png",
+  },
+
   {
     id: "shape-based-UI",
     name: "Shape Based UI",
@@ -359,49 +392,21 @@ export const data: Item[] = [
     imgSource: "/color-guessing-game.png",
   },
   {
-    id: "stoplight-component",
-    name: "Stoplight Component",
+    id: "newsletter-sign-up-form-with-success-message",
+    name: "Newsletter sign-up",
     description:
-      "Build a React stoplight component that cycles between colors at set intervals, using hooks to manage state.",
+      "This will test your skills with basic form structure, validation, and submission. The success state will also be an excellent opportunity to work with DOM manipulation.",
     type: "start",
-    tags: ["Web Dev Cody"],
-    tutorialUrl: "https://www.youtube.com/watch?v=plFo3jJRTdE",
-    statementUrl:
-      "https://github.com/SofiaBargues/stoplight-component/blob/main/README.md",
-    githubUrl: "https://github.com/SofiaBargues/stoplight-component",
-    demoUrl: "https://stoplight-component.vercel.app/",
-    imgSource: "/stoplight-component.png",
-  },
-  {
-    id: "image-slider",
-    name: "Image Slider",
-    description:
-      "The challenge is to create an image slider (carousel) component with functionality for navigating between images, automatic cycling with play/stop controls, and basic sliding animations.",
-    type: "start",
-    tags: ["Web Dev Cody"],
+    tags: ["Frontend Mentor"],
     tutorialUrl:
-      "https://www.youtube.com/watch?v=1eO3LQ1rptA&list=PL6x5Q-Sj_Bla3_wMqhETxMBjFml0XJNPI&index=10",
+      "https://www.youtube.com/watch?v=abdsoVJsWzQ&list=PLrVXEY3WfL-39_2q2HiKkuyNxelQI1XeV&index=3",
     statementUrl:
-      "https://github.com/SofiaBargues/image-slider/blob/main/README.md",
-    githubUrl: "https://github.com/SofiaBargues/image-slider",
-    demoUrl: "https://image-slider-wheat-mu.vercel.app/",
-    imgSource: "/image-slider.png",
+      "https://www.frontendmentor.io/challenges/newsletter-signup-form-with-success-message-3FC1AZbNrv",
+    githubUrl: "https://github.com/SofiaBargues/newsletter-sign-up",
+    demoUrl: "https://frontend-mentor-newsletter-signup-form-ruby.vercel.app/",
+    imgSource: "/newsletter-singup-form.jpg",
   },
-  {
-    id: "multi-select-state-dropdown",
-    name: "Multi-Select Dropdown",
-    description:
-      "The Multi-Select Dropdown Component Challenge involves creating a React component that allows users to select multiple US states from a dropdown menu and displays the count of selected states in real-time. This challenge tests your skills in React, state management, and dynamic user input handling.",
-    type: "start",
-    tags: ["Web Dev Cody"],
-    tutorialUrl:
-      "https://www.youtube.com/watch?v=V2zEAXLQbF4&list=PL6x5Q-Sj_Bla3_wMqhETxMBjFml0XJNPI&index=13",
-    statementUrl:
-      "https://github.com/SofiaBargues/multi-select-dropdown/blob/main/README.md",
-    githubUrl: "https://github.com/SofiaBargues/multi-select-dropdown",
-    demoUrl: "https://multi-select-dropdown-beta.vercel.app/",
-    imgSource: "/multi-select-dropdown.png",
-  },
+
   {
     id: "memory-game",
     name: "Memory Game",
