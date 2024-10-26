@@ -8,7 +8,7 @@ export function StarOnGithubButton() {
       href="https://github.com/SofiaBargues/frontend-30"
       target="_blank"
       rel="noopener noreferrer"
-      className="group flex items-center gap-1.5 rounded-lg bg-gradient-to-r p-3 px-4 py-2 hover:bg-gray-600 hover:opacity-90 hover:drop-shadow-2xl dark:from-[#6ef195] dark:to-[#00e3fd]"
+      className="group flex items-center gap-1.5 rounded-lg border bg-gray-100 bg-gradient-to-r p-3 px-4 py-2 shadow-md shadow-primary transition-shadow hover:shadow-lg hover:shadow-primary-focus"
     >
       <Github className="h-4 w-4 text-primary-content" />
       <span className="hidden text-sm font-semibold text-primary-content sm:block">
