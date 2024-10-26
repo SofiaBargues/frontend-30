@@ -69,9 +69,12 @@ export function Step({ item, number, isDone, setDone }: StepProps) {
             </div>
           </span>
         </div>
-        <div className="">
+        <div className="bg">
           {item.tags.map((tag, index) => (
-            <span className="badge badge-primary h-4 text-[10px]" key={index}>
+            <span
+              className="badge badge-outline text-xs text-base-content/80"
+              key={index}
+            >
               {tag}
             </span>
           ))}
