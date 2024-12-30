@@ -51,7 +51,7 @@ export function Hero({}: {}) {
                 }} */}
               {/* /> */}
             </div>
-            <span className="">Projects</span>
+            <span className="">Challenges</span>
           </h1>
           <p className="mt-2 max-w-xl py-6 sm:text-xl lg:text-2xl">
             {
