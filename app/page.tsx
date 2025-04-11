@@ -62,7 +62,6 @@ export default function Home() {
 function Problems({ items }: { items: Item[] }) {
   const [status, setStatus] = useState<boolean[]>(Array(30).fill(false));
   const [isFirstRender, setIsFirstRender] = useState<boolean>(true);
-  const [completedAverage, setcompletedAverage] = useState<number>(0);
 
   useEffect(() => {
     if (isFirstRender) {
@@ -80,22 +79,12 @@ function Problems({ items }: { items: Item[] }) {
     }
   }, [status, isFirstRender]);
 
-  function itemToStep(item: Item, index: number, items: Item[]) {
-    function handleSetDone(isDone: boolean) {
-      const statusCopi = [...status];
-      statusCopi[index] = isDone;
-      setStatus(statusCopi);
-    }
-    return (
-      <Step
-        key={item.id}
-        number={index + 1}
-        isDone={status[index]}
-        setDone={handleSetDone}
-        item={item}
-      ></Step>
-    );
+  function handleSetDone(index: number, isDone: boolean) {
+    const statusCopi = [...status];
+    statusCopi[index] = isDone;
+    setStatus(statusCopi);
   }
+
   let completed = status.filter((x) => x === true).length;
   return (
     <section className="flex w-full flex-col items-center justify-center">
@@ -114,7 +103,17 @@ function Problems({ items }: { items: Item[] }) {
         </div>
       </div>
       <div className="flex w-full max-w-4xl flex-col items-center justify-between pb-8">
-        {items.map(itemToStep)}
+        {items.map((item: Item, index: number) => (
+          <Step
+            key={item.id}
+            number={index + 1}
+            isDone={status[index]}
+            setDone={(isDone) => {
+              handleSetDone(index, isDone);
+            }}
+            item={item}
+          ></Step>
+        ))}
       </div>
     </section>
   );
