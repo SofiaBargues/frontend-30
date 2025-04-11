@@ -16,7 +16,7 @@ export interface StepProps {
 
 function StepNumber({ number, item }: { number: number; item: Item }) {
   return (
-    <div className="flex h-full items-center justify-start text-2xl font-semibold md:ml-4 md:text-7xl lg:w-24">
+    <div className="flex h-full items-center justify-start text-2xl font-semibold sm:font-bold md:ml-4 md:text-7xl lg:w-24">
       <div className="flex text-left lg:flex-col">{number}</div>
     </div>
   );
@@ -45,16 +45,18 @@ export function Step({ item, number, isDone, setDone }: StepProps) {
           (number % 2 === 0 ? " -rotate-12" : " rotate-12")
         }
       ></img>
-      <div className="z-30 hidden sm:block">
+      <div className="z-30 hidden md:block">
         <StepNumber number={number} item={item} />
       </div>
       <div className="items relative m-3 flex w-full flex-col gap-2 rounded bg-base-100/50 sm:p-2 md:m-5">
         <div className="flex h-3 items-center justify-between gap-4 md:h-auto">
-          <div className="z-30 block sm:hidden">
+          <div className="z-30 block md:hidden">
             <StepNumber number={number} item={item} />
           </div>
           <span className="flex w-full items-center justify-between md:gap-4">
-            <h3 className="text-xl font-bold sm:text-3xl">{item.name}</h3>
+            <h3 className="text-xl font-bold sm:text-2xl md:text-3xl">
+              {item.name}
+            </h3>
             <div className="m-1 flex flex-col justify-center md:hidden">
               <button
                 onClick={handleClick}
