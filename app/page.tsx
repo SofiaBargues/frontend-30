@@ -8,7 +8,7 @@ import { LinkedIn } from "./component/LinkedIn";
 import { GitHubRepo } from "./component/GitHub";
 import { Step } from "./component/Step";
 import { Hero } from "./component/Hero";
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { Route } from "lucide-react";
 import { Email } from "./component/Email";
 import { StarOnGithubButton } from "./component/StarOnGithubButton";
@@ -59,10 +59,10 @@ export default function Home() {
 
 function Problems({ items }: { items: Item[] }) {
   const [status, setStatus] = useState<boolean[]>(Array(30).fill(false));
-  const [isFirstRender, setIsFirstRender] = useState<boolean>(true);
+  const isFirstRenderRef = useRef<boolean>(true);
 
   useEffect(() => {
-    if (isFirstRender) {
+    if (isFirstRenderRef.current) {
       // Load from localstorage
       if (typeof window !== "undefined") {
         const stored = localStorage.getItem("frontend-30");
@@ -70,12 +70,12 @@ function Problems({ items }: { items: Item[] }) {
           setStatus(JSON.parse(stored));
         }
       }
-      setIsFirstRender(false);
+      isFirstRenderRef.current=false
     } else {
       // Save to localstorage
       localStorage.setItem("frontend-30", JSON.stringify(status));
     }
-  }, [status, isFirstRender]);
+  }, [status, isFirstRenderRef]);
 
   function handleSetDone(index: number, isDone: boolean) {
     const statusCopy = [...status];
