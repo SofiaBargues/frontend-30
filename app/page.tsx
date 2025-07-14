@@ -8,11 +8,9 @@ import { LinkedIn } from "./component/LinkedIn";
 import { GitHubRepo } from "./component/GitHub";
 import { Step } from "./component/Step";
 import { Hero } from "./component/Hero";
-//   const [status, setStatus] = useState<boolean[]>(new Array(30).fill(false));
 import { useEffect, useState } from "react";
-import { Filter, Route } from "lucide-react";
+import { Route } from "lucide-react";
 import { Email } from "./component/Email";
-import { LinkButton } from "./component/LinkButton";
 import { StarOnGithubButton } from "./component/StarOnGithubButton";
 
 export default function Home() {
@@ -67,7 +65,7 @@ function Problems({ items }: { items: Item[] }) {
     if (isFirstRender) {
       // Load from localstorage
       if (typeof window !== "undefined") {
-        const stored = localStorage.getItem("sofiapp");
+        const stored = localStorage.getItem("frontend-30");
         if (stored) {
           setStatus(JSON.parse(stored));
         }
@@ -75,7 +73,7 @@ function Problems({ items }: { items: Item[] }) {
       setIsFirstRender(false);
     } else {
       // Save to localstorage
-      localStorage.setItem("sofiapp", JSON.stringify(status));
+      localStorage.setItem("frontend-30", JSON.stringify(status));
     }
   }, [status, isFirstRender]);
 
