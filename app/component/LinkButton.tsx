@@ -23,12 +23,12 @@ const buttonStyle = {
   },
 };
 
-export function MyButton({
+export function LinkButton({
   url,
   name,
   type,
 }: {
-  url: any;
+  url: string;
   name: string;
   type: ButtonTypes;
 }) {
@@ -44,17 +44,9 @@ export function MyButton({
           href={url}
           rel="noopener, noreferrer"
         >
-          <button
-            className={
-              // buttonStyle[type].color +
-              // buttonStyle[type].bgColor +
-              // buttonStyle[type].bgColor +
-              " " + " text-xs xl:p-2 xl:text-sm"
-            }
-          >
+          <button className={"text-xs xl:p-2 xl:text-sm"}>
             <div className="flex items-center justify-center gap-1">
               <div className="">{buttonStyle[type].img}</div>
-              {/* <p>{name}</p> */}
             </div>
           </button>
         </a>

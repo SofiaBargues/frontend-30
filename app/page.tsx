@@ -12,7 +12,7 @@ import { Hero } from "./component/Hero";
 import { useEffect, useState } from "react";
 import { Filter, Route } from "lucide-react";
 import { Email } from "./component/Email";
-import { MyButton } from "./component/MyButton";
+import { LinkButton } from "./component/LinkButton";
 import { StarOnGithubButton } from "./component/StarOnGithubButton";
 
 export default function Home() {
@@ -80,9 +80,9 @@ function Problems({ items }: { items: Item[] }) {
   }, [status, isFirstRender]);
 
   function handleSetDone(index: number, isDone: boolean) {
-    const statusCopi = [...status];
-    statusCopi[index] = isDone;
-    setStatus(statusCopi);
+    const statusCopy = [...status];
+    statusCopy[index] = isDone;
+    setStatus(statusCopy);
   }
 
   let completed = status.filter((x) => x === true).length;
@@ -91,11 +91,13 @@ function Problems({ items }: { items: Item[] }) {
       <div className="shadow-black[50%] items- center flex w-full max-w-4xl flex-row justify-between gap-4 border border-gray-300 bg-base-100 p-10 shadow-md">
         <div className="text-2xl font-semibold">Progress</div>
         <div className="flex w-full items-center justify-end gap-2">
-          <span className="">{completed}/30 </span>
+          <span className="">
+            {completed}/{items.length}{" "}
+          </span>
           <div className="relative flex h-4 w-full max-w-[300px] rounded-full bg-gray-200">
             <div
               style={{
-                width: (completed * 100) / 30 + "%",
+                width: (completed * 100) / items.length + "%",
               }}
               className="relative flex h-4 rounded-full bg-emerald-400"
             ></div>
