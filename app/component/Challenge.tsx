@@ -4,7 +4,7 @@ import { LinkButton } from "./LinkButton";
 import { Item } from "./Item";
 import { StatementButton } from "./StatementButton";
 
-function StepNumber({ number }: { number: number }) {
+function ChallengeNumber({ number }: { number: number }) {
   return (
     <div className="flex h-full items-center justify-start text-2xl font-semibold sm:font-bold md:ml-4 md:text-7xl lg:w-24">
       <div className="flex text-left lg:flex-col">{number}</div>
@@ -12,7 +12,7 @@ function StepNumber({ number }: { number: number }) {
   );
 }
 
-export function Step({
+export function Challenge({
   item,
   number,
   isDone,
@@ -35,7 +35,7 @@ export function Step({
     >
       {/* eslint-disable-next-line @next/next/no-img-element */}
       <img
-        alt={"Step image for step " + number}
+        alt={"Challenge image for challenge " + number}
         src={item.imgSource}
         style={{ opacity: 0.3 }}
         className={
@@ -45,12 +45,12 @@ export function Step({
         }
       ></img>
       <div className="z-30 hidden md:block">
-        <StepNumber number={number} />
+        <ChallengeNumber number={number} />
       </div>
       <div className="items relative m-3 flex w-full flex-col gap-2 rounded bg-base-100/50 sm:p-2 md:m-5">
         <div className="flex h-3 items-center justify-between gap-4 md:h-auto">
           <div className="z-30 block md:hidden">
-            <StepNumber number={number} />
+            <ChallengeNumber number={number} />
           </div>
           <span className="flex w-full items-center justify-between md:gap-4">
             <h3 className="text-xl font-bold sm:text-2xl md:text-3xl">
