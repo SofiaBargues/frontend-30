@@ -1,6 +1,6 @@
 "use client";
 
-import { Linkedin, LucideTentTree, Mail } from "lucide-react";
+import { Mail } from "lucide-react";
 
 export function Email() {
   return (

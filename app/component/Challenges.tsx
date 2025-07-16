@@ -1,10 +1,10 @@
 "use client";
 import { useState, useRef, useEffect } from "react";
-import { Item } from "./Item";
+import { type ChallengeData } from "./ChallengeData";
 import { ProgressBar } from "./ProgressBar";
 import { Challenge } from "./Challenge";
 
-export function Challenges({ items }: { items: Item[] }) {
+export function Challenges({ items }: { items: ChallengeData[] }) {
   const [status, setStatus] = useState<boolean[]>(Array(30).fill(false));
   const isFirstRenderRef = useRef<boolean>(true);
 
@@ -35,7 +35,7 @@ export function Challenges({ items }: { items: Item[] }) {
     <section className="flex w-full flex-col items-center justify-center">
       <ProgressBar completed={completed} items={items} />
       <div className="flex w-full max-w-4xl flex-col items-center justify-between pb-8">
-        {items.map((item: Item, index: number) => (
+        {items.map((item: ChallengeData, index: number) => (
           <Challenge
             key={item.id}
             number={index + 1}

@@ -1,6 +1,6 @@
-import { Item } from "./Item";
+import { ChallengeData } from "./component/ChallengeData";
 
-export const data: Item[] = [
+export const data: ChallengeData[] = [
   {
     id: "qr-code-component",
     name: "QR code component",

@@ -1,6 +1,6 @@
 "use client";
 
-import { Github, Github as GithubLucide } from "lucide-react";
+import { Github } from "lucide-react";
 
 export function GitHubRepo() {
   return (

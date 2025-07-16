@@ -1,5 +1,4 @@
-export type Item = {
-  
+export type ChallengeData = {
   id: string;
   tags: string[];
   name: string;

@@ -1,38 +1,44 @@
-import Typewriter from "typewriter-effect";
+import Image from "next/image";
+import ageCalculatorApp from "../../public/age-calculator-app.jpg";
+import qr from "../../public/qr-code-component.jpg";
+import mole from "../../public/mole.png";
+import tipCalculator from "../../public/tip-calculator-app.jpg";
+import paymentGraphic from "../../public/payment-graphic.png";
+import cards from "../../public/cards.png";
 
 export function Hero({}: {}) {
   return (
     <div className="hero relative mt-11 min-h-[560px] sm:min-h-[650px] md:min-h-[700px]">
       <div className="hero-content text-center">
         <div className="absolute top-10 -z-10 grid h-full w-full grid-cols-3 justify-items-center gap-x-[20px] gap-y-[200px] filter sm:gap-y-[300px] md:top-20 md:h-auto md:w-auto md:grid-cols-2 md:gap-x-[600px] md:gap-y-[80px]">
-          <img
+          <Image
             alt="age-calculator-app"
-            src="/age-calculator-app.jpg"
+            src={ageCalculatorApp}
             className="mt-5 max-w-[100px] -rotate-12 rounded-md grayscale transition hover:scale-110 hover:grayscale-0 md:mt-0 md:max-w-[150px]"
           />
-          <img
-            alt="recipe-page"
-            src="/recipe-page.jpg"
-            className="max-h-[100px] max-w-[100px] rotate-12 rounded-md grayscale transition hover:scale-110 hover:grayscale-0 md:max-h-[150px] md:max-w-[150px]"
+          <Image
+            alt="qr-app"
+            src={qr}
+            className="max-w-[70px] rotate-12 rounded-md grayscale transition hover:scale-110 hover:grayscale-0 md:max-w-[100px]"
           />
-          <img
+          <Image
             alt="mole"
-            src="/mole.png"
+            src={mole}
             className="mt-5 max-h-[100px] max-w-[100px] rotate-12 rounded-md grayscale transition hover:scale-110 hover:grayscale-0 md:mt-0 md:max-h-[150px] md:max-w-[150px]"
           />
-          <img
+          <Image
             alt="tip-calculator-app"
-            src="/tip-calculator-app.jpg"
+            src={tipCalculator}
             className="max-h-[100px] max-w-[100px] -rotate-12 rounded-md grayscale transition hover:scale-110 hover:grayscale-0 md:max-h-[150px] md:max-w-[150px]"
           />
-          <img
+          <Image
             alt="payment-graphic"
-            src="/payment-graphic.png"
+            src={paymentGraphic}
             className="max-h-[100px] max-w-[100px] -rotate-12 rounded-md grayscale transition hover:scale-110 hover:grayscale-0 md:max-h-[150px] md:max-w-[150px]"
           />
-          <img
+          <Image
             alt="cards"
-            src="/cards.png"
+            src={cards}
             className="max-h-[100px] max-w-[100px] rotate-12 rounded-md grayscale transition hover:scale-110 hover:grayscale-0 md:max-h-[150px] md:max-w-[150px]"
           />
         </div>
@@ -42,14 +48,6 @@ export function Hero({}: {}) {
             <br />
             <div className="h-12 text-primary sm:h-[4.5rem] lg:h-24">
               Frontend
-              {/* <Typewriter
-                options={{
-                  wrapperClassName: "text-primary",
-                  strings: ["Web Dev", "Learning", "Exploring", "Programming"],
-                  autoStart: true,
-                  loop: true,
-                }} */}
-              {/* /> */}
             </div>
             <span className="">Challenges</span>
           </h1>
@@ -58,7 +56,6 @@ export function Hero({}: {}) {
               "Project-based learning is awesome, learn or test your frontend skills with these challenges!"
             }
           </p>
-          {/* <button className="btn btn-primary">Get Started</button> */}
         </div>
       </div>
     </div>

@@ -1,13 +1,13 @@
 "use client";
 
-import { Item } from "./Item";
+import { Type } from "./ChallengeData";
 
 export function ProgressBar({
   completed,
   items,
 }: {
   completed: number;
-  items: Item[];
+  items: Type[];
 }) {
   return (
     <div className="shadow-black[50%] items- center flex w-full max-w-4xl flex-row justify-between gap-4 border border-gray-300 bg-base-100 p-10 shadow-md">

@@ -6,19 +6,12 @@ type ButtonTypes = "github" | "demo" | "tutorial";
 
 const buttonStyle = {
   github: {
-    color: "border-black text-black",
-    bgColor: " hover:border-black hover:text-base-100 hover:bg-black",
     img: <GithubIcon className="h-4 w-4 sm:h-6 sm:w-6" />,
   },
   demo: {
-    color: " border-secondary text-secondary",
-    bgColor: " hover:border-secondary hover:text-base-100 hover:bg-secondary ",
     img: <Globe className="h-4 w-4 sm:h-6 sm:w-6" />,
   },
-
   tutorial: {
-    color: " border-red-600 text-red-600 ",
-    bgColor: " hover:border-red-600 hover:text-base-100 hover:bg-red-600 ",
     img: <YoutubeIcon className="h-4 w-4 sm:h-6 sm:w-6" />,
   },
 };

@@ -1,7 +1,7 @@
 "use client";
 import { CircleCheck } from "lucide-react";
 import { LinkButton } from "./LinkButton";
-import { Item } from "./Item";
+import { ChallengeData } from "./ChallengeData";
 import { StatementButton } from "./StatementButton";
 
 function ChallengeNumber({ number }: { number: number }) {
@@ -18,7 +18,7 @@ export function Challenge({
   isDone,
   setDone,
 }: {
-  item: Item;
+  item: ChallengeData;
   number: number;
   isDone: boolean;
   setDone: (isDone: boolean) => void;

@@ -1,6 +1,6 @@
 "use client";
 
-import { data } from "./component/data";
+import { data } from "./data";
 import { LinkedIn } from "./component/LinkedIn";
 import { GitHubRepo } from "./component/GitHub";
 import { Hero } from "./component/Hero";

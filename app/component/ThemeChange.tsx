@@ -1,6 +1,6 @@
 "use client";
+
 import { useTheme } from "next-themes";
-import { useEffect, useRef, useState } from "react";
 export const themes = [{ id: "emerald" }, { id: "forest" }];
 const lightTheme = "emerald";
 export function ThemeChange({}) {
