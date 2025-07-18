@@ -4,46 +4,46 @@ import { type ChallengeData } from "./ChallengeData";
 import { ProgressBar } from "./ProgressBar";
 import { Challenge } from "./Challenge";
 
-export function Challenges({ items }: { items: ChallengeData[] }) {
-  const [status, setStatus] = useState<boolean[]>(Array(30).fill(false));
+export function Challenges({ challenges }: { challenges: ChallengeData[] }) {
+  const [completionStatus, setCompletionStatus] = useState<boolean[]>(
+    Array(30).fill(false),
+  );
   const isFirstRenderRef = useRef<boolean>(true);
 
   useEffect(() => {
     if (isFirstRenderRef.current) {
       // Load from localstorage
-      if (typeof window !== "undefined") {
-        const stored = localStorage.getItem("frontend-30");
-        if (stored) {
-          setStatus(JSON.parse(stored));
-        }
+      const rawData = localStorage.getItem("frontend-30");
+      if (rawData) {
+        setCompletionStatus(JSON.parse(rawData));
       }
       isFirstRenderRef.current = false;
     } else {
       // Save to localstorage
-      localStorage.setItem("frontend-30", JSON.stringify(status));
+      localStorage.setItem("frontend-30", JSON.stringify(completionStatus));
     }
-  }, [status, isFirstRenderRef]);
+  }, [completionStatus, isFirstRenderRef]);
 
-  function handleSetDone(index: number, isDone: boolean) {
-    const statusCopy = [...status];
+  function handleSetCompleted(index: number, isDone: boolean) {
+    const statusCopy = [...completionStatus];
     statusCopy[index] = isDone;
-    setStatus(statusCopy);
+    setCompletionStatus(statusCopy);
   }
 
-  let completed = status.filter((x) => x === true).length;
+  let completed = completionStatus.filter((x) => x === true).length;
   return (
     <section className="flex w-full flex-col items-center justify-center">
-      <ProgressBar completed={completed} items={items} />
+      <ProgressBar completed={completed} challenges={challenges} />
       <div className="flex w-full max-w-4xl flex-col items-center justify-between pb-8">
-        {items.map((item: ChallengeData, index: number) => (
+        {challenges.map((challenge: ChallengeData, index: number) => (
           <Challenge
-            key={item.id}
+            key={challenge.id}
             number={index + 1}
-            isDone={status[index]}
-            setDone={(isDone) => {
-              handleSetDone(index, isDone);
+            isCompleted={completionStatus[index]}
+            setCompleted={(completed) => {
+              handleSetCompleted(index, completed);
             }}
-            item={item}
+            challenge={challenge}
           ></Challenge>
         ))}
       </div>

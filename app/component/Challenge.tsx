@@ -13,18 +13,18 @@ function ChallengeNumber({ number }: { number: number }) {
 }
 
 export function Challenge({
-  item,
+  challenge,
   number,
-  isDone,
-  setDone,
+  isCompleted,
+  setCompleted,
 }: {
-  item: ChallengeData;
+  challenge: ChallengeData;
   number: number;
-  isDone: boolean;
-  setDone: (isDone: boolean) => void;
+  isCompleted: boolean;
+  setCompleted: (completed: boolean) => void;
 }) {
   function handleClick() {
-    return setDone(!isDone);
+    return setCompleted(!isCompleted);
   }
 
   return (
@@ -36,10 +36,10 @@ export function Challenge({
       {/* eslint-disable-next-line @next/next/no-img-element */}
       <img
         alt={"Challenge image for challenge " + number}
-        src={item.imgSource}
+        src={challenge.imgSource}
         style={{ opacity: 0.3 }}
         className={
-          (!isDone ? "grayscale filter " : "") +
+          (!isCompleted ? "grayscale filter " : "") +
           "absolute left-[10px] z-0 ml-6 mt-6 flex max-h-[100px] max-w-[100px] rounded-md md:max-h-[200px] md:max-w-[200px]" +
           (number % 2 === 0 ? " -rotate-12" : " rotate-12")
         }
@@ -54,13 +54,13 @@ export function Challenge({
           </div>
           <span className="flex w-full items-center justify-between md:gap-4">
             <h3 className="text-xl font-bold sm:text-2xl md:text-3xl">
-              {item.name}
+              {challenge.name}
             </h3>
             <div className="m-1 flex flex-col justify-center md:hidden">
               <button
                 onClick={handleClick}
                 className={`duration-00 flex aspect-square h-7 w-7 self-start rounded-full text-sm font-semibold transition-colors md:h-14 md:w-14 md:border-4 lg:min-w-[55px] ${
-                  !isDone
+                  !isCompleted
                     ? "border-gray-300 text-gray-300 hover:border-gray-400 hover:text-gray-400"
                     : "border-green-400 text-green-400 hover:border-green-600 hover:text-green-600"
                 }`}
@@ -71,7 +71,7 @@ export function Challenge({
           </span>
         </div>
         <div className="bg">
-          {item.tags.map((tag, index) => (
+          {challenge.tags.map((tag, index) => (
             <span
               className="badge badge-outline text-xs text-base-content/80"
               key={index}
@@ -81,20 +81,24 @@ export function Challenge({
           ))}
         </div>
 
-        <p className="my-3 text-xs sm:text-base">{item.description}</p>
+        <p className="my-3 text-xs sm:text-base">{challenge.description}</p>
 
         <div className="flex items-center gap-3">
-          <StatementButton url={item.statementUrl} name="Statement" />
-          <LinkButton url={item.githubUrl} name="GitHub" type="github" />
-          <LinkButton url={item.demoUrl} name="Demo" type="demo" />
-          <LinkButton url={item.tutorialUrl} name="Tutorial" type="tutorial" />
+          <StatementButton url={challenge.statementUrl} name="Statement" />
+          <LinkButton url={challenge.githubUrl} name="GitHub" type="github" />
+          <LinkButton url={challenge.demoUrl} name="Demo" type="demo" />
+          <LinkButton
+            url={challenge.tutorialUrl}
+            name="Tutorial"
+            type="tutorial"
+          />
         </div>
       </div>
       <div className="hidden flex-col justify-center md:block">
         <button
           onClick={handleClick}
           className={`duration-00 flex aspect-square h-7 w-7 self-start text-sm font-semibold transition-colors md:h-14 md:w-14 lg:min-w-[55px] ${
-            !isDone
+            !isCompleted
               ? "border-gray-300 text-gray-300 hover:border-gray-400 hover:text-gray-400"
               : "border-green-400 text-green-400 hover:border-green-600 hover:text-green-600"
           }`}
