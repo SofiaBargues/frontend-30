@@ -109,7 +109,7 @@ export const data: ChallengeData[] = [
     tags: ["Devtools"],
     tutorialUrl: "https://www.youtube.com/watch?v=CM-MXPl0-wE",
     statementUrl:
-      "https://www.devtools.tech/questions/s/how-to-build-a-password-strength-checker-in-react-js-or-frontend-interview-question-or-javascript---qid---tQR3mRIXsSK1tDfCliYj",
+      "https://github.com/SofiaBargues/password-strength-checker/blob/main/README.md",
     githubUrl: "https://github.com/SofiaBargues/password-strength-checker",
     demoUrl: "https://password-strength-checker-red.vercel.app/",
     imgSource: "/password-strength-checker.png",
